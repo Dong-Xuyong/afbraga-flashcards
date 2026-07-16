@@ -1,0 +1,22 @@
+{
+  "decks": [
+    {
+      "id": "c5-a",
+      "title": "C5 — Versão A",
+      "file": "c5-versao-a.json",
+      "cardCount": 20
+    },
+    {
+      "id": "c6-a",
+      "title": "C6 — Versão A",
+      "file": "c6-versao-a.json",
+      "cardCount": 20
+    },
+    {
+      "id": "cf",
+      "title": "CF — Categorias Femininas",
+      "file": "cf.json",
+      "cardCount": 20
+    }
+  ]
+}

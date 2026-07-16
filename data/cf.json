@@ -1,0 +1,269 @@
+{
+  "deckId": "cf",
+  "title": "CF — Categorias Femininas",
+  "category": "CF",
+  "version": null,
+  "source": "AF Braga Conselho de Arbitragem 11.07.2026",
+  "cards": [
+    {
+      "id": "cf-01",
+      "number": 1,
+      "question": "Um jogador demora a sair do campo de jogo quando é substituído. O mesmo jogador já foi advertido por outra infração. Qual é a decisão correta?",
+      "options": {
+        "A": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada.",
+        "B": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e pode ser substituído.",
+        "C": "O árbitro dá um aviso verbal ao jogador em questão.",
+        "D": "O árbitro exibe ao jogador o cartão vermelho. O jogador é expulso e pode ser substituído."
+      },
+      "answer": "A",
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada."
+    },
+    {
+      "id": "cf-02",
+      "number": 2,
+      "question": "Na execução de um pontapé de penalti, a bola ficou deformada, quando foi pontapeada para a frente e antes de tocar em qualquer jogador ou na barra ou postes da baliza. Assim, perante a situação o que decidir?",
+      "options": {
+        "A": "Efetuar uma bola ao solo pelo guarda-redes.",
+        "B": "Mandar repetir o pontapé de penalti.",
+        "C": "Efetuar uma bola ao solo pelo árbitro.",
+        "D": "Assinalar pontapé-livre indireto e solicitar nova bola."
+      },
+      "answer": "B",
+      "answerText": "Mandar repetir o pontapé de penalti."
+    },
+    {
+      "id": "cf-03",
+      "number": 3,
+      "question": "Após a bola sair pela linha lateral, foi solicitada uma substituição de um jogador da equipa visitada. Contudo, quando o jogador suplente se preparava para entrar, o jogador que era substituído informou o árbitro que não ia sair. O que decidir?",
+      "options": {
+        "A": "Adverte o jogador.",
+        "B": "Dá o jogo por concluído.",
+        "C": "Dá continuidade ao jogo.",
+        "D": "Só recomeça depois de normalizada a substituição."
+      },
+      "answer": "C",
+      "answerText": "Dá continuidade ao jogo."
+    },
+    {
+      "id": "cf-04",
+      "number": 4,
+      "question": "Na bola ao solo se esta entra na baliza sem tocar em pelo menos dois jogadores, o jogo recomeça como?",
+      "options": {
+        "A": "Pontapé de baliza.",
+        "B": "Pontapé de canto.",
+        "C": "Repetição da bola ao solo.",
+        "D": "Depende, pelo que as hipóteses a) e b) podem ser corretas em face das circunstâncias."
+      },
+      "answer": "D",
+      "answerText": "Depende, pelo que as hipóteses a) e b) podem ser corretas em face das circunstâncias."
+    },
+    {
+      "id": "cf-05",
+      "number": 5,
+      "question": "Se, na execução de um pontapé -livre, um jogador da equipa atacante estiver a menos de 1 metro de distância da barreira defensiva formada por três ou mais defensores, deverá ser:",
+      "options": {
+        "A": "Concedido um pontapé-livre direto à equipa defensora.",
+        "B": "Concedido um pontapé-livre indireto à equipa defensora.",
+        "C": "Concedido um pontapé-livre indireto à equipa atacante.",
+        "D": "Concedido um pontapé-livre direto à equipa atacante."
+      },
+      "answer": "B",
+      "answerText": "Concedido um pontapé-livre indireto à equipa defensora."
+    },
+    {
+      "id": "cf-06",
+      "number": 6,
+      "question": "Pode ser marcado um golo à equipa adversária diretamente a partir do pontapé de saída. Se a bola entrar diretamente na baliza do executante?",
+      "options": {
+        "A": "É concedido um pontapé de canto a favor da equipa adversária.",
+        "B": "É repetido o pontapé.",
+        "C": "É assinalado uma bola ao solo.",
+        "D": "É concedido um pontapé de baliza."
+      },
+      "answer": "A",
+      "answerText": "É concedido um pontapé de canto a favor da equipa adversária."
+    },
+    {
+      "id": "cf-07",
+      "number": 7,
+      "question": "No decurso do jogo, um jogador perdeu uma bota e com ela na mão rasteirou um adversário de forma negligente. Que decisão deve o árbitro tomar?",
+      "options": {
+        "A": "Interrompe o jogo, expulsa esse jogador e recomeça o jogo com um lançamento de bola ao solo, no local onde a bola se encontrava no momento da interrupção.",
+        "B": "Interrompe o jogo, adverte esse jogador e pune a sua equipa com um pontapé-livre indireto no local onde se encontrava a bola no momento da interrupção.",
+        "C": "Interrompe o jogo, adverte esse jogador e pune a sua equipa com um pontapé-livre direto ou pontapé de penalti.",
+        "D": "Nenhuma das respostas está correta."
+      },
+      "answer": "C",
+      "answerText": "Interrompe o jogo, adverte esse jogador e pune a sua equipa com um pontapé-livre direto ou pontapé de penalti."
+    },
+    {
+      "id": "cf-08",
+      "number": 8,
+      "question": "Um jogador reclama por palavras e gestos perante o árbitro a exibição de um cartão amarelo para um adversário. Como agir?",
+      "options": {
+        "A": "Avisar que não pode proceder daquela forma.",
+        "B": "Exibir o cartão amarelo mesmo que seja a primeira vez.",
+        "C": "Exibir o cartão amarelo se for reincidente.",
+        "D": "Nestas circunstâncias é sempre expulso."
+      },
+      "answer": "B",
+      "answerText": "Exibir o cartão amarelo mesmo que seja a primeira vez."
+    },
+    {
+      "id": "cf-09",
+      "number": 9,
+      "question": "Um jogador pretende ser ele a defender o penalti assinalado pelo árbitro no último minuto do jogo em troca com o seu guarda-redes. Tal é permitido?",
+      "options": {
+        "A": "Sim, desde que o árbitro seja informado antes da alteração ser feita e que a alteração seja feita durante a interrupção do jogo antes da execução do penalti.",
+        "B": "Tal não é permitido.",
+        "C": "Sim, desde que o seu colega esteja lesionado.",
+        "D": "Sim, só quando o resultado já esteja definido."
+      },
+      "answer": "A",
+      "answerText": "Sim, desde que o árbitro seja informado antes da alteração ser feita e que a alteração seja feita durante a interrupção do jogo antes da execução do penalti."
+    },
+    {
+      "id": "cf-10",
+      "number": 10,
+      "question": "Na bola ao solo, quando é que a bola entra em jogo?",
+      "options": {
+        "A": "Depois de lançada pelo árbitro.",
+        "B": "Depois de lançada para o guarda-redes.",
+        "C": "Depois de tocada pelo jogador que está próximo.",
+        "D": "Todas as opções estão erradas."
+      },
+      "answer": "D",
+      "answerText": "Todas as opções estão erradas."
+    },
+    {
+      "id": "cf-11",
+      "number": 11,
+      "question": "Foi efetuada uma substituição durante o intervalo, o procedimento deve ser concluído antes do recomeço do jogo. Mas se o árbitro não for informado, o que pode acontecer?",
+      "options": {
+        "A": "O suplente não pode continuar a jogar, volta a sair para o procedimento da substituição.",
+        "B": "O suplente pode continuar a jogar, não é tomada qualquer medida disciplinar e a questão é reportada às autoridades competentes.",
+        "C": "O suplente pode continuar a jogar, é advertido e o jogo recomeça com uma bola ao solo.",
+        "D": "O suplente pode continuar a jogar, é advertido e o jogo recomeça com um pontapé-livre indireto."
+      },
+      "answer": "B",
+      "answerText": "O suplente pode continuar a jogar, não é tomada qualquer medida disciplinar e a questão é reportada às autoridades competentes."
+    },
+    {
+      "id": "cf-12",
+      "number": 12,
+      "question": "Um jogador da equipa A passou inadvertidamente a bola ao guarda -redes adversário quando aquele (GR) estava na sua área de baliza por ocasião de um pontapé de canto. O referido guarda-redes agarrou a bola com a mão e passou a um seu colega de equipa. Como agir?",
+      "options": {
+        "A": "Assinala pontapé-livre direto.",
+        "B": "Assinala pontapé-livre indireto.",
+        "C": "Efetua uma bola ao solo.",
+        "D": "Deixa prosseguir o jogo."
+      },
+      "answer": "D",
+      "answerText": "Deixa prosseguir o jogo."
+    },
+    {
+      "id": "cf-13",
+      "number": 13,
+      "question": "Um jogador defensor atinge um jogador atacante dentro da área de penalti quando a bola está em jogo. Um dos árbitros assistentes indica a infração, mas o árbitro não vê a indicação. O jogo continua e a bola sai pela linha lateral. Que decisões pode o árbitro tomar se o jogo já tiver sido reiniciado com um lançamento lateral em virtude da rápida reposição?",
+      "options": {
+        "A": "O árbitro pode alterar a decisão de reinício e pode conceder um penalti e o cartão vermelho exibido por conduta violenta.",
+        "B": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho também não pode ser exibido.",
+        "C": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. Não há lugar a punição disciplinar e remete o assunto às entidades competentes.",
+        "D": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho é exibido por conduta violenta porque o árbitro assistente identificou e tentou comunicar a infração ao árbitro antes do jogo recomeçar."
+      },
+      "answer": "D",
+      "answerText": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho é exibido por conduta violenta porque o árbitro assistente identificou e tentou comunicar a infração ao árbitro antes do jogo recomeçar."
+    },
+    {
+      "id": "cf-14",
+      "number": 14,
+      "question": "Um pontapé-livre:",
+      "options": {
+        "A": "Pode ser executado levantando a bola com um pé ou com os dois pés simultaneamente.",
+        "B": "Só pode ser executado com um pé.",
+        "C": "Só pode ser pontapeada a bola com os dois pés simultaneamente.",
+        "D": "Não pode ser pontapeado para trás em nenhuma circunstância."
+      },
+      "answer": "A",
+      "answerText": "Pode ser executado levantando a bola com um pé ou com os dois pés simultaneamente."
+    },
+    {
+      "id": "cf-15",
+      "number": 15,
+      "question": "Um jogador suplente, sobre a linha lateral, insulta o árbitro, levando -o a interromper o jogo. Como deve este agir técnica e disciplinarmente?",
+      "options": {
+        "A": "Deve exibir o cartão vermelho ao suplente por usar linguagem injuriosa e/ou grosseira e punir a sua equipa com um pontapé-livre indireto no local da infração.",
+        "B": "Deve exibir o cartão vermelho ao suplente por usar linguagem injuriosa e/ou grosseira. O jogo recomeça com lançamento de bola ao solo no local onde a bola se encontrava no momento da interrupção.",
+        "C": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e punir a sua equipa com um pontapé-livre direto no local da infração.",
+        "D": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e recomeçar o jogo com um lançamento de bola ao solo no local da infração."
+      },
+      "answer": "C",
+      "answerText": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e punir a sua equipa com um pontapé-livre direto no local da infração."
+    },
+    {
+      "id": "cf-16",
+      "number": 16,
+      "question": "Se o árbitro ficar incapacitado, haverá que considerar:",
+      "options": {
+        "A": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+        "B": "O jogo deve ser interrompido de imediato.",
+        "C": "O árbitro deverá dar o jogo por concluído.",
+        "D": "É substituído pelo árbitro assistente mais categorizado"
+      },
+      "answer": "A",
+      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo."
+    },
+    {
+      "id": "cf-17",
+      "number": 17,
+      "question": "No decurso da primeira parte do jogo, não se verificaram situações que pudessem levar o árbitro a adicionar tempo de compensação, até porque tudo decorreu dentro da normalidade e o resultado estava em 0-0. Contudo, no último minuto (44) da referida parte, eis que um jogador da equipa visitada ficou no solo e foi necessário retirar o mesmo com recurso a uma ambulância, pelo que o jogo foi reatado nove minutos depois. Quanto tempo deverá ser jogado para terminar a primeira parte?",
+      "options": {
+        "A": "Dez minutos.",
+        "B": "Nove minutos.",
+        "C": "Um minuto.",
+        "D": "Doze minutos."
+      },
+      "answer": "C",
+      "answerText": "Um minuto."
+    },
+    {
+      "id": "cf-18",
+      "number": 18,
+      "question": "Um jogador que ultrapasse acidentalmente uma linha delimitadora do terreno de jogo, como parte da ação de uma jogada, a qual é visível para o árbitro e árbitro assistente que se encontra nas proximidades, leva a tomar alguma decisão?",
+      "options": {
+        "A": "A decisão a tomar é punir de imediato esta ação, mas só tecnicamente.",
+        "B": "A decisão a tomar é deixar prosseguir o jogo dado que o jogador não comete uma infração devido a essa ação.",
+        "C": "A decisão a tomar é punir tecnicamente e disciplinarmente esta ação.",
+        "D": "A decisão a tomar é expulsar o jogador e retomar com uma bola ao solo."
+      },
+      "answer": "B",
+      "answerText": "A decisão a tomar é deixar prosseguir o jogo dado que o jogador não comete uma infração devido a essa ação."
+    },
+    {
+      "id": "cf-19",
+      "number": 19,
+      "question": "Com a finalidade de determinar com mais clareza as infrações de mão na bola, o limite superior do braço coincide com:",
+      "options": {
+        "A": "Ponto inferior da axila.",
+        "B": "Ponto superior da axila.",
+        "C": "Limite da manga.",
+        "D": "Não há limite definido."
+      },
+      "answer": "A",
+      "answerText": "Ponto inferior da axila."
+    },
+    {
+      "id": "cf-20",
+      "number": 20,
+      "question": "Quando é cometida uma infração cometida por alguém presente na área técnica (suplente, jogador substituído, jogador expulso ou elemento oficial da equipa) e caso não seja possível identificar o infrator, o que decidir?",
+      "options": {
+        "A": "O elemento oficial presente na área técnica irá receber essa mesma sanção.",
+        "B": "O suplente mais categorizado presente na área técnica irá receber essa mesma sanção.",
+        "C": "O massagista ou fisioterapeuta presente na área técnica irá receber essa mesma sanção.",
+        "D": "O treinador principal presente na área técnica irá receber essa mesma sanção."
+      },
+      "answer": "D",
+      "answerText": "O treinador principal presente na área técnica irá receber essa mesma sanção."
+    }
+  ]
+}

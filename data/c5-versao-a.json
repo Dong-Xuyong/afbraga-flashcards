@@ -1,0 +1,269 @@
+{
+  "deckId": "c5-a",
+  "title": "C5 — Versão A",
+  "category": "C5",
+  "version": "A",
+  "source": "AF Braga Conselho de Arbitragem 11.07.2026",
+  "cards": [
+    {
+      "id": "c5-a-01",
+      "number": 1,
+      "question": "Um jogador da equipa atacante tem a posse da bola na área de penalti da equipa defensora. O jogo é interrompido pelo árbitro (nenhuma falta cometida). Como é o jogo reiniciado?",
+      "options": {
+        "A": "Bola ao solo para o guarda-redes da equipa defensora.",
+        "B": "Bola ao solo para a equipa atacante.",
+        "C": "Pontapé-livre indireto para a equipa do guarda-redes.",
+        "D": "Pontapé de canto para a equipa atacante."
+      },
+      "answer": "A",
+      "answerText": "Bola ao solo para o guarda-redes da equipa defensora."
+    },
+    {
+      "id": "c5-a-02",
+      "number": 2,
+      "question": "O árbitro apercebe -se que um jogador está a cometer uma infração passível de advertência (cartão amarelo) no terreno de jogo durante o aquecimento e antes do pontapé inicial. Qual é o procedimento correto?",
+      "options": {
+        "A": "O jogador infrator é advertido e o capitão avisado.",
+        "B": "O jogador infrator não pode ser advertido com cartão amarelo, mas vai contar como se tivesse sido exibido.",
+        "C": "O jogador infrator não pode ser advertido ou exibido um cartão amarelo, pois a infração ocorreu antes do árbitro entrar no campo. O incidente é relatado.",
+        "D": "O jogador só pode ser advertido verbalmente."
+      },
+      "answer": "C",
+      "answerText": "O jogador infrator não pode ser advertido ou exibido um cartão amarelo, pois a infração ocorreu antes do árbitro entrar no campo. O incidente é relatado."
+    },
+    {
+      "id": "c5-a-03",
+      "number": 3,
+      "question": "Um jogador substituído pontapeia um objeto que interfere com um adversário. Como recomeça o jogo?",
+      "options": {
+        "A": "Pontapé-livre direto (ou penálti) no local da interferência.",
+        "B": "Pontapé-livre indireto no local da bola.",
+        "C": "Pontapé-livre indireto sobre a linha de baliza.",
+        "D": "Bola ao solo."
+      },
+      "answer": "A",
+      "answerText": "Pontapé-livre direto (ou penálti) no local da interferência."
+    },
+    {
+      "id": "c5-a-04",
+      "number": 4,
+      "question": "Se um guarda-redes controlar a bola com as mãos/braços durante mais de oito segundos, o árbitro irá conceder um pontapé de canto. Para que o procedimento esteja correto, opte pela resposta mais correta:",
+      "options": {
+        "A": "Que será no lado do terreno de jogo mais próximo da posição do guarda-redes quando foi penalizado. Não há lugar a sanção disciplinar, exceto se o guarda-redes cometer a infração de forma persistente.",
+        "B": "Que será no lado do terreno de jogo mais próximo da posição do guarda-redes e sem sanção disciplinar.",
+        "C": "Que será no lado do terreno de jogo mais próximo da posição do guarda -redes e há lugar a sanção disciplinar.",
+        "D": "Que será no lado do terreno de jogo mais próximo da posição do guarda -redes e sem sanção disciplinar em qualquer circunstância."
+      },
+      "answer": "A",
+      "answerText": "Que será no lado do terreno de jogo mais próximo da posição do guarda-redes quando foi penalizado. Não há lugar a sanção disciplinar, exceto se o guarda-redes cometer a infração de forma persistente."
+    },
+    {
+      "id": "c5-a-05",
+      "number": 5,
+      "question": "Um golo é marcado com um defensor lesionado junto à linha de baliza. Qual a decisão?",
+      "options": {
+        "A": "Golo inválido, porque o árbitro devia ter interrompido o jogo.",
+        "B": "Se houver dois adversários mais próximos da linha de baliza, o golo é válido.",
+        "C": "O golo é sempre inválido.",
+        "D": "O defensor lesionado nunca conta para fora-de-jogo."
+      },
+      "answer": "B",
+      "answerText": "Se houver dois adversários mais próximos da linha de baliza, o golo é válido."
+    },
+    {
+      "id": "c5-a-06",
+      "number": 6,
+      "question": "A bola rebenta durante um passe. Qual a decisão correta?",
+      "options": {
+        "A": "Interrompe o jogo e recomeça com bola ao solo para a equipa que teria posse.",
+        "B": "Bola ao solo no local do árbitro.",
+        "C": "Bola ao solo na linha lateral.",
+        "D": "Pontapé-livre indireto."
+      },
+      "answer": "A",
+      "answerText": "Interrompe o jogo e recomeça com bola ao solo para a equipa que teria posse."
+    },
+    {
+      "id": "c5-a-07",
+      "number": 7,
+      "question": "Um jogador entra em campo sem autorização e é advertido. Como recomeça o jogo?",
+      "options": {
+        "A": "Pontapé-livre direto se houve interferência ou indireto no local da bola.",
+        "B": "Pontapé-livre indireto no local da bola.",
+        "C": "Pontapé-livre indireto sobre a linha lateral.",
+        "D": "Bola ao solo."
+      },
+      "answer": "A",
+      "answerText": "Pontapé-livre direto se houve interferência ou indireto no local da bola."
+    },
+    {
+      "id": "c5-a-08",
+      "number": 8,
+      "question": "Dois jogadores da mesma equipa lesionam -se entre eles ao tentar jogar a bola de cabeça. Ambos necessitam de ajuda. Qual a opção correta?",
+      "options": {
+        "A": "Ambos podem ser tratados e não precisam sair.",
+        "B": "Os dois jogadores devem sair do terreno de jogo.",
+        "C": "Apenas um pode continuar.",
+        "D": "O árbitro terá sempre de advertir um deles."
+      },
+      "answer": "A",
+      "answerText": "Ambos podem ser tratados e não precisam sair."
+    },
+    {
+      "id": "c5-a-09",
+      "number": 9,
+      "question": "O árbitro interrompe o jogo por uma infração cometida por um jogador, dentro ou fora do terreno de jogo contra um elemento estranho. Depois qual o procedimento correto?",
+      "options": {
+        "A": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado no local onde a bola se encontrava.",
+        "B": "O jogo recomeça com uma bola ao solo em qualquer das circunstâncias em que o facto ocorreu.",
+        "C": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado nas proximidades da ocorrência.",
+        "D": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado do ponto da linha limite onde o jogador deixou o terreno de jogo."
+      },
+      "answer": "D",
+      "answerText": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado do ponto da linha limite onde o jogador deixou o terreno de jogo."
+    },
+    {
+      "id": "c5-a-10",
+      "number": 10,
+      "question": "Um jogador atrasa a saída do campo de jogo quando vai ser substituído. O mesmo jogador anteriormente tinha sido advertido por uma infração. Qual é a decisão correta?",
+      "options": {
+        "A": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído – a substituição não é consumada.",
+        "B": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso, mas pode ser substituído.",
+        "C": "O árbitro avisa o jogador que, se continuar com a sua intenção, será expulso.",
+        "D": "O árbitro não permite efetuar a substituição e o jogo continua."
+      },
+      "answer": "A",
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído – a substituição não é consumada."
+    },
+    {
+      "id": "c5-a-11",
+      "number": 11,
+      "question": "Ao executar um penalti, um jogador remata a bola com o pé direito de forma que a bola se mova claramente, acidentalmente toca o pé esquerdo do jogador e depois entra na baliza. Qual é a decisão correta?",
+      "options": {
+        "A": "Valida o golo",
+        "B": "Deve assinalar pontapé-livre indireto (dois toques na bola)",
+        "C": "O pontapé é repetido porque o segundo toque foi acidental e ocorreu imediatamente após o primeiro toque.",
+        "D": "Assinala pontapé de baliza."
+      },
+      "answer": "C",
+      "answerText": "O pontapé é repetido porque o segundo toque foi acidental e ocorreu imediatamente após o primeiro toque."
+    },
+    {
+      "id": "c5-a-12",
+      "number": 12,
+      "question": "Se o guarda -redes tocar a bola com a mão dentro da sua própria área de penálti quando não está autorizado a fazê-lo, como deve agir o árbitro?",
+      "options": {
+        "A": "Conceder um pontapé -livre indireto à equipa adversária, havendo lugar a punição disciplinar (CA). Contudo, se a infração consiste em jogar a bola uma 2.ª vez (utilizando ou não, a mão/braço) depois desta estar em jogo e antes que seja tocada por outro jogador, o guarda-redes será sancionado em conformidade se com esta ação interrompe um ataque prometedor(2ºCA) ou se evita um golo/clara oportunidade de golo da equipa adversária.",
+        "B": "Conceder um pontapé-livre indireto à equipa adversária, não havendo lugar a qualquer sanção disciplinar. Contudo, se a infração consiste em jogar a bola uma 2.ª vez (utilizando ou não, a mão/braço) depois desta estar em jogo e antes que seja tocada por outro jogador, o guarda-redes será sancionado em conformidade se com esta ação interrompe um ataque prometedor ou se evita um golo/clara oportunidade de golo da equipa adversária.",
+        "C": "Conceder um pontapé-livre indireto à equipa adversária e em nenhuma circunstância deve ser advertido ou expulso.",
+        "D": "Todas as hipóteses estão totalmente erradas."
+      },
+      "answer": "B",
+      "answerText": "Conceder um pontapé-livre indireto à equipa adversária, não havendo lugar a qualquer sanção disciplinar. Contudo, se a infração consiste em jogar a bola uma 2.ª vez (utilizando ou não, a mão/braço) depois desta estar em jogo e antes que seja tocada por outro jogador, o guarda-redes será sancionado em conformidade se com esta ação interrompe um ataque prometedor ou se evita um golo/clara oportunidade de golo da equipa adversária."
+    },
+    {
+      "id": "c5-a-13",
+      "number": 13,
+      "question": "Se um jogador começa a agarrar um adversário fora da área de penálti e prossegue a sua ação para o interior da área, o Árbitro deve:",
+      "options": {
+        "A": "Conceder penálti.",
+        "B": "As hipóteses A) e C) podem estar corretas.",
+        "C": "Assinalar pontapé livre direto.",
+        "D": "Assinalar pontapé livre indireto."
+      },
+      "answer": "B",
+      "answerText": "As hipóteses A) e C) podem estar corretas."
+    },
+    {
+      "id": "c5-a-14",
+      "number": 14,
+      "question": "Durante a execução de um pontapé de penálti, após o atacante ter pontapeado a bola, a mesma é defendida pelo guarda-redes. Quando o executante se preparava para rematar novamente à baliza, tendo apenas o guarda -redes à sua frente, foi rasteirado de forma i mprudente por um defensor na tentativa de jogar a bola. Se fosse o Árbitro do jogo, o que decidia?",
+      "options": {
+        "A": "Interrompia o jogo, assinalava pontapé de penálti e advertia o infrator por comportamento antidesportivo.",
+        "B": "Interrompia o jogo, assinalava pontapé de penálti e expulsava o jogador infrator por anular uma clara oportunidade de golo.",
+        "C": "Interrompia o jogo, assinalava pontapé livre direto e expulsava o jogador infrator por anular uma clara oportunidade de golo.",
+        "D": "Interrompia o jogo, assinalava pontapé livre direto e advertia o jogador infrator por comportamento antidesportivo."
+      },
+      "answer": "A",
+      "answerText": "Interrompia o jogo, assinalava pontapé de penálti e advertia o infrator por comportamento antidesportivo."
+    },
+    {
+      "id": "c5-a-15",
+      "number": 15,
+      "question": "Quando um jogador impedir a equipa adversária de marcar um golo ou anular uma clara oportunidade de golo, cometendo uma infração deliberada de mão na bola, o jogador é expulso independentemente do local onde a infração foi cometida (exceto um guarda-redes dentro de sua área de penálti. Quando um jogador impedir a equipa adversária de marcar um golo ou anular uma clara oportunidade de golo, cometendo uma infração não deliberada de mão na bola e o árbitro assinalar pontapé de penalti, o infrator deve ser?",
+      "options": {
+        "A": "Advertido.",
+        "B": "Expulso.",
+        "C": "Avisado.",
+        "D": "Neste cado não deve o árbitro tomar qualquer decisão."
+      },
+      "answer": "A",
+      "answerText": "Advertido."
+    },
+    {
+      "id": "c5-a-16",
+      "number": 16,
+      "question": "Um golo pode ser marcado diretamente de um pontapé de canto?",
+      "options": {
+        "A": "Em todas as situações.",
+        "B": "Nunca poderá acontecer.",
+        "C": "Só na baliza do executante.",
+        "D": "Só na baliza do adversário do executante."
+      },
+      "answer": "D",
+      "answerText": "Só na baliza do adversário do executante."
+    },
+    {
+      "id": "c5-a-17",
+      "number": 17,
+      "question": "Deve-se considerar que a bola está fora do jogo quando toca num elemento da equipa de arbitragem e permanece em terreno de jogo. Identifique as circunstâncias a considerar num momento em que tal possa ocorrer:",
+      "options": {
+        "A": "Uma equipa inicia um ataque prometedor.",
+        "B": "A bola entra diretamente numa das balizas ou muda a equipa que tinha a posse de bola.",
+        "C": "Sempre que toca num elemento da equipa de arbitragem.",
+        "D": "As alíneas a) e b) estão corretas."
+      },
+      "answer": "D",
+      "answerText": "As alíneas a) e b) estão corretas."
+    },
+    {
+      "id": "c5-a-18",
+      "number": 18,
+      "question": "Se um colega executante do pontapé de saída jogar posteriormente a bola antes que esta seja tocada por outro jogador, o árbitro deve:",
+      "options": {
+        "A": "Conceder à equipa adversária um pontapé-livre indireto ou, por uma infração de mão na bola, um pontapé- livre direto.",
+        "B": "Conceder à equipa adversária um pontapé livre-direto.",
+        "C": "Deixar prosseguir o jogo se nenhuma infração tiver lugar.",
+        "D": "Efetuar uma bola ao solo."
+      },
+      "answer": "C",
+      "answerText": "Deixar prosseguir o jogo se nenhuma infração tiver lugar."
+    },
+    {
+      "id": "c5-a-19",
+      "number": 19,
+      "question": "Um jogador da equipa visitada, ao chutar a bola pela linha lateral para além de tentar cortar um ataque promissor da equipa adversária, tenta atingir um espectador que estava a troçar dele. Como recomeça o jogo?",
+      "options": {
+        "A": "Lançamento de bola ao solo.",
+        "B": "Pontapé-livre direto.",
+        "C": "Pontapé-livre indireto.",
+        "D": "Lançamento de linha lateral."
+      },
+      "answer": "D",
+      "answerText": "Lançamento de linha lateral."
+    },
+    {
+      "id": "c5-a-20",
+      "number": 20,
+      "question": "Recomenda-se aos árbitros que devem intervir rapidamente e com firmeza contra os jogadores que agarram o seu adversário, principalmente no interior da área de penálti por ocasião dos pontapés de canto e dos pontapés-livres. Nestas situações, o árbitro deve:",
+      "options": {
+        "A": "Chamar a atenção de todo o jogador que agarre um adversário antes de a bola estar em jogo.",
+        "B": "Advertir o jogador se ele continua a agarrar o adversário antes de a bola estar em jogo.",
+        "C": "Conceder um pontapé-livre direto ou um pontapé de penálti e advertir o jogador se ele agarra o adversário depois da bola estar em jogo.",
+        "D": "Todas as situações referidas anteriormente estão corretas."
+      },
+      "answer": "D",
+      "answerText": "Todas as situações referidas anteriormente estão corretas."
+    }
+  ]
+}

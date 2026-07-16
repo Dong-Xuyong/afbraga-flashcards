@@ -1,0 +1,269 @@
+{
+  "deckId": "c6-a",
+  "title": "C6 — Versão A",
+  "category": "C6",
+  "version": "A",
+  "source": "AF Braga Conselho de Arbitragem 11.07.2026",
+  "cards": [
+    {
+      "id": "c6-a-01",
+      "number": 1,
+      "question": "No fora de jogo, deve ser considerado como 'jogar deliberadamente' a bola:",
+      "options": {
+        "A": "O jogador tem tempo para controlar o movimento do próprio corpo, ou seja, não se tratou de uma ação instintiva de se esticar ou saltar ou ter um movimento que limita o contacto/controlo.",
+        "B": "A direção da bola não foi inesperada e o movimento da bola não foi com velocidade.",
+        "C": "A bola percorreu uma longa distância e o jogador tinha uma clara visão desta.",
+        "D": "Todas as hipóteses apresentadas aplicam-se à situação enunciada."
+      },
+      "answer": "D",
+      "answerText": "Todas as hipóteses apresentadas aplicam-se à situação enunciada."
+    },
+    {
+      "id": "c6-a-02",
+      "number": 2,
+      "question": "Após um remate à baliza, a bola acabou por bater no árbitro, e o GR mesmo assim, evitou que a bola viesse a entrar na sua baliza, defendeu esta pela sua linha de baliza. Como recomeçar o jogo?",
+      "options": {
+        "A": "Pontapé de baliza.",
+        "B": "Pontapé de canto.",
+        "C": "Bola ao solo.",
+        "D": "Pontapé Livre indireto."
+      },
+      "answer": "B",
+      "answerText": "Pontapé de canto."
+    },
+    {
+      "id": "c6-a-03",
+      "number": 3,
+      "question": "Um suplente pode substituir um jogador para a marcação de um pontapé de penalti em prorrogação de tempo?",
+      "options": {
+        "A": "Não.",
+        "B": "Sim, pode substituir qualquer jogador, mas só em caso de lesão muito grave.",
+        "C": "Sim, se esta equipa ainda não gastou as substituições.",
+        "D": "Sim, mas só para substituir o guarda-redes em caso de lesão e se essa equipa ainda não esgotou as substituições."
+      },
+      "answer": "C",
+      "answerText": "Sim, se esta equipa ainda não gastou as substituições."
+    },
+    {
+      "id": "c6-a-04",
+      "number": 4,
+      "question": "Das opções abaixo escolha a que se deve considerar para análise da aplicação da vantagem.",
+      "options": {
+        "A": "O ambiente no estádio.",
+        "B": "A oportunidade imediata de um ataque perigoso contra a baliza adversária.",
+        "C": "A proximidade da infração à baliza.",
+        "D": "Todas as anteriores."
+      },
+      "answer": "B",
+      "answerText": "A oportunidade imediata de um ataque perigoso contra a baliza adversária."
+    },
+    {
+      "id": "c6-a-05",
+      "number": 5,
+      "question": "Os pontapés-livres indiretos a favor da equipa atacante por uma infração cometida dentro da área de baliza adversária são executados em que local?",
+      "options": {
+        "A": "A partir de um ponto qualquer da linha da área de baliza paralela à linha de baliza.",
+        "B": "A partir do ponto mais próximo da linha da área de baliza paralela à linha da área.",
+        "C": "A partir de qualquer linha da área.",
+        "D": "A partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza."
+      },
+      "answer": "D",
+      "answerText": "A partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza."
+    },
+    {
+      "id": "c6-a-06",
+      "number": 6,
+      "question": "Quando o árbitro tenha decidido advertir ou expulsar o jogador lesionado, e este tenha de deixar o terreno de jogo para receber assistência, o árbitro deve exibir o respetivo cartão ao jogador em que momento?",
+      "options": {
+        "A": "A qualquer momento.",
+        "B": "Quando entrar novamente no terreno de jogo.",
+        "C": "Antes de sair do terreno de jogo.",
+        "D": "Depois de sair do terreno de jogo."
+      },
+      "answer": "C",
+      "answerText": "Antes de sair do terreno de jogo."
+    },
+    {
+      "id": "c6-a-07",
+      "number": 7,
+      "question": "Um jogador disputa a bola com um adversário não muito longe do banco dos técnicos da equipa contrária. Na tentativa de aliviar a bola, rematou o que levou a atingir com alguma intensidade um jogador suplente que estava sentado no banco. Como agir posterior mente em termos disciplinares e de recomeço de jogo?",
+      "options": {
+        "A": "Com uma bola ao solo, sem sanção disciplinar.",
+        "B": "Com um pontapé-livre direto e expulsão.",
+        "C": "Com um pontapé-livre indireto e advertência.",
+        "D": "Com um lançamento lateral, sem sanção disciplinar."
+      },
+      "answer": "D",
+      "answerText": "Com um lançamento lateral, sem sanção disciplinar."
+    },
+    {
+      "id": "c6-a-08",
+      "number": 8,
+      "question": "Um jogador lesionou-se após ter sofrido uma falta o que levou a ser avaliado pelo médico no terreno de jogo. O jogador recuperou e sente condições para continuar. Este jogador pode executar o pontapé- livre?",
+      "options": {
+        "A": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi advertido ou expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o terreno de jogo.",
+        "B": "O jogador não pode permanecer no terreno de jogo em qualquer das circunstâncias.",
+        "C": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi advertido e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o campo de jogo.",
+        "D": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o campo de jogo."
+      },
+      "answer": "A",
+      "answerText": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi advertido ou expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o terreno de jogo."
+    },
+    {
+      "id": "c6-a-09",
+      "number": 9,
+      "question": "Um jogador perdeu acidentalmente uma caneleira. O que está determinado perante este tipo de situações?",
+      "options": {
+        "A": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo deve ser validado, mas haverá sempre lugar a punição disciplinar.",
+        "B": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo deve ser validado.",
+        "C": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo não deve ser validado e o jogador advertido.",
+        "D": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo não deve ser validado."
+      },
+      "answer": "B",
+      "answerText": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo deve ser validado."
+    },
+    {
+      "id": "c6-a-10",
+      "number": 10,
+      "question": "Um jogador da equipa atacante sofre falta depois de passar a bola para um colega que estava em posição de fora-de-jogo, quando o passe foi efetuado. Qual é a decisão do árbitro?",
+      "options": {
+        "A": "Qualquer infração que ocorra primeiro é penalizada, portanto, a falta só é penalizada se ocorrer antes do jogador em posição de fora-de-jogo cometer uma infração de FJ (por exemplo, tocar a bola). Se ambas as infrações ocorrerem ao mesmo tempo, a falta é penalizada por ser mais grave, ou seja, o FJ é punido com um Pontapé- livre indireto, enquanto a falta é punida com um pontapé- livre direto.",
+        "B": "Qualquer infração que ocorra de fora-de-jogo deve ser imediatamente penalizada.",
+        "C": "Qualquer infração que ocorra primeiro é penalizada, portanto, a falta só é penalizada se ocorrer antes do jogador em posição de fora-de-jogo cometer uma infração de FJ (por exemplo, tocar a bola). Se ambas as infrações ocorrerem ao mesmo tempo, a falta é penalizada por fora-de-jogo.",
+        "D": "Nestas circunstâncias não há lugar à penalização."
+      },
+      "answer": "A",
+      "answerText": "Qualquer infração que ocorra primeiro é penalizada, portanto, a falta só é penalizada se ocorrer antes do jogador em posição de fora-de-jogo cometer uma infração de FJ (por exemplo, tocar a bola). Se ambas as infrações ocorrerem ao mesmo tempo, a falta é penalizada por ser mais grave, ou seja, o FJ é punido com um Pontapé- livre indireto, enquanto a falta é punida com um pontapé- livre direto."
+    },
+    {
+      "id": "c6-a-11",
+      "number": 11,
+      "question": "Enquanto a bola está em jogo, um substituto atinge um substituto da mesma equipa fora do campo de jogo. Como é o jogo reiniciado?",
+      "options": {
+        "A": "Lançamento de linha lateral.",
+        "B": "Pontapé- livre indireto.",
+        "C": "Pontapé-livre direto ou pontapé de penalti.",
+        "D": "Com uma bola ao solo."
+      },
+      "answer": "D",
+      "answerText": "Com uma bola ao solo."
+    },
+    {
+      "id": "c6-a-12",
+      "number": 12,
+      "question": "O jogador da equipa que está em desvantagem no marcador, remata a bola à baliza adversária e a mesma não atravessa totalmente a linha de baliza entre os postes. O que está convencionado fazer?",
+      "options": {
+        "A": "O árbitro deve apitar de imediato e assinalar golo.",
+        "B": "Deve por força das dúvidas efetuar uma bola ao solo.",
+        "C": "O árbitro deve estabelecer contacto visual com o árbitro assistente e, se necessário, este deverá fazer um sinal discreto com a mão.",
+        "D": "Interrompe o jogo e acerca-se do AA mais próximo."
+      },
+      "answer": "C",
+      "answerText": "O árbitro deve estabelecer contacto visual com o árbitro assistente e, se necessário, este deverá fazer um sinal discreto com a mão."
+    },
+    {
+      "id": "c6-a-13",
+      "number": 13,
+      "question": "Se um elemento da equipa de arbitragem, um jogador ou um elemento oficial das equipas for atingido por um objeto lançado por um espetador, o árbitro pode:",
+      "options": {
+        "A": "Deixar prosseguir o jogo ou suspendê-lo.",
+        "B": "Deixar prosseguir o jogo, pará -lo temporariamente, suspendê -lo ou interrompê -lo definitivamente, consoante a gravidade do incidente.",
+        "C": "Deixar prosseguir o jogo ou pará-lo temporariamente.",
+        "D": "Deixar prosseguir o jogo, pará-lo temporariamente, suspendê-lo definitivamente, mesmo no caso de um grave do incidente."
+      },
+      "answer": "B",
+      "answerText": "Deixar prosseguir o jogo, pará -lo temporariamente, suspendê -lo ou interrompê -lo definitivamente, consoante a gravidade do incidente."
+    },
+    {
+      "id": "c6-a-14",
+      "number": 14,
+      "question": "Com a bola em jogo, outra bola entra no terreno. O árbitro deve interromper o jogo?",
+      "options": {
+        "A": "Não, o árbitro interrompe o jogo, apenas se a segunda bola interferir no jogo.",
+        "B": "Sim, o jogo será interrompido imediatamente.",
+        "C": "Sim, mas não imediatamente.",
+        "D": "O árbitro deve interromper se não for possível aplicar a vantagem."
+      },
+      "answer": "A",
+      "answerText": "Não, o árbitro interrompe o jogo, apenas se a segunda bola interferir no jogo."
+    },
+    {
+      "id": "c6-a-15",
+      "number": 15,
+      "question": "Se o árbitro ficar incapacitado, haverá a considerar:",
+      "options": {
+        "A": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+        "B": "O jogo deve ser interrompido de imediato.",
+        "C": "O árbitro deverá dar o jogo por concluído.",
+        "D": "É substituído pelo árbitro assistente mais categorizado."
+      },
+      "answer": "A",
+      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo."
+    },
+    {
+      "id": "c6-a-16",
+      "number": 16,
+      "question": "Se, na execução de um pontapé -livre, um jogador da equipa atacante estiver a menos de 1 metro de distância da barreira defensiva formada por três ou mais defensores, deverá ser:",
+      "options": {
+        "A": "Concedido um pontapé-livre direto à equipa defensora.",
+        "B": "Concedido um pontapé-livre indireto à equipa defensora.",
+        "C": "Concedido um pontapé-livre indireto à equipa atacante.",
+        "D": "Concedido um pontapé-livre direto à equipa atacante."
+      },
+      "answer": "B",
+      "answerText": "Concedido um pontapé-livre indireto à equipa defensora."
+    },
+    {
+      "id": "c6-a-17",
+      "number": 17,
+      "question": "Podem ser colocadas bolas suplementares em redor do terreno de jogo para serem utilizadas no decorrer do mesmo, desde que satisfaçam as exigências estipuladas na Lei 2 e que a sua utilização seja controlada por quem?",
+      "options": {
+        "A": "Árbitro assistente nº 1.",
+        "B": "Árbitro assistente nº 1 e/ou quarto árbitro.",
+        "C": "Árbitro.",
+        "D": "Os delegados das equipas."
+      },
+      "answer": "C",
+      "answerText": "Árbitro."
+    },
+    {
+      "id": "c6-a-18",
+      "number": 18,
+      "question": "Qualquer jogador que ataque um adversário na disputa da bola, de frente, de lado ou por trás, utilizando uma ou ambas as pernas, com força excessiva, pondo em perigo a integridade física do adversário, torna-se culpado de que tipo de falta?",
+      "options": {
+        "A": "Grosseira.",
+        "B": "Ligeira.",
+        "C": "Defensiva/ligeira.",
+        "D": "Dolosa."
+      },
+      "answer": "A",
+      "answerText": "Grosseira."
+    },
+    {
+      "id": "c6-a-19",
+      "number": 19,
+      "question": "Um jogador demora a sair do campo de jogo quando é substituído. O mesmo jogador já foi advertido por outra infração. Qual é a decisão correta?",
+      "options": {
+        "A": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada.",
+        "B": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e pode ser substituído.",
+        "C": "O árbitro dá um aviso verbal ao jogador em questão.",
+        "D": "O árbitro exibe ao jogador o cartão vermelho. O jogador é expulso e pode ser substituído."
+      },
+      "answer": "A",
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada."
+    },
+    {
+      "id": "c6-a-20",
+      "number": 20,
+      "question": "Um elemento oficial da equipa entra no campo de jogo quando a bola está em jogo e empurra um jogador da equipa adversária. Qual é a decisão do árbitro?",
+      "options": {
+        "A": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou indireto no caso de o jogador não estar na posse da bola.",
+        "B": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre indireto no local da infração.",
+        "C": "O elemento oficial da equipa deve ser advertido. O jogo será reiniciado com um pontapé-livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator.",
+        "D": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator."
+      },
+      "answer": "D",
+      "answerText": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator."
+    }
+  ]
+}
