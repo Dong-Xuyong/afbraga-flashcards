@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AF Braga — Flashcards</title>
+  <title>AF Braga — Flashcards & Exame</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
@@ -14,16 +14,31 @@
     <header class="header">
       <div class="header-brand">
         <span class="header-badge">AF Braga</span>
-        <h1 class="header-title">Flashcards</h1>
+        <h1 class="header-title">Árbitros</h1>
       </div>
-      <p class="header-sub">Preparação para exames de árbitro</p>
+      <p class="header-sub">Flashcards e simulação de exame</p>
     </header>
 
     <main class="main">
-      <!-- Home: deck picker -->
+      <!-- Home -->
       <section class="view view--home" id="view-home">
-        <h2 class="section-label">Escolher baralho</h2>
+        <div class="mode-switch" role="tablist" aria-label="Modo">
+          <button class="mode-btn is-active" type="button" data-mode="study" role="tab" aria-selected="true">
+            Flashcards
+          </button>
+          <button class="mode-btn" type="button" data-mode="exam" role="tab" aria-selected="false">
+            Exame
+          </button>
+        </div>
+        <p class="mode-hint" id="mode-hint">
+          Repetição espaçada para estudar carta a carta.
+        </p>
+        <h2 class="section-label" id="home-section-label">Escolher baralho</h2>
         <div class="deck-grid" id="deck-grid"></div>
+        <p class="exam-rules-note" id="exam-rules-note" hidden>
+          Cotação oficial: certa <strong>+5</strong> · em branco <strong>0</strong> · errada <strong>−2</strong>
+          (máx. 100 pts).
+        </p>
       </section>
 
       <!-- Study mode -->
@@ -97,10 +112,63 @@
           <button class="btn-primary" id="btn-done-home" type="button">Voltar aos baralhos</button>
         </div>
       </section>
+
+      <!-- Exam mode -->
+      <section class="view view--exam hidden" id="view-exam">
+        <div class="study-top">
+          <button class="btn-ghost" id="btn-exam-back" type="button" aria-label="Sair do exame">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Sair
+          </button>
+          <div class="study-meta">
+            <span class="deck-name" id="exam-deck-name"></span>
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="exam-progress-bar">
+              <div class="progress-fill" id="exam-progress-fill"></div>
+            </div>
+            <div class="progress-stats">
+              <span id="exam-progress-label">Pergunta 1 / 20</span>
+              <span class="stat-sep">·</span>
+              <span id="exam-answered-label">0 respondidas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exam-sheet" id="exam-sheet">
+          <span class="card-number" id="exam-q-number">Pergunta 1</span>
+          <p class="card-question" id="exam-question"></p>
+          <div class="exam-options" id="exam-options" role="radiogroup" aria-label="Opções de resposta"></div>
+          <div class="exam-nav">
+            <button class="btn-secondary" id="btn-exam-prev" type="button">Anterior</button>
+            <button class="btn-ghost" id="btn-exam-clear" type="button">Limpar</button>
+            <button class="btn-primary" id="btn-exam-next" type="button">Seguinte</button>
+          </div>
+          <button class="btn-primary btn-submit-exam hidden" id="btn-exam-submit" type="button">
+            Submeter teste
+          </button>
+        </div>
+
+        <div class="exam-results hidden" id="exam-results">
+          <h2 class="done-title">Resultado do exame</h2>
+          <p class="exam-score-line">
+            <span class="exam-score" id="exam-score">0</span>
+            <span class="exam-score-max">/ <span id="exam-score-max">100</span> pts</span>
+          </p>
+          <p class="exam-score-pct" id="exam-score-pct"></p>
+          <div class="exam-breakdown" id="exam-breakdown"></div>
+          <p class="exam-rules-reminder">
+            Certa +5 · Em branco 0 · Errada −2
+          </p>
+          <div class="exam-review" id="exam-review"></div>
+          <div class="exam-result-actions">
+            <button class="btn-primary" id="btn-exam-retry" type="button">Repetir exame</button>
+            <button class="btn-secondary" id="btn-exam-home" type="button">Voltar ao início</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <p>Repetição espaçada · dados locais no navegador</p>
+      <p>AF Braga · Conselho de Arbitragem</p>
     </footer>
   </div>
 
