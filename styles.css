@@ -1,17 +1,17 @@
-/* AF Braga Flashcards — forest green + warm paper cream */
+/* AF Braga Flashcards — forest green accents + dong-ui theme surfaces */
 
 :root {
   --green-deep: #1a3d2e;
   --green-mid: #2d5a45;
   --green-light: #3d7a5c;
   --green-muted: #5a8f72;
-  --cream: #f5f0e6;
-  --cream-warm: #ebe4d4;
-  --cream-dark: #d9d0bc;
-  --ink: #1c2420;
-  --ink-soft: #3d4a44;
-  --ink-muted: #6b7a72;
-  --white: #fefdfb;
+  --cream: hsl(var(--background));
+  --cream-warm: hsl(var(--secondary));
+  --cream-dark: hsl(var(--border));
+  --ink: hsl(var(--foreground));
+  --ink-soft: hsl(var(--muted-foreground));
+  --ink-muted: hsl(var(--muted-foreground));
+  --white: hsl(var(--card));
   --accent-gold: #c4a035;
   --accent-gold-soft: #e8d9a8;
   --correct: #2d6a4f;
@@ -26,10 +26,19 @@
   --shadow-lg: 0 12px 40px rgba(26, 61, 46, 0.16);
   --radius: 12px;
   --radius-lg: 20px;
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-display: var(--font-sans);
+  --font-body: var(--font-sans);
   --transition-fast: 150ms ease;
   --transition-flip: 520ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark {
+  --correct-bg: rgba(45, 106, 79, 0.25);
+  --again-bg: rgba(155, 59, 48, 0.25);
+  --accent-gold-soft: rgba(196, 160, 53, 0.22);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
 *,
@@ -53,19 +62,23 @@ body {
   line-height: 1.5;
 }
 
-/* Subtle pitch-line pattern */
+/* Subtle pitch-line pattern (theme-aware surfaces) */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(165deg, var(--green-deep) 0%, transparent 42%),
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--green-deep) 40%, transparent) 0%,
+      transparent 42%
+    ),
     repeating-linear-gradient(
       90deg,
       transparent,
       transparent 79px,
-      rgba(26, 61, 46, 0.03) 79px,
-      rgba(26, 61, 46, 0.03) 80px
+      color-mix(in srgb, var(--green-deep) 8%, transparent) 79px,
+      color-mix(in srgb, var(--green-deep) 8%, transparent) 80px
     ),
     linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
   z-index: -1;
@@ -86,6 +99,11 @@ body::before {
   text-align: center;
   margin-bottom: 2rem;
   animation: fadeSlideDown 0.6s ease both;
+}
+
+.header .dong-theme-toggle {
+  position: static;
+  margin-top: 0.75rem;
 }
 
 .header-badge {
