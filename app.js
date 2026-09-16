@@ -124,10 +124,11 @@ function escapeHtml(str) {
 
 function setHomeMode(mode) {
   homeMode = mode;
-  document.querySelectorAll(".mode-btn").forEach((btn) => {
+  document.querySelectorAll("#tab-toggle .seg").forEach((btn) => {
     const active = btn.dataset.mode === mode;
-    btn.classList.toggle("is-active", active);
+    btn.classList.toggle("active", active);
     btn.setAttribute("aria-selected", active ? "true" : "false");
+    btn.tabIndex = active ? 0 : -1;
   });
   const hint = $("#mode-hint");
   const label = $("#home-section-label");
@@ -167,6 +168,7 @@ async function renderHome() {
           <div class="deck-count-label">pts máx.</div>
           <div class="deck-due">Iniciar exame</div>
         </div>
+        <span class="deck-chevron" aria-hidden="true">›</span>
       `;
       btn.addEventListener("click", () => startExam(meta));
     } else {
@@ -185,6 +187,7 @@ async function renderHome() {
           <div class="deck-count-label">cartas</div>
           ${due > 0 ? `<div class="deck-due">${due} por rever</div>` : `<div class="deck-due" style="color:var(--green-muted)">En dia</div>`}
         </div>
+        <span class="deck-chevron" aria-hidden="true">›</span>
       `;
       btn.addEventListener("click", () => startStudy(meta));
     }
@@ -549,7 +552,7 @@ function leaveExam() {
 // --- Events ---
 
 function initEvents() {
-  document.querySelectorAll(".mode-btn").forEach((btn) => {
+  document.querySelectorAll("#tab-toggle .seg").forEach((btn) => {
     btn.addEventListener("click", () => setHomeMode(btn.dataset.mode));
   });
 
