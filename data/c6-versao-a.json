@@ -16,7 +16,13 @@
         "D": "Todas as hipóteses apresentadas aplicam-se à situação enunciada."
       },
       "answer": "D",
-      "answerText": "Todas as hipóteses apresentadas aplicam-se à situação enunciada."
+      "answerText": "Todas as hipóteses apresentadas aplicam-se à situação enunciada.",
+      "lawRefs": [
+        "l11-2-20",
+        "l11-2-22",
+        "l11-2-23"
+      ],
+      "explanation": "Para haver «jogar deliberadamente», contam, entre outros indicadores, a bola ter percorrido uma longa distância com visão clara, a direção não ser inesperada e o movimento não ser rápido, e o jogador ter tempo de controlar o corpo em vez de um gesto instintivo. As três hipóteses estão na lista, por isso aplicam-se todas."
     },
     {
       "id": "c6-a-02",
@@ -29,7 +35,13 @@
         "D": "Pontapé Livre indireto."
       },
       "answer": "B",
-      "answerText": "Pontapé de canto."
+      "answerText": "Pontapé de canto.",
+      "lawRefs": [
+        "l9-2-1",
+        "l9-1-7",
+        "x-glossario-18"
+      ],
+      "explanation": "O guarda-redes fez uma defesa: parou a bola que ia à baliza e pô-la para lá da sua linha de baliza. O glossário distingue essa defesa de um controlo. O toque no árbitro só tira a bola de jogo se nascer um ataque prometedor, se a bola entrar direto numa baliza, ou se mudar a equipa que tinha a posse. Uma defesa não é essa mudança de posse, a bola manteve-se em jogo, e o último toque de um defesa para lá da linha de baliza dá canto."
     },
     {
       "id": "c6-a-03",
@@ -42,7 +54,12 @@
         "D": "Sim, mas só para substituir o guarda-redes em caso de lesão e se essa equipa ainda não esgotou as substituições."
       },
       "answer": "C",
-      "answerText": "Sim, se esta equipa ainda não gastou as substituições."
+      "answerText": "Sim, se esta equipa ainda não gastou as substituições.",
+      "lawRefs": [
+        "l3-2-5",
+        "l3-3-14"
+      ],
+      "explanation": "No prolongamento podem usar-se as substituições que ainda não foram gastas. O suplente, depois de entrar numa paragem, pode executar qualquer recomeço, incluindo o penálti. Não é preciso que seja o guarda-redes nem que haja lesão grave."
     },
     {
       "id": "c6-a-04",
@@ -55,7 +72,13 @@
         "D": "Todas as anteriores."
       },
       "answer": "B",
-      "answerText": "A oportunidade imediata de um ataque perigoso contra a baliza adversária."
+      "answerText": "A oportunidade imediata de um ataque perigoso contra a baliza adversária.",
+      "lawRefs": [
+        "x-diretrizes-praticas-117",
+        "x-diretrizes-praticas-116",
+        "x-diretrizes-praticas-118"
+      ],
+      "explanation": "A chave oficial isola a oportunidade imediata de um ataque. Nas diretrizes, o fator correspondente é a oportunidade imediata de um ataque prometedor.\n\nNota: o mesmo bloco manda ponderar também a gravidade, o local da infração e o ambiente em que o jogo decorre. A opção que junta esses factores está mais perto da lista do que a chave, que fica só pelo ataque."
     },
     {
       "id": "c6-a-05",
@@ -68,7 +91,11 @@
         "D": "A partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza."
       },
       "answer": "D",
-      "answerText": "A partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza."
+      "answerText": "A partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza.",
+      "lawRefs": [
+        "l13-2-2"
+      ],
+      "explanation": "O livre indireto do ataque por infração dentro da área de baliza adversária não se marca no local da infração. Executa-se no ponto mais próximo da linha da área de baliza que é paralela à linha de baliza."
     },
     {
       "id": "c6-a-06",
@@ -81,7 +108,11 @@
         "D": "Depois de sair do terreno de jogo."
       },
       "answer": "C",
-      "answerText": "Antes de sair do terreno de jogo."
+      "answerText": "Antes de sair do terreno de jogo.",
+      "lawRefs": [
+        "l5-3-23"
+      ],
+      "explanation": "Se o árbitro já decidiu advertir ou expulsar o jogador lesionado, e ele tem de sair para ser assistido, o cartão mostra-se antes de ele abandonar o terreno, não quando regressar nem depois de sair."
     },
     {
       "id": "c6-a-07",
@@ -94,7 +125,12 @@
         "D": "Com um lançamento lateral, sem sanção disciplinar."
       },
       "answer": "D",
-      "answerText": "Com um lançamento lateral, sem sanção disciplinar."
+      "answerText": "Com um lançamento lateral, sem sanção disciplinar.",
+      "lawRefs": [
+        "l9-1-2",
+        "l12-4-76"
+      ],
+      "explanation": "O alívio levou a bola para fora do terreno, até ao banco, pelo que o recomeço é lançamento lateral. O jogador estava a jogar a bola. Conduta violenta é força excessiva ou brutalidade quando não se disputa a bola, pelo que este contacto da bola com o suplente não é, por si, cartão."
     },
     {
       "id": "c6-a-08",
@@ -107,7 +143,11 @@
         "D": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o campo de jogo."
       },
       "answer": "A",
-      "answerText": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi advertido ou expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o terreno de jogo."
+      "answerText": "O jogador pode permanecer no terreno de jogo se a possível lesão é o resultado de uma infração física pela qual o adversário foi advertido ou expulso e a avaliação/tratamento é concluída rapidamente. Caso contrário, o jogador deverá abandonar o terreno de jogo.",
+      "lawRefs": [
+        "l5-3-19"
+      ],
+      "explanation": "Chave oficial: A — O texto do bloco permite ficar em campo quando a lesão resulta de uma infração com contacto pela qual o adversário é advertido ou expulso e a avaliação ou a assistência acaba depressa. Fora disso, o jogador abandona o terreno.\n\n⚠️ Leis 2026/27: a exceção mantém-se para a infração física com advertência ou expulsão, mas a chamada já não exige que a avaliação termine rapidamente."
     },
     {
       "id": "c6-a-09",
@@ -120,7 +160,11 @@
         "D": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo não deve ser validado."
       },
       "answer": "B",
-      "answerText": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo deve ser validado."
+      "answerText": "O jogador deve substituí-la logo que possível e, o mais tardar, na paragem de jogo seguinte; se, antes de o fazer, jogar a bola e/ou marcar um golo, o golo deve ser validado.",
+      "lawRefs": [
+        "l4-2-8"
+      ],
+      "explanation": "Caneleira perdida por acidente substitui-se o mais tarde na paragem seguinte. Se, antes disso, o jogador jogar a bola ou marcar, o golo é válido. O texto não manda anular o golo nem aplicar cartão por esse facto."
     },
     {
       "id": "c6-a-10",
@@ -133,7 +177,13 @@
         "D": "Nestas circunstâncias não há lugar à penalização."
       },
       "answer": "A",
-      "answerText": "Qualquer infração que ocorra primeiro é penalizada, portanto, a falta só é penalizada se ocorrer antes do jogador em posição de fora-de-jogo cometer uma infração de FJ (por exemplo, tocar a bola). Se ambas as infrações ocorrerem ao mesmo tempo, a falta é penalizada por ser mais grave, ou seja, o FJ é punido com um Pontapé- livre indireto, enquanto a falta é punida com um pontapé- livre direto."
+      "answerText": "Qualquer infração que ocorra primeiro é penalizada, portanto, a falta só é penalizada se ocorrer antes do jogador em posição de fora-de-jogo cometer uma infração de FJ (por exemplo, tocar a bola). Se ambas as infrações ocorrerem ao mesmo tempo, a falta é penalizada por ser mais grave, ou seja, o FJ é punido com um Pontapé- livre indireto, enquanto a falta é punida com um pontapé- livre direto.",
+      "lawRefs": [
+        "l11-2-28",
+        "l11-2-29",
+        "l5-3-7"
+      ],
+      "explanation": "Pune-se a infração que ocorre primeiro. Se a falta é antes de o jogador em fora de jogo jogar ou tentar jogar a bola, pune-se a falta. Se ele já estava a jogar a bola, pune-se o fora de jogo. Se as duas são ao mesmo tempo, pune-se a mais grave, e o livre direto da falta prevalece sobre o indireto do fora de jogo."
     },
     {
       "id": "c6-a-11",
@@ -146,7 +196,12 @@
         "D": "Com uma bola ao solo."
       },
       "answer": "D",
-      "answerText": "Com uma bola ao solo."
+      "answerText": "Com uma bola ao solo.",
+      "lawRefs": [
+        "l8-0-1",
+        "l12-5-9"
+      ],
+      "explanation": "O livre por infração de um suplente fora do terreno está previsto quando ele interfere com um adversário ou com a equipa de arbitragem. Entre suplentes da mesma equipa não há esse livre. Parado o jogo sem outra forma de recomeço exigida pela Lei, recomeça-se com bola ao solo."
     },
     {
       "id": "c6-a-12",
@@ -159,7 +214,11 @@
         "D": "Interrompe o jogo e acerca-se do AA mais próximo."
       },
       "answer": "C",
-      "answerText": "O árbitro deve estabelecer contacto visual com o árbitro assistente e, se necessário, este deverá fazer um sinal discreto com a mão."
+      "answerText": "O árbitro deve estabelecer contacto visual com o árbitro assistente e, se necessário, este deverá fazer um sinal discreto com a mão.",
+      "lawRefs": [
+        "x-diretrizes-praticas-35"
+      ],
+      "explanation": "Se a bola não passou por completo a linha de baliza, não há golo. O árbitro procura o contacto visual com o árbitro assistente e, se for preciso, este faz um sinal discreto com a mão. Não se marca golo por dúvida nem se faz bola ao solo."
     },
     {
       "id": "c6-a-13",
@@ -172,7 +231,11 @@
         "D": "Deixar prosseguir o jogo, pará-lo temporariamente, suspendê-lo definitivamente, mesmo no caso de um grave do incidente."
       },
       "answer": "B",
-      "answerText": "Deixar prosseguir o jogo, pará -lo temporariamente, suspendê -lo ou interrompê -lo definitivamente, consoante a gravidade do incidente."
+      "answerText": "Deixar prosseguir o jogo, pará -lo temporariamente, suspendê -lo ou interrompê -lo definitivamente, consoante a gravidade do incidente.",
+      "lawRefs": [
+        "l5-3-27"
+      ],
+      "explanation": "Objeto lançado por um espetador que atinge árbitro, jogador ou elemento oficial permite deixar seguir, parar de momento, suspender ou dar o jogo por terminado, conforme a gravidade. Não é só deixar seguir ou só parar."
     },
     {
       "id": "c6-a-14",
@@ -185,7 +248,12 @@
         "D": "O árbitro deve interromper se não for possível aplicar a vantagem."
       },
       "answer": "A",
-      "answerText": "Não, o árbitro interrompe o jogo, apenas se a segunda bola interferir no jogo."
+      "answerText": "Não, o árbitro interrompe o jogo, apenas se a segunda bola interferir no jogo.",
+      "lawRefs": [
+        "l5-3-30",
+        "l5-3-31"
+      ],
+      "explanation": "Uma segunda bola que entra em campo só manda parar o jogo se interferir. Se não interferir, o jogo segue e retira-se o objeto na primeira oportunidade. Não se para sempre, nem só por não haver vantagem."
     },
     {
       "id": "c6-a-15",
@@ -198,7 +266,11 @@
         "D": "É substituído pelo árbitro assistente mais categorizado."
       },
       "answer": "A",
-      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo."
+      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+      "lawRefs": [
+        "l5-2-5"
+      ],
+      "explanation": "Se o árbitro fica incapacitado, o jogo pode seguir sob a direção dos outros elementos da equipa de arbitragem até a bola sair de jogo. Não se para de imediato nem se dá o jogo por concluído nesse instante."
     },
     {
       "id": "c6-a-16",
@@ -211,7 +283,11 @@
         "D": "Concedido um pontapé-livre direto à equipa atacante."
       },
       "answer": "B",
-      "answerText": "Concedido um pontapé-livre indireto à equipa defensora."
+      "answerText": "Concedido um pontapé-livre indireto à equipa defensora.",
+      "lawRefs": [
+        "l13-3-2"
+      ],
+      "explanation": "Atacante a menos de 1 m de uma barreira de três ou mais defesas, na execução do livre, dá livre indireto à equipa defensora. Não é livre direto, nem livre para o ataque."
     },
     {
       "id": "c6-a-17",
@@ -224,7 +300,11 @@
         "D": "Os delegados das equipas."
       },
       "answer": "C",
-      "answerText": "Árbitro."
+      "answerText": "Árbitro.",
+      "lawRefs": [
+        "l2-3-1"
+      ],
+      "explanation": "Bolas suplementares à volta do terreno podem ser usadas se cumprirem a Lei 2 e se a sua utilização for controlada pelo árbitro. O controlo não passa para o assistente, o quarto árbitro ou os delegados."
     },
     {
       "id": "c6-a-18",
@@ -237,7 +317,11 @@
         "D": "Dolosa."
       },
       "answer": "A",
-      "answerText": "Grosseira."
+      "answerText": "Grosseira.",
+      "lawRefs": [
+        "l12-4-75"
+      ],
+      "explanation": "Atacar o adversário na disputa da bola, de frente, de lado ou por trás, com uma ou ambas as pernas, com força excessiva ou pondo em perigo a integridade física, é falta grosseira. Não é falta ligeira nem uma categoria à parte chamada dolosa."
     },
     {
       "id": "c6-a-19",
@@ -250,7 +334,13 @@
         "D": "O árbitro exibe ao jogador o cartão vermelho. O jogador é expulso e pode ser substituído."
       },
       "answer": "A",
-      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada."
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada.",
+      "lawRefs": [
+        "l3-5-15",
+        "l3-5-19",
+        "l12-4-50"
+      ],
+      "explanation": "Chave oficial: A — Demorar a sair na substituição estava escrito como advertência por retardar o recomeço. Com um amarelo anterior, seguem-se o segundo amarelo e o vermelho. Expulso depois do início, o jogador não pode ser substituído e a substituição não se consuma, porque o suplente não chegou a entrar.\n\n⚠️ Leis 2026/27: esse ponto foi eliminado da lista. Se o substituído não sai em dez segundos, sai na mesma e só é advertido se retardar excessivamente o recomeço para além desse prazo. A substituição não se anula e o suplente só entra na primeira paragem depois de decorrido um minuto."
     },
     {
       "id": "c6-a-20",
@@ -263,7 +353,12 @@
         "D": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator."
       },
       "answer": "D",
-      "answerText": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator."
+      "answerText": "O elemento oficial da equipa deve ser expulso (cartão vermelho). O jogo será reiniciado com um pontapé- livre direto ou pontapé de penalti se a infração ocorrer dentro da área de penalti do infrator.",
+      "lawRefs": [
+        "l12-4-108",
+        "l3-7-8"
+      ],
+      "explanation": "Empurrar um adversário é comportamento físico ou agressivo e, na lista dos elementos oficiais, é expulsão. Se o jogo para porque um elemento oficial entrou e interferiu, o recomeço é livre direto ou penálti."
     }
   ]
 }

@@ -1,0 +1,371 @@
+{
+  "deckId": "alteracoes-2627",
+  "title": "Alterações 2026/27",
+  "category": "Alterações",
+  "version": null,
+  "source": "Alterações às Leis do Jogo 2026/27",
+  "kind": "changes",
+  "cards": [
+    {
+      "id": "alt-001",
+      "number": 1,
+      "question": "Nos jogos particulares de seleções «A» seniores, quantos suplentes podem ser utilizados?",
+      "options": {
+        "A": "Um máximo de oito, ou até onze se ambas as equipas concordarem e informarem o árbitro antes do jogo.",
+        "B": "Um máximo de seis.",
+        "C": "Um máximo de cinco, com as três oportunidades das competições oficiais de primeira divisão.",
+        "D": "Substituições ilimitadas, desde que o árbitro seja informado no intervalo."
+      },
+      "answer": "A",
+      "answerText": "Um máximo de oito, ou até onze se ambas as equipas concordarem e informarem o árbitro antes do jogo.",
+      "explanation": "Antes: no máximo seis suplentes. Agora: oito, ou até onze se as duas equipas concordarem e informarem o árbitro, mantendo-se as restrições de oportunidades de substituição.",
+      "lawRefs": [
+        "l3-2-11"
+      ],
+      "evidence": "um máximo de oito podem ser utilizados, salvo se as duas equipas concordarem em utilizar mais, até ao máximo de onze"
+    },
+    {
+      "id": "alt-002",
+      "number": 2,
+      "question": "Quanto tempo tem o jogador que vai ser substituído para abandonar o terreno de jogo?",
+      "options": {
+        "A": "Até o árbitro autorizar o recomeço, sem prazo fixo em segundos.",
+        "B": "Dez segundos após a placa de substituição ou, se não houver placa, após o sinal do árbitro.",
+        "C": "Um minuto contado desde o apito inicial da parte.",
+        "D": "Deve sair apenas no intervalo, sem contagem durante o jogo."
+      },
+      "answer": "B",
+      "answerText": "Dez segundos após a placa de substituição ou, se não houver placa, após o sinal do árbitro.",
+      "explanation": "Antes: o substituído saía de imediato, sem um prazo em segundos. Agora: tem de estar fora em dez segundos, salvo segurança ou lesão, para evitar perdas de tempo.",
+      "lawRefs": [
+        "l3-3-16"
+      ],
+      "evidence": "deve estar fora do terreno de jogo no prazo de dez segundos após a exibição da placa de substituição"
+    },
+    {
+      "id": "alt-003",
+      "number": 3,
+      "question": "O jogador substituído não sai nos dez segundos. Quando pode o suplente entrar?",
+      "options": {
+        "A": "Entra na mesma e o jogador que demorou é expulso.",
+        "B": "A substituição é anulada e a equipa pode indicar outro suplente.",
+        "C": "Só na primeira interrupção depois de decorrido um minuto desde o recomeço, com autorização do árbitro.",
+        "D": "Entra de imediato; o atraso só pode ser advertido, sem impedir a entrada."
+      },
+      "answer": "C",
+      "answerText": "Só na primeira interrupção depois de decorrido um minuto desde o recomeço, com autorização do árbitro.",
+      "explanation": "Antes: o suplente entrava assim que o substituído saía. Agora: se os dez segundos forem excedidos, o suplente espera a primeira paragem após um minuto de tempo corrido.",
+      "lawRefs": [
+        "l3-5-19"
+      ],
+      "evidence": "na primeira interrupção do jogo após ter decorrido um minuto desde o recomeço do jogo"
+    },
+    {
+      "id": "alt-004",
+      "number": 4,
+      "question": "Um jogador usa um acessório que não é perigoso e está protegido e coberto de forma segura. O que decide o árbitro?",
+      "options": {
+        "A": "Manda retirá-lo, porque toda a joalharia continua proibida.",
+        "B": "Expulsa o jogador por usar equipamento eletrónico.",
+        "C": "Só o guarda-redes pode usar acessórios.",
+        "D": "Permite o acessório. Os objetos perigosos é que têm de ser retirados e não podem ser tapados com fita."
+      },
+      "answer": "D",
+      "answerText": "Permite o acessório. Os objetos perigosos é que têm de ser retirados e não podem ser tapados com fita.",
+      "explanation": "Antes: as joias eram proibidas e tinham de ser retiradas. Agora: os acessórios são permitidos se não forem perigosos e estiverem protegidos e cobertos; o que é perigoso continua proibido.",
+      "lawRefs": [
+        "l4-1-2"
+      ],
+      "evidence": "Os acessórios são permitidos desde que não sejam perigosos e estejam protegidos e cobertos de forma segura."
+    },
+    {
+      "id": "alt-005",
+      "number": 5,
+      "question": "Num pontapé de penálti durante o jogo, o guarda-redes e o executante cometem uma infração em simultâneo. Qual é agora a consequência?",
+      "options": {
+        "A": "O penálti é repetido, salvo se o executante cometer uma infração mais grave.",
+        "B": "Pontapé-livre indireto para a defesa e advertência automática ao executante.",
+        "C": "O golo conta sempre e o guarda-redes é expulso.",
+        "D": "O pontapé conta como falhado e o jogo recomeça com pontapé de baliza."
+      },
+      "answer": "A",
+      "answerText": "O penálti é repetido, salvo se o executante cometer uma infração mais grave.",
+      "explanation": "Antes: pontapé-livre indireto para a defesa e o executante era advertido. Agora: essa regra foi eliminada; aplica-se a regra geral e o penálti é repetido, salvo infração mais grave do executante.",
+      "lawRefs": [
+        "l14-2-24"
+      ],
+      "evidence": "o pontapé é repetido, salvo se o executante cometer uma infração mais grave."
+    },
+    {
+      "id": "alt-006",
+      "number": 6,
+      "question": "Nos penáltis da marca, o guarda-redes e o executante cometem uma infração em simultâneo. O que prevê agora a Lei 10?",
+      "options": {
+        "A": "O pontapé é registado como falhado e o executante é advertido.",
+        "B": "Essa regra foi eliminada: já não há resultado de falhado nem advertência automática por essa infração simultânea.",
+        "C": "O pontapé é repetido e os dois são expulsos.",
+        "D": "Marca-se golo e o jogo recomeça com pontapé de saída."
+      },
+      "answer": "B",
+      "answerText": "Essa regra foi eliminada: já não há resultado de falhado nem advertência automática por essa infração simultânea.",
+      "explanation": "Antes: o pontapé era registado como falhado e o executante era advertido. Agora: o parágrafo está eliminado e a Lei 10 não o substitui por outra sanção.",
+      "lawRefs": [
+        "l10-3-18"
+      ],
+      "evidence": "Texto eliminado em 2026/27."
+    },
+    {
+      "id": "alt-007",
+      "number": 7,
+      "question": "No penálti durante o jogo, o executante toca a bola acidentalmente com os dois pés e a bola entra diretamente na baliza. O que faz o árbitro?",
+      "options": {
+        "A": "Valida o golo.",
+        "B": "Concede pontapé-livre indireto à equipa defensora.",
+        "C": "Manda repetir o penálti.",
+        "D": "Advertia o executante por segundo toque e valida o golo."
+      },
+      "answer": "C",
+      "answerText": "Manda repetir o penálti.",
+      "explanation": "Antes: o duplo toque acidental não tinha esta distinção. Agora: se a bola entra diretamente, o penálti é repetido; se não entra, há pontapé-livre indireto.",
+      "lawRefs": [
+        "l14-2-34"
+      ],
+      "evidence": "se a bola entrar na baliza diretamente do pontapé, este deve ser repetido"
+    },
+    {
+      "id": "alt-008",
+      "number": 8,
+      "question": "Nos penáltis da marca, a bola toca acidentalmente no pé de apoio do executante logo após o pontapé e não entra na baliza. Como se regista?",
+      "options": {
+        "A": "O pontapé é repetido.",
+        "B": "É golo, porque o guarda-redes não pode antecipar-se.",
+        "C": "Há pontapé-livre indireto no meio-campo e o executante é advertido.",
+        "D": "O pontapé é registado como falhado."
+      },
+      "answer": "D",
+      "answerText": "O pontapé é registado como falhado.",
+      "explanation": "Antes: não havia regra própria para o duplo toque acidental na marca. Agora: se a bola entra, o pontapé repete-se; se não entra, conta como falhado.",
+      "lawRefs": [
+        "l10-3-32"
+      ],
+      "evidence": "se a bola não entrar na baliza a partir do pontapé, este é registado como falhado"
+    },
+    {
+      "id": "alt-009",
+      "number": 9,
+      "question": "O árbitro aplica a vantagem numa infração que anulava uma clara oportunidade de golo e a equipa atacante marca em consequência. Que sanção sofre o infrator?",
+      "options": {
+        "A": "Nenhuma sanção disciplinar.",
+        "B": "Advertência por comportamento antidesportivo.",
+        "C": "Expulsão por anular a clara oportunidade de golo.",
+        "D": "Advertência apenas se o golo for anulado na revisão."
+      },
+      "answer": "A",
+      "answerText": "Nenhuma sanção disciplinar.",
+      "explanation": "Antes: a clara oportunidade de golo com vantagem dava advertência por comportamento antidesportivo. Agora: se o golo sai dessa vantagem, não há sanção disciplinar.",
+      "lawRefs": [
+        "l12-4-7"
+      ],
+      "evidence": "caso em que não é aplicada qualquer sanção disciplinar"
+    },
+    {
+      "id": "alt-010",
+      "number": 10,
+      "question": "Ao decidir se houve uma clara oportunidade de golo, o que passa a ser considerado além dos defensores?",
+      "options": {
+        "A": "Apenas a distância entre a infração e a baliza.",
+        "B": "A posição e o número de atacantes, além dos defensores.",
+        "C": "Só o número de defensores.",
+        "D": "O tempo em que o guarda-redes controla a bola com as mãos."
+      },
+      "answer": "B",
+      "answerText": "A posição e o número de atacantes, além dos defensores.",
+      "explanation": "Antes: contavam a posição e o número de defensores. Agora: entram também a posição e o número de atacantes, porque isso ajuda a ver se a oportunidade é clara.",
+      "lawRefs": [
+        "l12-4-73"
+      ],
+      "evidence": "a posição e o número de defensores e atacantes."
+    },
+    {
+      "id": "alt-011",
+      "number": 11,
+      "question": "Uma equipa retarda injustificadamente o seu lançamento lateral. O que faz o árbitro?",
+      "options": {
+        "A": "Advertia de imediato o executante e mantém o lateral para a mesma equipa.",
+        "B": "Concede um pontapé-livre indireto no local da linha lateral.",
+        "C": "Conta cinco segundos com a mão levantada e, se o lateral não for executado, atribui-o à equipa adversária.",
+        "D": "Expulsa o jogador por perda de tempo logo ao iniciar a contagem."
+      },
+      "answer": "C",
+      "answerText": "Conta cinco segundos com a mão levantada e, se o lateral não for executado, atribui-o à equipa adversária.",
+      "explanation": "Antes: o atraso do lateral punia-se sobretudo com advertência. Agora: há contagem visual de cinco segundos e, no fim, o lateral passa à equipa adversária; o cartão só entra se o atraso continuar depois disso.",
+      "lawRefs": [
+        "l15-2-6"
+      ],
+      "evidence": "se o lançamento lateral não tiver sido executado até ao final dos cinco segundos, é atribuído à equipa adversária"
+    },
+    {
+      "id": "alt-012",
+      "number": 12,
+      "question": "Uma equipa não executa o pontapé de baliza até ao fim da contagem de cinco segundos. Qual é o recomeço?",
+      "options": {
+        "A": "O pontapé de baliza passa à equipa adversária.",
+        "B": "Mantém-se o pontapé de baliza e o jogador é logo advertido.",
+        "C": "Pontapé-livre indireto no círculo central.",
+        "D": "Pontapé de canto para a equipa adversária."
+      },
+      "answer": "D",
+      "answerText": "Pontapé de canto para a equipa adversária.",
+      "explanation": "Antes: o atraso do pontapé de baliza não mudava o recomeço para canto. Agora: ao fim dos cinco segundos é canto para os adversários, e a advertência só cabe se o atraso for excessivo depois disso.",
+      "lawRefs": [
+        "l16-2-7"
+      ],
+      "evidence": "é atribuído um pontapé de canto à equipa adversária"
+    },
+    {
+      "id": "alt-013",
+      "number": 13,
+      "question": "O canto por o guarda-redes controlar a bola mais de oito segundos já existia. O que acrescenta a contagem de cinco segundos do pontapé de baliza?",
+      "options": {
+        "A": "Se o pontapé de baliza não for executado até ao fim dos cinco segundos, é canto para a equipa adversária.",
+        "B": "O canto dos oito segundos deixa de existir.",
+        "C": "O atraso só dá advertência e o pontapé de baliza mantém-se.",
+        "D": "O pontapé de baliza passa à equipa adversária."
+      },
+      "answer": "A",
+      "answerText": "Se o pontapé de baliza não for executado até ao fim dos cinco segundos, é canto para a equipa adversária.",
+      "explanation": "Antes: a Lei 12 já concedia um pontapé de canto se o guarda-redes controlasse a bola com as mãos mais de oito segundos. Agora: a Lei 17 enumera esse caso e acrescenta o pontapé de baliza não executado no fim da contagem de cinco segundos da Lei 16, que dá canto aos adversários.",
+      "lawRefs": [
+        "l16-2-7",
+        "l17-0-1"
+      ],
+      "evidence": "execução de um pontapé de baliza a favor da sua equipa"
+    },
+    {
+      "id": "alt-014",
+      "number": 14,
+      "question": "Um segundo cartão amarelo claramente incorreto transforma-se em vermelho. O vídeo árbitro pode rever essa decisão?",
+      "options": {
+        "A": "Não, porque a revisão excluía a segunda advertência.",
+        "B": "Sim: a revisão do cartão vermelho inclui uma segunda advertência claramente incorreta.",
+        "C": "Só se a competição não utilizar o protocolo VAR.",
+        "D": "Só o quarto árbitro pode anular o segundo amarelo."
+      },
+      "answer": "B",
+      "answerText": "Sim: a revisão do cartão vermelho inclui uma segunda advertência claramente incorreta.",
+      "explanation": "Antes: o cartão vermelho direto revisto não incluía a segunda advertência. Agora: «direto» e «não» saíram; a revisão inclui uma segunda advertência claramente incorreta.",
+      "lawRefs": [
+        "l5-4-5"
+      ],
+      "evidence": "incluindo uma segunda advertência claramente incorreta"
+    },
+    {
+      "id": "alt-015",
+      "number": 15,
+      "question": "Quando é que o árbitro advertia agora por retardar o recomeço do jogo?",
+      "options": {
+        "A": "Em qualquer atraso, mesmo breve, sem remissão para outras leis.",
+        "B": "Deixou de existir qualquer advertência por atraso.",
+        "C": "Quando o atraso é excessivo, nos casos das Leis 3, 15 e 16 e dos respetivos protocolos.",
+        "D": "Só se o atraso ocorrer no pontapé de penálti."
+      },
+      "answer": "C",
+      "answerText": "Quando o atraso é excessivo, nos casos das Leis 3, 15 e 16 e dos respetivos protocolos.",
+      "explanation": "Antes: a Lei 12 mandava advertir quem retardasse o recomeço, numa lista que incluía fingir o lateral e demorar a sair, sem remeter para as Leis 3, 15 e 16. Agora: a advertência é pelo atraso excessivo e remete para os casos das Leis 3, 15 e 16; fingir o lateral e demorar a sair na substituição saem dessa lista.",
+      "lawRefs": [
+        "l12-4-48"
+      ],
+      "evidence": "incluindo nos casos previstos nas Leis 3, 15 e 16 e nos respetivos protocolos"
+    },
+    {
+      "id": "alt-016",
+      "number": 16,
+      "question": "Uma equipa é responsável por o jogo ser dado por terminado por ter menos de sete jogadores. Em princípio, qual é o resultado?",
+      "options": {
+        "A": "O jogo é sempre repetido e não há vencedor.",
+        "B": "Empate, sejam quais forem os golos já marcados.",
+        "C": "Vitória de quem tinha mais golos no momento da interrupção.",
+        "D": "O jogo é dado como perdido por essa equipa."
+      },
+      "answer": "D",
+      "answerText": "O jogo é dado como perdido por essa equipa.",
+      "explanation": "Antes: o jogo interrompido definitivamente era repetido, salvo regulamento em contrário. Agora: se a equipa causa o termo por ficar com menos de sete, em princípio perde o jogo.",
+      "lawRefs": [
+        "l7-5-2"
+      ],
+      "evidence": "o jogo é dado como perdido por essa equipa"
+    },
+    {
+      "id": "alt-017",
+      "number": 17,
+      "question": "Depois de executado o pontapé de penálti, o executante volta a tocar a bola antes de outro jogador. Quando é que isso é infração?",
+      "options": {
+        "A": "Quando o segundo toque é deliberado.",
+        "B": "Sempre, mesmo que o segundo toque seja acidental.",
+        "C": "Nunca, porque o penálti já está concluído.",
+        "D": "Só se a bola já tiver entrado na baliza."
+      },
+      "answer": "A",
+      "answerText": "Quando o segundo toque é deliberado.",
+      "explanation": "Antes: o segundo toque do executante era punido sem exigir que fosse deliberado. Agora: só o toque deliberado gera pontapé-livre; o toque acidental segue a regra do duplo toque.",
+      "lawRefs": [
+        "l14-2-26"
+      ],
+      "evidence": "tocar deliberadamente a bola novamente"
+    },
+    {
+      "id": "alt-018",
+      "number": 18,
+      "question": "O vídeo árbitro revê um erro de identidade. Em que situação pode fazê-lo agora?",
+      "options": {
+        "A": "Só se o jogador errado for da equipa que cometeu a infração.",
+        "B": "Quando o árbitro adverte ou expulsa o jogador errado, sem essa limitação à equipa infratora.",
+        "C": "Sempre que um adepto na bancada for identificado por engano.",
+        "D": "Apenas para suplentes, nunca para quem está em campo."
+      },
+      "answer": "B",
+      "answerText": "Quando o árbitro adverte ou expulsa o jogador errado, sem essa limitação à equipa infratora.",
+      "explanation": "Antes: o erro de identidade revisto era o jogador errado da equipa infratora. Agora: essa limitação foi eliminada; revê-se advertir ou expulsar o jogador errado.",
+      "lawRefs": [
+        "l5-4-6"
+      ],
+      "evidence": "quando o árbitro adverte ou expulsa o jogador errado"
+    },
+    {
+      "id": "alt-019",
+      "number": 19,
+      "question": "A competição adotou a opção e o árbitro assinalou um canto claramente errado, ainda por executar. O que pode ser feito?",
+      "options": {
+        "A": "Nada: um canto nunca pode ser revisto.",
+        "B": "O canto já executado rapidamente pode ser anulado mais tarde.",
+        "C": "A decisão pode ser alterada de imediato, sem atrasar o recomeço.",
+        "D": "O canto converte-se sozinho em pontapé de baliza, sem o árbitro."
+      },
+      "answer": "C",
+      "answerText": "A decisão pode ser alterada de imediato, sem atrasar o recomeço.",
+      "explanation": "Antes: o canto atribuído por engano não estava na lista do vídeo árbitro. Agora: se a competição o permitir, a decisão pode ser corrigida de imediato e sem atrasar o recomeço.",
+      "lawRefs": [
+        "l5-4-10"
+      ],
+      "evidence": "se a decisão puder ser alterada imediatamente e sem atrasar o recomeço (opção da competição)"
+    },
+    {
+      "id": "alt-020",
+      "number": 20,
+      "question": "Uma lesão grave faz parar o jogo e o jogador é tratado no terreno. Quando pode regressar?",
+      "options": {
+        "A": "Logo que o tratamento termine, ainda antes do recomeço.",
+        "B": "Só no intervalo seguinte.",
+        "C": "Três minutos depois, obrigatoriamente pela linha de baliza.",
+        "D": "Só um minuto após o recomeço do jogo."
+      },
+      "answer": "D",
+      "answerText": "Só um minuto após o recomeço do jogo.",
+      "explanation": "Antes: o jogador lesionado saía e só regressava depois de o jogo recomeçar, sem o minuto de espera. Agora: se a lesão interrompe o jogo ou atrasa o recomeço, só pode voltar um minuto após o recomeço.",
+      "lawRefs": [
+        "l5-3-14"
+      ],
+      "evidence": "só pode regressar um minuto após o recomeço do jogo"
+    }
+  ]
+}

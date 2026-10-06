@@ -1,0 +1,907 @@
+{
+  "deckId": "cenarios",
+  "title": "Cenários — Qual a decisão?",
+  "category": "Cenários",
+  "version": null,
+  "source": "Referee wiki (Leis do Jogo 2025/26 + Alterações 2026/27 em vigor)",
+  "kind": "scenario",
+  "cards": [
+    {
+      "id": "cen-001",
+      "number": 1,
+      "question": "Minuto 23, bola em jogo no meio-campo. O defesa entra ao avançado e rasteira-o de forma imprudente, com pouco contacto e sem pôr em perigo a integridade física. O avançado não ia isolado nem numa ocasião clara de golo.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da infração, sem cartão.",
+        "B": "Pontapé livre direto no local da infração e cartão amarelo ao defesa.",
+        "C": "Pontapé livre indireto no local da infração, sem cartão.",
+        "D": "Pontapé de penálti e cartão amarelo ao defesa."
+      },
+      "answer": "A",
+      "answerText": "Pontapé livre direto no local da infração, sem cartão.",
+      "explanation": "Rasteirar o adversário é infração de pontapé livre direto (^l12-1-8). Feita de forma imprudente, não leva sanção disciplinar (^l12-1-10). O amarelo seria para a forma negligente, e o penálti só caberia dentro da área de quem comete a falta.",
+      "lawRefs": [
+        "l12-1-10",
+        "l12-1-8"
+      ],
+      "evidence": "Não é necessária qualquer sanção disciplinar"
+    },
+    {
+      "id": "cen-002",
+      "number": 2,
+      "question": "Minuto 37, bola em jogo junto à linha lateral, fora da área. O médio carga o adversário de forma negligente, sem medir o perigo para o outro jogador, e derruba-o. Não havia ocasião clara de golo.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da infração, sem cartão.",
+        "B": "Pontapé livre direto no local da infração e cartão amarelo ao médio.",
+        "C": "Pontapé livre indireto no local da infração e cartão amarelo ao médio.",
+        "D": "Pontapé livre direto no local da infração e cartão vermelho ao médio."
+      },
+      "answer": "B",
+      "answerText": "Pontapé livre direto no local da infração e cartão amarelo ao médio.",
+      "explanation": "A carga sobre o adversário é livre direto (^l12-1-2). Negligente significa atuar sem ter em conta o perigo para o adversário e deve ser advertido (^l12-1-11). Não chega a força excessiva, pelo que não é vermelho, nem passa a livre indireto.",
+      "lawRefs": [
+        "l12-1-11",
+        "l12-1-2"
+      ],
+      "evidence": "deve ser advertido"
+    },
+    {
+      "id": "cen-003",
+      "number": 3,
+      "question": "Minuto 51, bola em jogo fora da área de penálti. O defesa disputa a bola e entra com os dois pés, de frente, com força excessiva, pondo em perigo a integridade física do avançado.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da infração e cartão amarelo ao defesa.",
+        "B": "Deixa seguir por vantagem e adverte o defesa na paragem seguinte.",
+        "C": "Pontapé livre direto no local da infração e cartão vermelho ao defesa por falta grosseira.",
+        "D": "Pontapé livre indireto no local da infração e cartão vermelho ao defesa por conduta violenta."
+      },
+      "answer": "C",
+      "answerText": "Pontapé livre direto no local da infração e cartão vermelho ao defesa por falta grosseira.",
+      "explanation": "Entrar ao adversário na disputa da bola com força excessiva, pondo em perigo a integridade física, é falta grosseira (^l12-4-75). Força excessiva na falta implica expulsão (^l12-1-12). O recomeço mantém-se livre direto, porque houve disputa da bola; conduta violenta seria fora dessa disputa.",
+      "lawRefs": [
+        "l12-4-75",
+        "l12-1-12"
+      ],
+      "evidence": "é culpado de uma falta grosseira."
+    },
+    {
+      "id": "cen-004",
+      "number": 4,
+      "question": "Minuto 64, a bola está em jogo no meio-campo, longe dos dois. Depois de uma discussão, o avançado, que não disputa a bola, dá um murro na cara do adversário. O contacto não é insignificante e ocorre fora da área de penálti.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da agressão e cartão amarelo ao avançado.",
+        "B": "Bola ao solo no local da agressão e cartão vermelho ao avançado.",
+        "C": "Pontapé livre indireto no local da agressão e cartão vermelho ao avançado.",
+        "D": "Pontapé livre direto no local da agressão e cartão vermelho ao avançado por conduta violenta."
+      },
+      "answer": "D",
+      "answerText": "Pontapé livre direto no local da agressão e cartão vermelho ao avançado por conduta violenta.",
+      "explanation": "Atingir de propósito a cara do adversário com a mão, sem disputar a bola e sem força insignificante, é conduta violenta (^l12-4-77). Agredir o adversário é livre direto (^l12-1-6), executado no local da infração (^l13-2-1). Não é amarelo nem bola ao solo.",
+      "lawRefs": [
+        "l12-4-77",
+        "l12-1-6",
+        "l13-2-1"
+      ],
+      "evidence": "torna-se culpado de conduta violenta, a menos que o uso de força seja insignificante."
+    },
+    {
+      "id": "cen-005",
+      "number": 5,
+      "question": "Minuto 78, bola em jogo. O avançado controla dentro da área de penálti, com apenas o guarda-redes entre ele e a baliza, e prepara o remate. O defesa entra-lhe de forma negligente, na tentativa de jogar a bola, e derruba-o antes do remate.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé de penálti e cartão vermelho ao defesa por anular uma clara oportunidade de golo.",
+        "B": "Pontapé de penálti e cartão amarelo ao defesa.",
+        "C": "Pontapé livre direto fora da área e cartão amarelo ao defesa.",
+        "D": "Pontapé de penálti, sem cartão, por ter sido tentativa de jogar a bola."
+      },
+      "answer": "B",
+      "answerText": "Pontapé de penálti e cartão amarelo ao defesa.",
+      "explanation": "Dentro da área, anular uma clara oportunidade de golo na tentativa de jogar ou disputar a bola, com penálti assinalado, é advertência e não expulsão (^l12-4-65). O vermelho ficaria para um agarrão, um empurrão ou outra ação sem possibilidade de jogar a bola. O livre fora da área ignoraria o local da falta.",
+      "lawRefs": [
+        "l12-4-65"
+      ],
+      "evidence": "o jogador infrator é advertido se a infração tiver sido cometida numa tentativa de jogar ou disputar a bola"
+    },
+    {
+      "id": "cen-006",
+      "number": 6,
+      "question": "Minuto 81, bola em jogo dentro da área de penálti. O avançado está isolado, com a baliza à frente e só o guarda-redes por perto. Um defesa, sem hipótese de jogar a bola, agarra-o pela camisola e impede o remate.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé de penálti e cartão amarelo ao defesa.",
+        "B": "Pontapé livre direto no limite da área e cartão vermelho ao defesa.",
+        "C": "Pontapé de penálti e cartão vermelho ao defesa.",
+        "D": "Pontapé de penálti, sem cartão."
+      },
+      "answer": "C",
+      "answerText": "Pontapé de penálti e cartão vermelho ao defesa.",
+      "explanation": "O agarrão dentro da área anulou uma clara oportunidade de golo e não foi uma tentativa de jogar a bola. Nessas outras circunstâncias o infrator é expulso e o recomeço é o penálti (^l12-4-65). O amarelo está reservado à tentativa de jogar ou disputar a bola.",
+      "lawRefs": [
+        "l12-4-65"
+      ],
+      "evidence": "o jogador infrator deve de ser expulso."
+    },
+    {
+      "id": "cen-007",
+      "number": 7,
+      "question": "Minuto 19, bola em jogo fora da área, no corredor direito. O ataque promete, com dois colegas a apoiar e três defesas ainda à frente da jogada, sem ocasião clara de golo. O lateral agarra o portador para cortar esse ataque.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da infração, sem cartão.",
+        "B": "Pontapé de penálti e cartão amarelo ao lateral.",
+        "C": "Pontapé livre direto no local da infração e cartão vermelho ao lateral.",
+        "D": "Pontapé livre direto no local da infração e cartão amarelo ao lateral por cortar um ataque prometedor."
+      },
+      "answer": "D",
+      "answerText": "Pontapé livre direto no local da infração e cartão amarelo ao lateral por cortar um ataque prometedor.",
+      "explanation": "Agarar o adversário é livre direto (^l12-1-15). Fazer essa infração para cortar um ataque prometedor é advertência, salvo quando o árbitro assinala penálti por uma tentativa de jogar a bola (^l12-4-33). Aqui a falta é fora da área e não há ocasião clara de golo, pelo que não há vermelho nem penálti.",
+      "lawRefs": [
+        "l12-4-33",
+        "l12-1-15"
+      ],
+      "evidence": "cortar um ataque prometedor"
+    },
+    {
+      "id": "cen-008",
+      "number": 8,
+      "question": "Minuto 88, bola em jogo fora da área de penálti. O avançado remata e a bola ia a entrar. Um defesa, de propósito, desvia-a com a mão e impede o golo. Não é o guarda-redes.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da mão na bola e cartão vermelho ao defesa.",
+        "B": "Pontapé livre direto no local da mão na bola e cartão amarelo ao defesa.",
+        "C": "Pontapé de penálti e cartão vermelho ao defesa.",
+        "D": "Pontapé livre indireto no local da mão na bola, sem cartão."
+      },
+      "answer": "A",
+      "answerText": "Pontapé livre direto no local da mão na bola e cartão vermelho ao defesa.",
+      "explanation": "Mão deliberada que impede um golo é expulsão, qualquer que seja o local, exceto o guarda-redes na sua área (^l12-4-66). Fora da área o recomeço é livre direto, não penálti (^l12-1-14). A mão não deliberada com penálti é que ficaria pelo amarelo.",
+      "lawRefs": [
+        "l12-4-66",
+        "l12-1-14"
+      ],
+      "evidence": "cometendo uma infração deliberada de mão na bola, o jogador é expulso"
+    },
+    {
+      "id": "cen-009",
+      "number": 9,
+      "question": "Minuto 73, bola em jogo. O remate vai entrar na baliza. Dentro da sua área, um defesa não move o braço para a bola, mas tem-no afastado do corpo, a aumentar a volumetria de forma que não se justifica com o movimento. A bola bate nesse braço e não entra. O árbitro considera a infração de mão na bola não deliberada.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé de penálti e cartão vermelho ao defesa.",
+        "B": "Pontapé de penálti, sem cartão.",
+        "C": "Pontapé de penálti e cartão amarelo ao defesa.",
+        "D": "Deixa seguir, porque o defesa não moveu o braço na direção da bola."
+      },
+      "answer": "C",
+      "answerText": "Pontapé de penálti e cartão amarelo ao defesa.",
+      "explanation": "O braço afastado, sem justificação no movimento, é volumetria não natural e por isso há infração mesmo sem gesto deliberado para a bola (^l12-1-23). Como a bola ia a entrar dentro da área, há penálti. Mão não deliberada com penálti assinalado é advertência, não expulsão (^l12-4-67).",
+      "lawRefs": [
+        "l12-4-67",
+        "l12-1-23"
+      ],
+      "evidence": "o jogador é advertido."
+    },
+    {
+      "id": "cen-010",
+      "number": 10,
+      "question": "Minuto 15, bola em jogo. Um defesa, de propósito, passa a bola com o pé ao seu guarda-redes, que está dentro da área de penálti. O guarda-redes agarra a bola com as mãos e não se trata de um segundo toque depois de um recomeço.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local onde o guarda-redes agarrou a bola e cartão amarelo.",
+        "B": "Pontapé de penálti, sem cartão.",
+        "C": "Deixa seguir, porque o guarda-redes está na sua área.",
+        "D": "Pontapé livre indireto no local da infração, sem cartão."
+      },
+      "answer": "D",
+      "answerText": "Pontapé livre indireto no local da infração, sem cartão.",
+      "explanation": "O guarda-redes não pode agarrar a bola pontapeada de propósito por um colega (^l12-2-11). Dentro da sua área, essa mão ilegal dá livre indireto e não leva sanção disciplinar, porque não é um segundo toque depois de um recomeço a cortar um ataque ou a evitar um golo (^l12-1-28). Não é penálti: a infração do guarda-redes na sua área, neste caso, não é livre direto.",
+      "lawRefs": [
+        "l12-1-28",
+        "l12-2-11"
+      ],
+      "evidence": "não havendo qualquer sanção disciplinar."
+    },
+    {
+      "id": "cen-011",
+      "number": 11,
+      "question": "Minuto 41, bola em jogo. O guarda-redes, dentro da sua área de penálti, segura a bola nas mãos durante mais de oito segundos e só depois a solta. Está mais perto do canto do lado direito do terreno.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé de canto na área de canto mais próxima da posição do guarda-redes quando foi penalizado.",
+        "B": "Pontapé livre indireto no local onde o guarda-redes segurou a bola, sem cartão.",
+        "C": "Bola ao solo para o guarda-redes, dentro da área.",
+        "D": "Pontapé de penálti contra a equipa do guarda-redes."
+      },
+      "answer": "A",
+      "answerText": "Pontapé de canto na área de canto mais próxima da posição do guarda-redes quando foi penalizado.",
+      "explanation": "Controlar a bola com as mãos mais de oito segundos, dentro da própria área, dá pontapé de canto (^l12-3-1). A bola coloca-se na área de canto mais próxima da posição do guarda-redes quando foi penalizado (^l17-1-1). Não voltou a ser livre indireto nem bola ao solo.",
+      "lawRefs": [
+        "l12-3-1",
+        "l17-1-1"
+      ],
+      "evidence": "Será concedido um pontapé de canto se o guarda-redes"
+    },
+    {
+      "id": "cen-012",
+      "number": 12,
+      "question": "Minuto 28, bola em jogo no meio-campo. O médio discorda em voz alta de um lançamento lateral acabado de dar contra a sua equipa e dirige palavras de protesto ao árbitro. É a primeira vez.\nQual a decisão correta?",
+      "options": {
+        "A": "Deixa seguir e apenas avisa o médio no final da parte.",
+        "B": "Pontapé livre indireto no local da infração e cartão amarelo ao médio.",
+        "C": "Pontapé livre direto no local da infração e cartão amarelo ao médio.",
+        "D": "Pontapé livre indireto no local da infração e cartão vermelho ao médio."
+      },
+      "answer": "B",
+      "answerText": "Pontapé livre indireto no local da infração e cartão amarelo ao médio.",
+      "explanation": "Manifestar desacordo por palavras ou por atos é advertência (^l12-4-12). As infrações verbais recomeçam com livre indireto (^l12-5-5), no local da infração (^l13-2-1). A primeira vez não é expulsão, e o protesto verbal não é livre direto.",
+      "lawRefs": [
+        "l12-4-12",
+        "l12-5-5",
+        "l13-2-1"
+      ],
+      "evidence": "manifestar desacordo por palavras ou por atos"
+    },
+    {
+      "id": "cen-013",
+      "number": 13,
+      "question": "Minuto 11, bola em jogo. O avançado A está em posição de fora de jogo, parado, sem tocar na bola nem obstruir ninguém. O colega B, em posição legal, recebe o passe e remata para o golo, sem interferência de A.\nQual a decisão correta?",
+      "options": {
+        "A": "Anula o golo e assinala pontapé livre indireto no sítio onde A estava.",
+        "B": "Valida o golo e adverte A por posição de fora de jogo.",
+        "C": "Anula o golo e faz bola ao solo onde A estava.",
+        "D": "Valida o golo, porque a posição de fora de jogo, sem interferência, não é infração."
+      },
+      "answer": "D",
+      "answerText": "Valida o golo, porque a posição de fora de jogo, sem interferência, não é infração.",
+      "explanation": "Estar em posição de fora de jogo não é, por si, infração (^l11-1-1). Só se pune quem toma parte ativa no jogo (^l11-2-1). A não tocou na bola nem interferiu, e foi B quem marcou, pelo que o golo mantém-se.",
+      "lawRefs": [
+        "l11-1-1",
+        "l11-2-1"
+      ],
+      "evidence": "Estar em posição de fora de jogo não constitui por si só uma infração."
+    },
+    {
+      "id": "cen-014",
+      "number": 14,
+      "question": "Minuto 46, bola em jogo. No momento do passe de um colega, o avançado está mais perto da linha de baliza adversária do que a bola e do que o penúltimo adversário. Corre para a bola e toca-lhe dentro da grande área antes de rematar.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre indireto no local onde o avançado tocou na bola.",
+        "B": "Pontapé de penálti, por o toque ter sido dentro da área.",
+        "C": "Deixa seguir, porque o avançado veio de trás depois do passe.",
+        "D": "Pontapé livre direto no local onde o avançado tocou na bola."
+      },
+      "answer": "A",
+      "answerText": "Pontapé livre indireto no local onde o avançado tocou na bola.",
+      "explanation": "Tocar na bola passada por um colega, estando em posição de fora de jogo nesse momento, é interferir no jogo (^l11-2-2). O recomeço é livre indireto no local da infração, mesmo dentro da área atacante (^l11-4-1). Fora de jogo não se transforma em penálti nem em livre direto.",
+      "lawRefs": [
+        "l11-4-1",
+        "l11-2-2"
+      ],
+      "evidence": "um pontapé livre indireto no local onde a infração foi cometida"
+    },
+    {
+      "id": "cen-015",
+      "number": 15,
+      "question": "Minuto 33, bola em jogo. A bola vem pelo chão, de longe, e o defesa vê-a com tempo, controla o corpo e passa-a de propósito a um colega. O avançado adversário, que estava em posição de fora de jogo quando o defesa jogou a bola, recebe esse passe e marca. Não foi uma defesa.\nQual a decisão correta?",
+      "options": {
+        "A": "Anula o golo e assinala pontapé livre indireto por fora de jogo.",
+        "B": "Valida o golo, porque o defesa jogou a bola deliberadamente e não foi uma defesa.",
+        "C": "Anula o golo e assinala pontapé livre direto ao avançado.",
+        "D": "Manda repetir a jogada com bola ao solo."
+      },
+      "answer": "B",
+      "answerText": "Valida o golo, porque o defesa jogou a bola deliberadamente e não foi uma defesa.",
+      "explanation": "Quem recebe a bola de um adversário que a jogou deliberadamente não tira vantagem da posição de fora de jogo, salvo se esse gesto foi uma defesa (^l11-2-13). O passe controlado do defesa repõe o avançado em jogo. Não há livre indireto nem bola ao solo.",
+      "lawRefs": [
+        "l11-2-13"
+      ],
+      "evidence": "a menos que se trate de uma defesa."
+    },
+    {
+      "id": "cen-016",
+      "number": 16,
+      "question": "Minuto 69, bola em jogo. O avançado está em posição de fora de jogo quando o colega remata. O guarda-redes desvia a bola, em defesa, e ela sobra para esse avançado, que marca. O guarda-redes não teve tempo de controlar o corpo: esticou-se para deter a bola.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo, porque a bola veio do guarda-redes.",
+        "B": "Valida o golo e adverte o avançado.",
+        "C": "Anula o golo e assinala pontapé livre indireto no local onde o avançado jogou a bola.",
+        "D": "Anula o golo e assinala pontapé de baliza."
+      },
+      "answer": "C",
+      "answerText": "Anula o golo e assinala pontapé livre indireto no local onde o avançado jogou a bola.",
+      "explanation": "A exceção da bola jogada deliberadamente por um adversário não vale quando se trata de uma defesa (^l11-2-13). Deter a bola que se dirige à baliza é defesa (^l11-2-12). O avançado ganhou vantagem da posição de fora de jogo, pelo que o golo cai e há livre indireto no local da infração (^l11-4-1).",
+      "lawRefs": [
+        "l11-2-13",
+        "l11-2-12",
+        "l11-4-1"
+      ],
+      "evidence": "a menos que se trate de uma defesa."
+    },
+    {
+      "id": "cen-017",
+      "number": 17,
+      "question": "Minuto 8, bola fora de jogo. A equipa executa um lançamento lateral correto. O colega que recebe está mais perto da linha de baliza adversária do que a bola e do que o penúltimo adversário no momento do lançamento, e é ele o primeiro a jogar a bola.\nQual a decisão correta?",
+      "options": {
+        "A": "Deixa seguir: não há fora de jogo quando a bola é recebida diretamente de um lançamento lateral.",
+        "B": "Pontapé livre indireto no local onde o colega recebeu a bola.",
+        "C": "Manda repetir o lançamento lateral pela mesma equipa.",
+        "D": "Pontapé livre direto por receber à frente do penúltimo adversário."
+      },
+      "answer": "A",
+      "answerText": "Deixa seguir: não há fora de jogo quando a bola é recebida diretamente de um lançamento lateral.",
+      "explanation": "Não há infração de fora de jogo quando o jogador recebe a bola diretamente de um lançamento lateral (^l11-3-1, ^l11-3-3). A posição à frente do penúltimo adversário, nesse recomeço, não se pune. O lançamento foi correcto, por isso não se repete.",
+      "lawRefs": [
+        "l11-3-1",
+        "l11-3-3"
+      ],
+      "evidence": "Não há infração de fora de jogo quando um jogador recebe a bola diretamente de:"
+    },
+    {
+      "id": "cen-018",
+      "number": 18,
+      "question": "Minuto 55, bola em jogo. Além do guarda-redes, só resta um defesa. Esse defesa sai deliberadamente pela linha de baliza, sem autorização, para tentar pôr o avançado em jogo. No momento do passe, o avançado está mais perto da linha de baliza do que o guarda-redes e toca na bola. O defesa que saiu conta, para fora de jogo, como se estivesse na linha de baliza.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida a jogada, porque quem saiu do terreno deixa de contar para o fora de jogo.",
+        "B": "Pontapé livre indireto por fora de jogo no local onde o avançado jogou a bola, e cartão amarelo ao defesa que saiu, quando a bola deixar de estar em jogo.",
+        "C": "Pontapé livre direto no local onde o avançado jogou a bola e cartão vermelho ao defesa.",
+        "D": "Bola ao solo no local onde o defesa saiu, sem cartão."
+      },
+      "answer": "B",
+      "answerText": "Pontapé livre indireto por fora de jogo no local onde o avançado jogou a bola, e cartão amarelo ao defesa que saiu, quando a bola deixar de estar em jogo.",
+      "explanation": "O defesa que sai sem autorização continua a contar como se estivesse na linha de baliza ou na linha lateral, até à paragem seguinte (^l11-4-2). Com ele nessa linha e o guarda-redes mais longe do que o avançado, o avançado está mais perto da baliza do que o penúltimo adversário. Sair de propósito ainda leva advertência quando a bola deixar de estar em jogo, no mesmo bloco.",
+      "lawRefs": [
+        "l11-4-2"
+      ],
+      "evidence": "deve ser considerado como se estivesse sobre a linha de baliza ou linha lateral, para efeitos de fora de jogo"
+    },
+    {
+      "id": "cen-019",
+      "number": 19,
+      "question": "Minuto 6, bola em jogo dentro da área de penálti. O árbitro para o jogo porque um cão entrou em campo e interferiu, sem qualquer falta de jogador. A bola, no momento da paragem, estava dentro da área da equipa A.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre indireto para a equipa que tinha a posse.",
+        "B": "Bola ao solo para um jogador da equipa atacante, no local da paragem.",
+        "C": "Bola ao solo para o guarda-redes da equipa defensora, na sua área de penálti.",
+        "D": "Pontapé de baliza para a equipa defensora."
+      },
+      "answer": "C",
+      "answerText": "Bola ao solo para o guarda-redes da equipa defensora, na sua área de penálti.",
+      "explanation": "Se, quando o jogo parou, a bola estava dentro da área de penálti, a bola ao solo é para o guarda-redes da equipa defensora, na sua área (^l8-2-2). Não se devolve a posse ao ataque nem se transforma a paragem em pontapé de baliza.",
+      "lawRefs": [
+        "l8-2-2"
+      ],
+      "evidence": "uma bola ao solo para o guarda-redes da equipa defensora na sua área de penálti"
+    },
+    {
+      "id": "cen-020",
+      "number": 20,
+      "question": "Minuto 12. O árbitro faz a bola ao solo para o guarda-redes, dentro da área de penálti da equipa A. A bola toca no solo, ninguém lhe toca, e entra na baliza da equipa A, que é a própria baliza neste recomeço. Não chegou a tocar em dois jogadores.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo à equipa B.",
+        "B": "Manda repetir a bola ao solo no mesmo local.",
+        "C": "Pontapé de baliza para a equipa A.",
+        "D": "Pontapé de canto para a equipa B."
+      },
+      "answer": "D",
+      "answerText": "Pontapé de canto para a equipa B.",
+      "explanation": "Se a bola ao solo entra na baliza sem tocar em pelo menos dois jogadores, não é golo (^l8-2-9). Entrar na própria baliza dá pontapé de canto (^l8-2-11). O pontapé de baliza seria se entrasse na baliza adversária.",
+      "lawRefs": [
+        "l8-2-11",
+        "l8-2-9"
+      ],
+      "evidence": "um pontapé de canto se entrar na própria baliza"
+    },
+    {
+      "id": "cen-021",
+      "number": 21,
+      "question": "Minuto 1, pontapé de saída da equipa A no ponto central. O executante pontapeia a bola, ela move-se com clareza e, sem tocar em mais ninguém, entra diretamente na baliza da equipa A.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo a favor da equipa B.",
+        "B": "Pontapé de canto para a equipa B.",
+        "C": "Manda repetir o pontapé de saída.",
+        "D": "Pontapé de baliza para a equipa A."
+      },
+      "answer": "B",
+      "answerText": "Pontapé de canto para a equipa B.",
+      "explanation": "Do pontapé de saída pode marcar-se golo diretamente na baliza adversária. Se a bola entra diretamente na baliza de quem executa, é canto para a equipa adversária (^l8-1-12). Não é auto-golo válido, nem se repete o pontapé, nem há pontapé de baliza.",
+      "lawRefs": [
+        "l8-1-12"
+      ],
+      "evidence": "se a bola entrar diretamente na baliza do executante, é concedido um pontapé de canto a favor da equipa adversária"
+    },
+    {
+      "id": "cen-022",
+      "number": 22,
+      "question": "Minuto 44, bola em jogo. O guarda-redes da equipa B, dentro da sua área de penálti, agarra a bola depois de um colega lha ter pontapeado de propósito. A infração ocorre dentro da área de baliza. O árbitro assinala livre indireto a favor do ataque.\nQual a decisão correta?",
+      "options": {
+        "A": "O livre indireto marca-se no local exato da infração, dentro da área de baliza.",
+        "B": "O livre indireto marca-se em qualquer ponto da área de penálti.",
+        "C": "O livre indireto marca-se no ponto mais próximo da linha da área de baliza paralela à linha de baliza.",
+        "D": "O livre passa a penálti, porque a infração foi dentro da área."
+      },
+      "answer": "C",
+      "answerText": "O livre indireto marca-se no ponto mais próximo da linha da área de baliza paralela à linha de baliza.",
+      "explanation": "O livre indireto a favor do ataque, por infração dentro da área de baliza adversária, executa-se no ponto mais próximo da linha dessa área que é paralela à linha de baliza (^l13-2-2). Não se marca no sítio da infração, dentro da área de baliza, e a mão ilegal do guarda-redes na sua área não é penálti.",
+      "lawRefs": [
+        "l13-2-2"
+      ],
+      "evidence": "a partir do ponto mais próximo da linha da área de baliza paralela à linha de baliza"
+    },
+    {
+      "id": "cen-023",
+      "number": 23,
+      "question": "Minuto 62, livre direto a favor do ataque, fora da área. Três defesas formam a barreira. Antes de a bola entrar em jogo, um atacante fica a menos de 1 m dessa barreira e assim se mantém quando o livre é executado.\nQual a decisão correta?",
+      "options": {
+        "A": "Manda repetir o livre direto da equipa atacante.",
+        "B": "Deixa seguir, porque a distância de 1 m é só uma orientação.",
+        "C": "Pontapé livre direto para a equipa defensora, no local onde estava o atacante.",
+        "D": "Pontapé livre indireto para a equipa defensora."
+      },
+      "answer": "D",
+      "answerText": "Pontapé livre indireto para a equipa defensora.",
+      "explanation": "Atacante a menos de 1 m de uma barreira de três ou mais defesas, na execução do livre, dá livre indireto à equipa defensora (^l13-3-2). Não se repete o livre do ataque nem se converte a infração em livre direto.",
+      "lawRefs": [
+        "l13-3-2"
+      ],
+      "evidence": "é concedido um pontapé livre indireto à equipa defensora."
+    },
+    {
+      "id": "cen-024",
+      "number": 24,
+      "question": "Minuto 17, lançamento lateral. No momento do lançamento, o executante tem os dois pés por completo dentro do terreno, sem qualquer parte sobre a linha lateral nem no terreno exterior. A bola entra em campo.\nQual a decisão correta?",
+      "options": {
+        "A": "O lançamento é repetido por um jogador da equipa adversária, no mesmo local.",
+        "B": "O lançamento é repetido pelo mesmo executante.",
+        "C": "Pontapé livre indireto contra a equipa que lançou.",
+        "D": "Deixa seguir, porque a bola já entrou no terreno."
+      },
+      "answer": "A",
+      "answerText": "O lançamento é repetido por um jogador da equipa adversária, no mesmo local.",
+      "explanation": "O executante tem de ter, pelo menos em parte, os dois pés na linha lateral ou fora dela (^l15-1-3). Se o lançamento não é feito corretamente, passa a ser executado por um jogador da equipa contrária (^l15-1-6). Não há livre indireto por este erro de procedimento.",
+      "lawRefs": [
+        "l15-1-6",
+        "l15-1-3"
+      ],
+      "evidence": "Se o lançamento lateral não tiver sido efetuado corretamente, é executado por um jogador da equipa contrária."
+    },
+    {
+      "id": "cen-025",
+      "number": 25,
+      "question": "Minuto 4, pontapé de baliza da equipa A, executado de dentro da sua área de baliza. A bola é pontapeada, move-se com clareza e, sem tocar em mais ninguém, entra diretamente na baliza da equipa A.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo à equipa B.",
+        "B": "Manda repetir o pontapé de baliza.",
+        "C": "Pontapé de canto para a equipa B.",
+        "D": "Pontapé livre indireto a favor da equipa B, dentro da área."
+      },
+      "answer": "C",
+      "answerText": "Pontapé de canto para a equipa B.",
+      "explanation": "Do pontapé de baliza pode marcar-se golo diretamente só contra a equipa adversária. Se a bola entra diretamente na baliza de quem executa, é canto para a equipa adversária (^l16-0-2). Não se valida o golo nem se repete o pontapé.",
+      "lawRefs": [
+        "l16-0-2"
+      ],
+      "evidence": "se a bola entrar diretamente na baliza do executante, é concedido um pontapé de canto à equipa adversária."
+    },
+    {
+      "id": "cen-026",
+      "number": 26,
+      "question": "Minuto 90, pontapé de canto da equipa A. O executante pontapeia a bola, ela move-se com clareza e, sem tocar em mais ninguém, entra diretamente na baliza da equipa A.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo à equipa B.",
+        "B": "Pontapé de baliza para a equipa A.",
+        "C": "Manda repetir o pontapé de canto da equipa A.",
+        "D": "Pontapé de canto para a equipa B."
+      },
+      "answer": "D",
+      "answerText": "Pontapé de canto para a equipa B.",
+      "explanation": "Do canto pode marcar-se golo diretamente, mas só contra a equipa adversária. Se a bola entra diretamente na baliza de quem executa, concede-se um canto à equipa adversária (^l17-0-2). Não é golo da equipa B nem pontapé de baliza.",
+      "lawRefs": [
+        "l17-0-2"
+      ],
+      "evidence": "se a bola entrar diretamente na baliza do executante, é concedido um pontapé de canto à equipa adversária."
+    },
+    {
+      "id": "cen-027",
+      "number": 27,
+      "question": "Minuto 49, bola em jogo no meio-campo, fora das áreas. Um jogador que tinha saído com autorização para tratar uma lesão volta a entrar sem sinal do árbitro e carrega um adversário que ia receber a bola. Há interferência.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local da interferência e cartão amarelo ao jogador que entrou.",
+        "B": "Pontapé livre indireto no local onde a bola estava e cartão amarelo.",
+        "C": "Bola ao solo no local da interferência, sem cartão.",
+        "D": "Pontapé livre direto no local da interferência e cartão vermelho."
+      },
+      "answer": "A",
+      "answerText": "Pontapé livre direto no local da interferência e cartão amarelo ao jogador que entrou.",
+      "explanation": "Voltar a entrar sem autorização é advertência (^l3-8-3). Se o árbitro para o jogo e houve interferência, o recomeço é livre direto no local dessa interferência (^l3-8-5). O indireto seria apenas se não tivesse havido interferência. Entrar sem autorização, por si, não é expulsão.",
+      "lawRefs": [
+        "l3-8-5",
+        "l3-8-3"
+      ],
+      "evidence": "com um pontapé livre direto no local da interferência"
+    },
+    {
+      "id": "cen-028",
+      "number": 28,
+      "question": "Minuto 22, bola em jogo na metade da equipa B. Um jogador da equipa A, que estava fora a corrigir o equipamento, entra sem autorização e fica parado junto da linha lateral, sem tocar na bola, em ninguém, nem num elemento da equipa de arbitragem. O árbitro para o jogo.\nQual a decisão correta?",
+      "options": {
+        "A": "Pontapé livre direto no local onde o jogador entrou e cartão amarelo.",
+        "B": "Pontapé livre indireto no local em que a bola se encontrava quando o jogo foi interrompido, e cartão amarelo ao jogador.",
+        "C": "Deixa seguir sem cartão, porque não houve interferência.",
+        "D": "Bola ao solo no local em que a bola se encontrava, sem cartão."
+      },
+      "answer": "B",
+      "answerText": "Pontapé livre indireto no local em que a bola se encontrava quando o jogo foi interrompido, e cartão amarelo ao jogador.",
+      "explanation": "Entrar sem autorização leva advertência (^l3-8-3). Parado o jogo sem interferência, o recomeço é livre indireto no local onde a bola estava (^l3-8-6). O livre direto exige interferência. A falta de interferência não apaga o cartão.",
+      "lawRefs": [
+        "l3-8-6",
+        "l3-8-3"
+      ],
+      "evidence": "com um pontapé livre indireto no local em que a bola se encontrava no momento da interrupção, se não tiver havido interferência"
+    },
+    {
+      "id": "cen-029",
+      "number": 29,
+      "question": "Minuto 70, bola em jogo dentro da área de penálti da equipa A, sem avançado isolado. Um suplente da equipa A entra no terreno sem autorização e chuta a bola para longe. Interfere no jogo, mas não impede um golo nem anula uma ocasião clara.\nQual a decisão correta?",
+      "options": {
+        "A": "Bola ao solo para o guarda-redes da equipa A e cartão amarelo ao suplente.",
+        "B": "Pontapé livre indireto no local da bola e cartão amarelo ao suplente.",
+        "C": "Pontapé de penálti e cartão vermelho ao suplente.",
+        "D": "Pontapé de penálti e cartão amarelo ao suplente por ter entrado sem autorização."
+      },
+      "answer": "D",
+      "answerText": "Pontapé de penálti e cartão amarelo ao suplente por ter entrado sem autorização.",
+      "explanation": "Suplente que entra e interfere faz recomeçar com livre direto ou penálti (^l3-7-8). A interferência foi dentro da área de penálti da sua equipa, pelo que o recomeço é o penálti. Entrar sem autorização, sem impedir um golo nem anular uma ocasião clara, é advertência do suplente (^l12-4-22), não expulsão.",
+      "lawRefs": [
+        "l3-7-8",
+        "l12-4-22"
+      ],
+      "evidence": "o jogo recomeça com um pontapé livre direto ou pontapé de penálti"
+    },
+    {
+      "id": "cen-030",
+      "number": 30,
+      "question": "Minuto 58, a bola saiu pela linha lateral e o jogo está parado para o lançamento. A equipa pede substituição. O jogador indicado para sair recusa-se a abandonar o terreno. O suplente ainda não entrou.\nQual a decisão correta?",
+      "options": {
+        "A": "O jogo continua, com o lançamento lateral, e a substituição não se faz enquanto ele não sair.",
+        "B": "Cartão vermelho ao jogador e a substituição completa-se com o suplente.",
+        "C": "O árbitro dá o jogo por terminado por recusa da equipa.",
+        "D": "Cartão amarelo obrigatório e livre indireto contra a equipa."
+      },
+      "answer": "A",
+      "answerText": "O jogo continua, com o lançamento lateral, e a substituição não se faz enquanto ele não sair.",
+      "explanation": "Se o jogador que vai ser substituído se recusa a sair, o jogo continua (^l3-3-8). O suplente só entra depois de o substituído ter saído. A recusa, neste bloco, não é expulsão nem dá o jogo por terminado.",
+      "lawRefs": [
+        "l3-3-8"
+      ],
+      "evidence": "se um jogador que vai ser substituído se recusar a deixar o terreno de jogo, o jogo continua"
+    },
+    {
+      "id": "cen-031",
+      "number": 31,
+      "question": "Minuto 39, bola em jogo no meio-campo. O árbitro sente-se mal e fica incapacitado de continuar a apitar. Os outros elementos da equipa de arbitragem estão em condições de dirigir o jogo. A bola ainda não saiu.\nQual a decisão correta?",
+      "options": {
+        "A": "Para o jogo de imediato e faz bola ao solo.",
+        "B": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+        "C": "Dá o jogo por concluído nesse instante.",
+        "D": "Manda repetir a parte desde o minuto 1."
+      },
+      "answer": "B",
+      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+      "explanation": "Árbitro incapacitado: o jogo pode seguir com os outros elementos da equipa de arbitragem até a bola sair de jogo (^l5-2-5). Não se impõe a paragem imediata nem o fim do jogo nesse momento.",
+      "lawRefs": [
+        "l5-2-5"
+      ],
+      "evidence": "o jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo."
+    },
+    {
+      "id": "cen-032",
+      "number": 32,
+      "question": "Minuto 14, bola em jogo dentro da área de penálti. Uma segunda bola entra em campo e bate na bola do jogo no momento em que o avançado ia rematar. Há interferência. Não foi cometida qualquer falta.\nQual a decisão correta?",
+      "options": {
+        "A": "Deixa seguir e manda retirar a segunda bola sem parar.",
+        "B": "Pontapé de penálti, porque a interferência foi dentro da área.",
+        "C": "Para o jogo e recomeça com bola ao solo para o guarda-redes da equipa defensora, na sua área.",
+        "D": "Pontapé livre indireto a favor do ataque, no local do contacto."
+      },
+      "answer": "C",
+      "answerText": "Para o jogo e recomeça com bola ao solo para o guarda-redes da equipa defensora, na sua área.",
+      "explanation": "Segunda bola que interfere manda parar e recomeçar com bola ao solo (^l5-3-30). A bola do jogo estava dentro da área de penálti, pelo que a bola ao solo é para o guarda-redes defensor (^l8-2-2). Não é penálti, porque não houve infração de um jogador.",
+      "lawRefs": [
+        "l5-3-30",
+        "l8-2-2"
+      ],
+      "evidence": "interromper o jogo (e recomeçá-lo com uma bola ao solo) apenas se interferir no jogo"
+    },
+    {
+      "id": "cen-033",
+      "number": 33,
+      "question": "Minuto 30, bola em jogo no meio-campo. Um defesa faz uma falta leve ao portador. No mesmo instante, um colega deste já conduz a bola em direção à baliza adversária, com espaço para um ataque prometedor imediato.\nQual a decisão correta?",
+      "options": {
+        "A": "Deixa seguir, pela oportunidade imediata de um ataque prometedor.",
+        "B": "Para sempre e assinala livre direto, porque toda a falta se marca.",
+        "C": "Para e expulsa o defesa, porque a falta foi no meio-campo.",
+        "D": "Deixa seguir e anula qualquer sanção mesmo que o ataque morra de imediato."
+      },
+      "answer": "A",
+      "answerText": "Deixa seguir, pela oportunidade imediata de um ataque prometedor.",
+      "explanation": "Entre as circunstâncias da vantagem está a oportunidade imediata de um ataque prometedor (^x-diretrizes-praticas-117). Com o colega já a conduzir para a baliza, parar para o livre desperdiça essa ocasião. A falta no meio-campo, por si, não é expulsão.",
+      "lawRefs": [
+        "x-diretrizes-praticas-117",
+        "x-diretrizes-praticas-114"
+      ],
+      "evidence": "a oportunidade imediata de um ataque prometedor"
+    },
+    {
+      "id": "cen-034",
+      "number": 34,
+      "question": "Minuto 80, bola em jogo. O assistente vê um empurrão dentro da área, mas o árbitro não o vê e o jogo segue. A bola sai pela linha lateral e a equipa já executou o lançamento. Só então o árbitro percebe a indicação do assistente.\nQual a decisão correta?",
+      "options": {
+        "A": "Anula o lançamento e assinala penálti.",
+        "B": "Manda repetir o lançamento e adverte o defesa.",
+        "C": "Mantém o lançamento lateral: o árbitro não altera o recomeço depois de o jogo ter recomeçado.",
+        "D": "Para o jogo e faz bola ao solo no local do empurrão."
+      },
+      "answer": "C",
+      "answerText": "Mantém o lançamento lateral: o árbitro não altera o recomeço depois de o jogo ter recomeçado.",
+      "explanation": "O árbitro não pode alterar um recomeço se o jogo já recomeçou (^l5-2-3). O lançamento já foi executado, pelo que o penálti deixou de poder ser assinalado no lugar desse recomeço. Voltar atrás seria mudar uma decisão cujo recomeço já ocorreu.",
+      "lawRefs": [
+        "l5-2-3"
+      ],
+      "evidence": "O árbitro não pode alterar um recomeço"
+    },
+    {
+      "id": "cen-035",
+      "number": 35,
+      "question": "Minuto 77, penálti. É a primeira infração do guarda-redes neste jogo. Quando a bola é pontapeada, nenhum dos pés do guarda-redes está em contacto com a linha de baliza, nem alinhado com ela, nem atrás dela. O guarda-redes defende a bola e impede o golo.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida a defesa e segue em jogo.",
+        "B": "Manda repetir o penálti e mostra cartão amarelo ao guarda-redes.",
+        "C": "Assinala pontapé livre indireto à equipa atacante e adverte o guarda-redes.",
+        "D": "Manda repetir o penálti e avisa o guarda-redes, por ser a primeira infração."
+      },
+      "answer": "D",
+      "answerText": "Manda repetir o penálti e avisa o guarda-redes, por ser a primeira infração.",
+      "explanation": "No momento do pontapé, o guarda-redes tem de ter pelo menos parte de um pé na linha, alinhado com ela ou atrás dela (^l14-1-11). Se impede a bola de entrar, o penálti é repetido (^l14-2-18). Na primeira infração que obriga a repetir, o guarda-redes é avisado; o amarelo fica para a reincidência (^l14-2-19).",
+      "lawRefs": [
+        "l14-2-18",
+        "l14-2-19",
+        "l14-1-11"
+      ],
+      "evidence": "o pontapé de penálti será repetido se o guarda-redes evitar que a bola entre na baliza"
+    },
+    {
+      "id": "cen-036",
+      "number": 36,
+      "question": "Minuto 45 da primeira parte. O árbitro assinalou um penálti e ainda não deu o sinal para a execução. O tempo regulamentar da parte chega ao fim com o penálti por executar.\nQual a decisão correta?",
+      "options": {
+        "A": "Dá a parte por finda e o penálti não se marca.",
+        "B": "Prolonga a parte o tempo necessário para o penálti ser executado e concluído.",
+        "C": "Converte o penálti em pontapé livre direto no início da segunda parte.",
+        "D": "Manda executar o penálti já na marca dos penáltis, como desempate."
+      },
+      "answer": "B",
+      "answerText": "Prolonga a parte o tempo necessário para o penálti ser executado e concluído.",
+      "explanation": "Se um penálti tem de ser executado no final de uma parte, a duração prolonga-se até o pontapé estar executado e concluído (^l14-1-15). Não se apaga o penálti por o relógio chegar aos 45, nem se transforma em livre ou em desempate.",
+      "lawRefs": [
+        "l14-1-15"
+      ],
+      "evidence": "Deve ser concedido tempo adicional para permitir que um pontapé de penálti seja executado e concluído"
+    },
+    {
+      "id": "cen-037",
+      "number": 37,
+      "question": "Final da segunda parte, já no tempo adicional concedido para um penálti. O executante pontapeia. Um colega do guarda-redes, que estava dentro da área, toca na bola e a defesa impede o golo. O penálti resulta falhado por causa dessa infração.\nQual a decisão correta?",
+      "options": {
+        "A": "Dá o jogo por findo, porque o tempo adicional já decorria.",
+        "B": "Manda repetir o penálti.",
+        "C": "Valida o resultado da defesa e recomeça com pontapé de baliza.",
+        "D": "Assinala pontapé livre indireto à equipa atacante no ponto da marca."
+      },
+      "answer": "B",
+      "answerText": "Manda repetir o penálti.",
+      "explanation": "No tempo adicional, se um jogador da equipa que defende comete uma infração e o penálti é falhado ou defendido, o penálti é repetido (^l14-1-16). O facto de já se jogar tempo adicional não transforma a defesa irregular em pontapé de baliza.",
+      "lawRefs": [
+        "l14-1-16"
+      ],
+      "evidence": "o penálti é repetido."
+    },
+    {
+      "id": "cen-038",
+      "number": 38,
+      "question": "Jogo de campeonato distrital, que não é da Taça de Portugal. A equipa visitante atrasou-se por um acidente na estrada, motivo que não lhe é imputável. A associação e o árbitro foram informados e o terreno está em condições de se jogar. Falta um quarto de hora para a hora marcada.\nQual a decisão correta?",
+      "options": {
+        "A": "Não espera e dá o jogo por não iniciado à hora marcada.",
+        "B": "Espera obrigatoriamente 60 minutos, como na Taça de Portugal.",
+        "C": "Aguarda o tempo que entender razoável, tendo em conta as circunstâncias e o interesse de o jogo realizar-se.",
+        "D": "Espera apenas 5 minutos e depois abandona, sem indagar a razão."
+      },
+      "answer": "C",
+      "answerText": "Aguarda o tempo que entender razoável, tendo em conta as circunstâncias e o interesse de o jogo realizar-se.",
+      "explanation": "Atraso por motivo não imputável, com a FPF ou o árbitro informados e condições para jogar, manda aguardar o tempo razoável, no interesse da realização do jogo (^n1-10-1). Os 60 minutos são a exceção da Taça de Portugal, que este jogo não é. Não se abandona à hora marcada.",
+      "lawRefs": [
+        "n1-10-1"
+      ],
+      "evidence": "o árbitro deve aguardar o tempo que entender razoável"
+    },
+    {
+      "id": "cen-039",
+      "number": 39,
+      "question": "Quarenta minutos antes do jogo, o delegado não tem o cartão-licença de um suplente. O jogador está presente. O árbitro pede-lhe que assine, por seu punho e na presença do árbitro, o descritivo do relatório, e o delegado mostra o cartão de cidadão com fotografia.\nQual a decisão correta?",
+      "options": {
+        "A": "Impede o suplente de constar da ficha e de jogar.",
+        "B": "Admite-o sem qualquer registo no relatório.",
+        "C": "Expulsa o delegado e recusa a ficha técnica.",
+        "D": "Admite o jogador depois da assinatura no relatório e da identificação com documento oficial com fotografia, e descreve a ocorrência no relatório."
+      },
+      "answer": "D",
+      "answerText": "Admite o jogador depois da assinatura no relatório e da identificação com documento oficial com fotografia, e descreve a ocorrência no relatório.",
+      "explanation": "Na falta do cartão-licença, o jogador assina por seu punho, na presença do árbitro, no descritivo do relatório (^n1-8-1). O delegado apresenta documento de identificação oficial com fotografia (^n1-8-1a). Não se exclui o jogador por esse motivo, mas a ocorrência fica descrita.",
+      "lawRefs": [
+        "n1-8-1",
+        "n1-8-1a"
+      ],
+      "evidence": "deverão esses jogadores assinar por seu próprio punho"
+    },
+    {
+      "id": "cen-040",
+      "number": 40,
+      "question": "Minuto 41 da primeira parte, resultado 0-0. Um jogador fica no chão e é transportado de maca para fora do terreno. A paragem dura quatro minutos e não houve qualquer outra perda de tempo antes disso. A parte é de 45 minutos.\nQual a decisão correta?",
+      "options": {
+        "A": "Prolonga a primeira parte para recuperar todo o tempo perdido com o transporte do lesionado.",
+        "B": "Termina a parte ao minuto 45, sem acrescentar o tempo da maca.",
+        "C": "Acrescenta só um minuto, seja qual for a duração real da paragem.",
+        "D": "Anula a primeira parte e manda repeti-la."
+      },
+      "answer": "A",
+      "answerText": "Prolonga a primeira parte para recuperar todo o tempo perdido com o transporte do lesionado.",
+      "explanation": "Cada parte prolonga-se para recuperar todo o tempo perdido (^l7-3-1). O transporte de jogadores lesionados para fora do terreno é uma dessas causas (^l7-3-3). Não se ignora a paragem nem se reduz a um minuto fixo quando a maca demorou quatro.",
+      "lawRefs": [
+        "l7-3-1",
+        "l7-3-3"
+      ],
+      "evidence": "Cada parte deve ser prolongada para recuperar todo o tempo de jogo perdido ocasionado por:"
+    },
+    {
+      "id": "cen-041",
+      "number": 41,
+      "question": "Minuto 33, bola em jogo fora da área de penálti, junto à linha de meio-campo. A equipa A conduz e ia manter a posse. O árbitro para o jogo porque um cão entra e interfere. Não há falta. Dá para ver quem ficaria com a bola.\nQual a decisão correta?",
+      "options": {
+        "A": "Bola ao solo, fora da área, para um jogador da equipa que teria mantido a posse, no local onde a bola estava.",
+        "B": "Bola ao solo para o guarda-redes da equipa defensora, dentro da área.",
+        "C": "Pontapé livre indireto para a equipa A no local da paragem.",
+        "D": "Bola ao solo sempre para a equipa que tocou na bola em último lugar, mesmo sendo claro quem a teria."
+      },
+      "answer": "A",
+      "answerText": "Bola ao solo, fora da área, para um jogador da equipa que teria mantido a posse, no local onde a bola estava.",
+      "explanation": "Fora da área, a bola ao solo de 2026/27 é para a equipa que teria mantido ou ganho a posse, quando o árbitro o consegue ver, e faz-se no sítio onde a bola estava (^l8-2-3). O guarda-redes só a recebe se a bola estava dentro da área. O último toque é o critério de recurso, não o primeiro.",
+      "lawRefs": [
+        "l8-2-3"
+      ],
+      "evidence": "a equipa que teria mantido ou ganho a posse de bola"
+    },
+    {
+      "id": "cen-042",
+      "number": 42,
+      "question": "Minuto 80, penálti. O executante pontapeia a bola para a frente. Logo a seguir, a bola toca-lhe por acidente no pé de apoio e entra diretamente na baliza, sem tocar no guarda-redes.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo.",
+        "B": "Manda repetir o penálti.",
+        "C": "Pontapé livre indireto para a equipa defensora.",
+        "D": "Pontapé de baliza, por o segundo toque ter sido do executante."
+      },
+      "answer": "B",
+      "answerText": "Manda repetir o penálti.",
+      "explanation": "O toque acidental no pé de apoio, logo após o pontapé, é o duplo toque da chamada de 2026/27 (^l14-2-33). Se a bola entra diretamente, o penálti repete-se e o golo não vale (^l14-2-34). O livre indireto é o resultado quando esse toque não faz golo.",
+      "lawRefs": [
+        "l14-2-34",
+        "l14-2-33"
+      ],
+      "evidence": "se a bola entrar na baliza diretamente do pontapé, este deve ser repetido"
+    },
+    {
+      "id": "cen-043",
+      "number": 43,
+      "question": "Minuto 70, jogo parado para um lançamento. É mostrada a placa de substituição. O jogador, que já tem um amarelo, não sai nos dez segundos, mas abandona o terreno em seguida, sem atrasar mais o recomeço. O árbitro repõe o jogo de imediato. O suplente ainda não entrou.\nQual a decisão correta?",
+      "options": {
+        "A": "Segundo amarelo e vermelho. A substituição não se consuma e o jogador não pode ser substituído.",
+        "B": "Cartão amarelo só por ter passado os dez segundos, e o suplente entra de seguida.",
+        "C": "Sem cartão, se não retardar excessivamente o recomeço para além dos dez segundos. Sai na mesma. O suplente só entra na primeira paragem depois de um minuto, e a substituição não se anula.",
+        "D": "A substituição é cancelada e a equipa pode indicar outro suplente."
+      },
+      "answer": "C",
+      "answerText": "Sem cartão, se não retardar excessivamente o recomeço para além dos dez segundos. Sai na mesma. O suplente só entra na primeira paragem depois de um minuto, e a substituição não se anula.",
+      "explanation": "Passar os dez segundos não é, por si, o segundo amarelo que a lista antiga dava por demorar a sair. O jogador sai na mesma e só é advertido se retardar excessivamente o recomeço para além desse prazo (^l3-5-15). A substituição não se anula (^l3-5-18) e o suplente espera a primeira paragem após um minuto (^l3-5-19).",
+      "lawRefs": [
+        "l3-5-15",
+        "l3-5-19",
+        "l3-5-18"
+      ],
+      "evidence": "só é advertido se retardar excessivamente o recomeço para além dos dez segundos"
+    },
+    {
+      "id": "cen-044",
+      "number": 44,
+      "question": "Minuto 89, bola em jogo. O avançado está isolado, com a baliza à frente. O defesa agarra-o e anula essa ocasião clara. O árbitro deixa seguir. Na sequência dessa vantagem, a equipa atacante marca.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo e mostra cartão amarelo ao defesa na celebração.",
+        "B": "Anula o golo e expulsa o defesa por anular a ocasião clara.",
+        "C": "Valida o golo e expulsa o defesa na paragem.",
+        "D": "Valida o golo e não aplica sanção disciplinar ao defesa."
+      },
+      "answer": "D",
+      "answerText": "Valida o golo e não aplica sanção disciplinar ao defesa.",
+      "explanation": "A vantagem numa infração que anulou uma clara oportunidade de golo levaria, em regra, a advertência quando a bola parasse. Se a equipa não infratora marca em consequência dessa vantagem, a chamada de 2026/27 não aplica qualquer sanção disciplinar (^l12-4-7). O golo mantém-se e o cartão cai.",
+      "lawRefs": [
+        "l12-4-7"
+      ],
+      "evidence": "não é aplicada qualquer sanção disciplinar"
+    },
+    {
+      "id": "cen-045",
+      "number": 45,
+      "question": "Minuto 20, bola em jogo. Um médio torce o pé sozinho, sem falta de adversário. O árbitro para o jogo e o médico avalia-o e trata-o no terreno, depressa. Não há hemorragia. O jogador diz que pode continuar.\nQual a decisão correta?",
+      "options": {
+        "A": "O jogador abandona o terreno e só pode regressar um minuto depois do recomeço.",
+        "B": "Pode ficar, porque a avaliação acabou depressa e não houve falta.",
+        "C": "Pode ficar, porque dois jogadores da mesma equipa não chocaram.",
+        "D": "Expulsão por simular, e livre indireto contra a sua equipa."
+      },
+      "answer": "A",
+      "answerText": "O jogador abandona o terreno e só pode regressar um minuto depois do recomeço.",
+      "explanation": "Quando a lesão faz parar o jogo ou atrasa o recomeço, o jogador não é tratado para continuar em campo: sai e só volta um minuto depois do recomeço (^l5-3-14). Acabar a avaliação depressa deixou de o dispensar. A exceção do tratamento no terreno é outra: a falta física com cartão, não este lance sem falta.",
+      "lawRefs": [
+        "l5-3-14"
+      ],
+      "evidence": "só pode regressar um minuto após o recomeço do jogo"
+    },
+    {
+      "id": "cen-046",
+      "number": 46,
+      "question": "Minuto 55, lançamento lateral a favor da equipa A. O executante demora sem razão. O árbitro apita e faz a contagem visual de cinco segundos. A bola não é lançada até ao fim da contagem. O jogador não insiste em atrasar depois disso.\nQual a decisão correta?",
+      "options": {
+        "A": "Cartão amarelo e o lançamento mantém-se para a equipa A.",
+        "B": "Lançamento lateral para a equipa adversária, sem cartão.",
+        "C": "Pontapé livre indireto contra a equipa A e cartão amarelo.",
+        "D": "Bola ao solo no local onde a bola saiu."
+      },
+      "answer": "B",
+      "answerText": "Lançamento lateral para a equipa adversária, sem cartão.",
+      "explanation": "Se a equipa atrasa o seu lateral, a contagem de cinco segundos acaba por dar o lançamento aos adversários (^l15-2-6). O cartão só entra se o jogador continuar a retardar excessivamente o recomeço depois de o lateral ter mudado de equipa. Não se marca livre nem se faz bola ao solo.",
+      "lawRefs": [
+        "l15-2-6",
+        "l15-0-1"
+      ],
+      "evidence": "se o lançamento lateral não tiver sido executado até ao final dos cinco segundos, é atribuído à equipa adversária"
+    },
+    {
+      "id": "cen-047",
+      "number": 47,
+      "question": "Minuto 12, pontapé de baliza para a equipa A. O guarda-redes segura a bola e não a põe em jogo. O árbitro inicia a contagem visual de cinco segundos. O pontapé não é executado até ao fim. O guarda-redes larga a bola assim que o árbitro indica o outro recomeço.\nQual a decisão correta?",
+      "options": {
+        "A": "Cartão amarelo ao guarda-redes e o pontapé de baliza mantém-se.",
+        "B": "Livre indireto contra a equipa A, dentro da área.",
+        "C": "Pontapé de canto para a equipa adversária, sem cartão.",
+        "D": "Bola ao solo para o guarda-redes, dentro da área."
+      },
+      "answer": "C",
+      "answerText": "Pontapé de canto para a equipa adversária, sem cartão.",
+      "explanation": "Atraso do pontapé de baliza: ao fim dos cinco segundos é canto para os adversários (^l16-2-7). A chamada do canto confirma esse fundamento (^l17-0-1). O amarelo fica para quem, depois do canto atribuído, ainda retardar excessivamente o recomeço. Largar a bola nesse momento não é esse atraso.",
+      "lawRefs": [
+        "l16-2-7",
+        "l17-0-1"
+      ],
+      "evidence": "é atribuído um pontapé de canto à equipa adversária"
+    },
+    {
+      "id": "cen-048",
+      "number": 48,
+      "question": "Minuto 77, penálti. No momento do pontapé, o guarda-redes tem os dois pés à frente da linha e o executante comete, ao mesmo tempo, uma infração que não é das mais graves (não simula o remate depois da corrida, não chuta para trás, não é o executante errado). A bola entra na baliza.\nQual a decisão correta?",
+      "options": {
+        "A": "Valida o golo.",
+        "B": "Pontapé livre indireto para a defesa e cartão amarelo ao executante.",
+        "C": "Cartão vermelho ao guarda-redes e golo validado.",
+        "D": "Manda repetir o penálti."
+      },
+      "answer": "D",
+      "answerText": "Manda repetir o penálti.",
+      "explanation": "A regra antiga, livre indireto e advertência ao executante quando os dois infringiam ao mesmo tempo, foi eliminada. Passa a valer a regra geral: o penálti é repetido, salvo se o executante cometer uma infração mais grave (^l14-2-24). Neste lance a infração do executante não é dessas, e o golo não se valida.",
+      "lawRefs": [
+        "l14-2-24"
+      ],
+      "evidence": "o pontapé é repetido, salvo se o executante cometer uma infração mais grave."
+    }
+  ]
+}

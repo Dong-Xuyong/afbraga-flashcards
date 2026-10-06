@@ -1,18 +1,20 @@
-# AF Braga Flashcards
+# AF Braga — Leis, flashcards e exame
 
-Aplicação web de flashcards estilo Anki para preparação dos exames de árbitro da AF Braga.
+Aplicação web (JavaScript simples, sem build) para estudar as Leis do Jogo e as Normas da AF Braga: sessão diária, flashcards com repetição espaçada, simulação de exame, leitor das leis e wiki.
 
-## Baralhos
+## Separadores
 
-| Ficheiro | Baralho |
-|----------|---------|
-| `data/c5-versao-a.json` | C5 Versão A |
-| `data/c6-versao-a.json` | C6 Versão A |
-| `data/cf.json` | CF |
+| Rota | Separador |
+|------|-----------|
+| `#/hoje` | **Hoje** — 10 perguntas por dia, série e mapa das leis 1–17 |
+| `#/flashcards` | **Flashcards** — repetição espaçada |
+| `#/exame` | **Exame** — cotação oficial: certa **+5**, em branco **0**, errada **−2** |
+| `#/leis`, `#/leis/<id>`, `#/leis/page/<slug>` | **Leis** — pesquisa, índice e leitor |
+| `#/wiki`, `#/wiki/<slug>` | **Wiki** — conceitos, fontes e marcadores |
 
-O índice `data/index.json` lista os três baralhos (20 cartas cada).
+No telemóvel a barra fica em baixo; no ecrã largo, em cima. A rota inicial é `#/hoje`.
 
-## Site online (telemóvel)
+## Site online
 
 **https://dong-xuyong.github.io/afbraga-flashcards/**
 
@@ -20,61 +22,55 @@ Repo público: https://github.com/Dong-Xuyong/afbraga-flashcards
 
 No telemóvel: abre o link no browser; no iPhone podes usar Partilhar → Adicionar ao Ecrã Principal.
 
-### Modos
+## Dados
 
-- **Flashcards** — repetição espaçada (Anki-like)
-- **Exame** — simulação do teste escrito com cotação oficial: certa **+5**, em branco **0**, errada **−2** (máx. 100 pts)
+| Ficheiro | Conteúdo |
+|----------|----------|
+| `data/index.json` | Baralhos (`kind`: `exam`, `scenario`, `changes`) |
+| `data/c5-versao-a.json` | C5 Versão A |
+| `data/c6-versao-a.json` | C6 Versão A |
+| `data/cf.json` | CF |
+| `data/laws.json` | Blocos das leis e normas (gerado) |
+| `data/wiki.json` | Páginas da wiki em HTML (gerado) |
+| `data/cenarios.json` | Cenários, se existirem na wiki |
+| `data/alteracoes-2627.json` | Cartas das alterações 26/27, se existirem |
+
+Os PDF ficam em `pdfs/` e abrem em `pdfs/<ficheiro>#page=N`.
+
+Progresso no browser (`localStorage`):
+
+- `afbraga-srs-<deckId>` — repetição espaçada de cada baralho
+- `afbraga-daily` — perguntas e respostas do dia (`date`, `ids`, `answers`)
+- `afbraga-stats` — acertos por lei e série (`byLaw`, `streak`)
+- `afbraga-notes` — marcadores e notas por bloco
 
 ## Como abrir localmente
 
-O browser bloqueia `fetch()` em ficheiros abertos directamente (`file://`). Use um servidor local simples:
-
-### Python (recomendado)
+O browser bloqueia `fetch()` em `file://`. Usa um servidor local:
 
 ```bash
 cd "docs/afbraga-flashcards"
 python -m http.server 8080
 ```
 
-Depois abra: **http://localhost:8080**
+Abre **http://localhost:8080**.
 
-### Node.js (npx)
+## Reconstruir e sincronizar
+
+Na raiz do repositório Second Brain:
 
 ```bash
-cd "docs/afbraga-flashcards"
-npx serve -p 8080
+python scripts/build_referee_data.py
+python scripts/sync_afbraga_flashcards.py --dry-run
+python scripts/sync_afbraga_flashcards.py
 ```
 
-### VS Code / Cursor
+`build_referee_data.py` lê `referee-wiki/wiki` e escreve `docs/afbraga-flashcards/data`. O sync corre o build, copia a app para `Dong-Xuyong/afbraga-flashcards` e faz push. `--dry-run` mostra o diff e não faz commit nem push.
 
-Extensão **Live Server** → clicar com o botão direito em `index.html` → *Open with Live Server*.
+Testes da lógica (sem browser):
 
-## Funcionalidades
-
-- **Início** — escolher baralho (C5 Versão A, C6 Versão A, CF) com contagem de cartas e cartas por rever
-- **Estudar** — pergunta na frente; clique/toque ou **Espaço** para virar
-- **Verso** — resposta correcta destacada; todas as opções listadas
-- **Avaliar** — Novamente / Difícil / Bom / Fácil (teclas **1–4**)
-- **Repetição espaçada** — fila por baralho guardada em `localStorage`
-- **Progresso** — cartas restantes e revistas hoje
-
-## Formato dos dados
-
-```json
-{
-  "deckId": "c5-versao-a",
-  "title": "C5 Versão A",
-  "cards": [
-    {
-      "id": "c5a-001",
-      "number": 1,
-      "question": "Pergunta...",
-      "options": { "A": "...", "B": "...", "C": "...", "D": "..." },
-      "answer": "B",
-      "answerText": "Texto da resposta correcta"
-    }
-  ]
-}
+```bash
+node scripts/test_afbraga_core.js
 ```
 
 ## Estrutura
@@ -83,11 +79,10 @@ Extensão **Live Server** → clicar com o botão direito em `index.html` → *O
 docs/afbraga-flashcards/
 ├── index.html
 ├── styles.css
+├── core.js
 ├── app.js
 ├── README.md
+├── dong-ui/
+├── pdfs/
 └── data/
-    ├── index.json
-    ├── c5-versao-a.json
-    ├── c6-versao-a.json
-    └── cf.json
 ```

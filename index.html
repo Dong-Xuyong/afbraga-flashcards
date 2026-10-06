@@ -1,50 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <meta name="color-scheme" content="light dark">
-  <title>AF Braga — Flashcards & Exame</title>
+  <title>AF Braga — Hoje</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="dong-ui/theme.js"></script>
-  <link rel="stylesheet" href="dong-ui/theme.css?v=4">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="dong-ui/theme.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#view-root">Saltar para o conteúdo</a>
   <div id="app">
-    <header id="topbar">
-      <h1 id="topbar-title">AF Braga</h1>
-      <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
-    </header>
+    <div class="app-chrome">
+      <header id="topbar">
+        <h1 id="topbar-title">AF Braga</h1>
+        <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
+      </header>
+      <nav id="app-nav" role="tablist" aria-label="Secções">
+        <a role="tab" href="#/hoje" data-tab="hoje" aria-selected="true">Hoje</a>
+        <a role="tab" href="#/flashcards" data-tab="flashcards" aria-selected="false">Flashcards</a>
+        <a role="tab" href="#/exame" data-tab="exame" aria-selected="false">Exame</a>
+        <a role="tab" href="#/leis" data-tab="leis" aria-selected="false">Leis</a>
+        <a role="tab" href="#/wiki" data-tab="wiki" aria-selected="false">Wiki</a>
+      </nav>
+    </div>
 
     <main id="view-root" tabindex="-1">
-      <!-- Home -->
-      <section class="view view--home" id="view-home">
+      <section class="view view--hoje" id="view-hoje">
+        <div class="learning-hero">
+          <span class="eyebrow">Hoje</span>
+          <h2 id="hoje-streak">🔥 0 dias</h2>
+          <p class="hero-sub" id="hoje-progress" aria-live="polite">0 de 10</p>
+          <div class="progress-bar progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="hoje-progress-bar">
+            <div class="progress-fill" id="hoje-progress-fill"></div>
+          </div>
+        </div>
+        <div id="law-heatmap" class="law-heatmap" aria-label="Precisão por lei"></div>
+        <div id="hoje-stage"></div>
+      </section>
+
+      <section class="view view--home hidden" id="view-home">
         <div class="learning-hero">
           <span class="eyebrow">AF Braga</span>
-          <h2>Árbitros</h2>
-          <p class="hero-sub">Flashcards e simulação de exame</p>
+          <h2 id="home-title">Flashcards</h2>
+          <p class="hero-sub" id="mode-hint">Repetição espaçada para estudar carta a carta.</p>
         </div>
-        <div id="tab-toggle" role="tablist" aria-label="Modo">
-          <button id="tab-flashcards" class="seg active" type="button" data-mode="study" role="tab" aria-selected="true">
-            Flashcards
-          </button>
-          <button id="tab-exam" class="seg" type="button" data-mode="exam" role="tab" aria-selected="false" tabindex="-1">
-            Exame
-          </button>
-        </div>
-        <p class="mode-hint" id="mode-hint">
-          Repetição espaçada para estudar carta a carta.
-        </p>
         <div class="home-section">
           <div class="section-heading">
             <h2 class="section-label" id="home-section-label">Escolher baralho</h2>
           </div>
           <div class="deck-grid" id="deck-grid"></div>
+        </div>
+        <div class="home-section hidden" id="extra-deck-section">
+          <div class="section-heading">
+            <h2 class="section-label">Cenários e alterações</h2>
+          </div>
+          <div class="deck-grid" id="deck-grid-extra"></div>
         </div>
         <p class="exam-rules-note" id="exam-rules-note" hidden>
           Cotação oficial: certa <strong>+5</strong> · em branco <strong>0</strong> · errada <strong>−2</strong>
@@ -52,7 +68,6 @@
         </p>
       </section>
 
-      <!-- Study mode -->
       <section class="view view--study hidden" id="view-study">
         <div class="study-top">
           <button class="btn-ghost text-action" id="btn-back" type="button" aria-label="Voltar aos baralhos">
@@ -77,6 +92,7 @@
             <div class="flashcard-inner" id="flashcard-inner">
               <div class="flashcard-face flashcard-front">
                 <span class="card-number" id="card-number"></span>
+                <span class="change-chip hidden" id="card-change-chip">Alterado 26/27</span>
                 <p class="card-question" id="card-question"></p>
                 <ul class="options-list options-list--front" id="options-list-front"></ul>
                 <p class="flip-hint">
@@ -85,11 +101,13 @@
               </div>
               <div class="flashcard-face flashcard-back">
                 <span class="card-number" id="card-number-back"></span>
+                <span class="change-chip hidden" id="card-change-chip-back">Alterado 26/27</span>
                 <div class="answer-reveal">
                   <span class="answer-letter" id="answer-letter"></span>
                   <p class="answer-text" id="answer-text"></p>
                 </div>
                 <ul class="options-list" id="options-list"></ul>
+                <div class="card-aside" id="card-aside"></div>
               </div>
             </div>
           </div>
@@ -127,7 +145,6 @@
         </div>
       </section>
 
-      <!-- Exam mode -->
       <section class="view view--exam hidden" id="view-exam">
         <div class="study-top">
           <button class="btn-ghost text-action" id="btn-exam-back" type="button" aria-label="Sair do exame">
@@ -149,6 +166,7 @@
 
         <div class="exam-sheet" id="exam-sheet">
           <span class="card-number" id="exam-q-number">Pergunta 1</span>
+          <span class="change-chip hidden" id="exam-change-chip">Alterado 26/27</span>
           <p class="card-question" id="exam-question"></p>
           <div class="exam-options" id="exam-options" role="radiogroup" aria-label="Opções de resposta"></div>
           <div class="exam-nav">
@@ -183,6 +201,76 @@
           </div>
         </div>
       </section>
+
+      <section class="view view--leis hidden" id="view-leis">
+        <div class="learning-hero">
+          <span class="eyebrow">Leis</span>
+          <h2>Pesquisar</h2>
+          <p class="hero-sub">Leis do Jogo 2025/26 + Alterações 2026/27 · Normas 2018</p>
+        </div>
+        <form class="leis-filters" role="search" id="leis-form">
+          <label class="field">
+            <span class="field-label">Pesquisar</span>
+            <input id="leis-query" type="search" placeholder="Ex.: falta, penálti, fora de jogo" autocomplete="off" enterkeyhint="search">
+          </label>
+          <div class="filter-row">
+            <label class="field">
+              <span class="field-label">Documento</span>
+              <select id="leis-doc">
+                <option value="">Todos</option>
+                <option value="leis-2526">Leis 2025/26</option>
+                <option value="normas-2018">Normas 2018</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="field-label">Lei</span>
+              <select id="leis-law">
+                <option value="">Todas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+              </select>
+            </label>
+            <button type="button" id="leis-changed" class="chip-toggle" aria-pressed="false">Só alterações 26/27</button>
+          </div>
+        </form>
+        <div id="leis-results" aria-live="polite"></div>
+      </section>
+
+      <section class="view view--reader hidden" id="view-reader">
+        <button class="btn-ghost text-action" id="btn-reader-back" type="button">Leis</button>
+        <p class="eyebrow" id="reader-kicker"></p>
+        <h2 id="reader-title"></h2>
+        <div id="reader-body"></div>
+      </section>
+
+      <section class="view view--wiki hidden" id="view-wiki">
+        <div class="learning-hero">
+          <span class="eyebrow">Wiki</span>
+          <h2>Notas</h2>
+          <p class="hero-sub">Conceitos, fontes e os teus marcadores</p>
+        </div>
+        <div id="wiki-list"></div>
+      </section>
+
+      <section class="view view--wiki-page hidden" id="view-wiki-page">
+        <button class="btn-ghost text-action" id="btn-wiki-back" type="button">Wiki</button>
+        <article id="wiki-article" class="wiki-body"></article>
+      </section>
     </main>
 
     <footer class="footer">
@@ -190,6 +278,7 @@
     </footer>
   </div>
 
-  <script src="app.js?v=4"></script>
+  <script src="core.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

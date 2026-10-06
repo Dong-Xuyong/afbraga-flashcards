@@ -16,7 +16,11 @@
         "D": "Pontapé de canto para a equipa atacante."
       },
       "answer": "A",
-      "answerText": "Bola ao solo para o guarda-redes da equipa defensora."
+      "answerText": "Bola ao solo para o guarda-redes da equipa defensora.",
+      "lawRefs": [
+        "l8-2-2"
+      ],
+      "explanation": "A bola estava dentro da área de penálti e o árbitro parou o jogo sem falta. Nesse caso a bola ao solo é para o guarda-redes da equipa defensora, na sua área. Não há canto, livre indireto nem bola ao solo para o ataque."
     },
     {
       "id": "c5-a-02",
@@ -29,7 +33,12 @@
         "D": "O jogador só pode ser advertido verbalmente."
       },
       "answer": "C",
-      "answerText": "O jogador infrator não pode ser advertido ou exibido um cartão amarelo, pois a infração ocorreu antes do árbitro entrar no campo. O incidente é relatado."
+      "answerText": "O jogador infrator não pode ser advertido ou exibido um cartão amarelo, pois a infração ocorreu antes do árbitro entrar no campo. O incidente é relatado.",
+      "lawRefs": [
+        "l12-4-2",
+        "l5-3-10"
+      ],
+      "explanation": "Antes de o árbitro entrar para o começo do jogo, uma infração só de advertência não dá cartão amarelo: é relatada. Impedir o jogador de participar reserva-se à infração de expulsão. Os cartões passam a poder ser exibidos quando o árbitro entra para o começo do jogo, pelo que a opção de advertir já no aquecimento não cabe."
     },
     {
       "id": "c5-a-03",
@@ -42,7 +51,11 @@
         "D": "Bola ao solo."
       },
       "answer": "A",
-      "answerText": "Pontapé-livre direto (ou penálti) no local da interferência."
+      "answerText": "Pontapé-livre direto (ou penálti) no local da interferência.",
+      "lawRefs": [
+        "l12-5-13"
+      ],
+      "explanation": "Um jogador substituído que pontapeia um objeto para dentro do terreno, e esse objeto interfere com um adversário, faz recomeçar com livre direto ou penálti no local da interferência. Não é bola ao solo nem livre indireto."
     },
     {
       "id": "c5-a-04",
@@ -55,7 +68,13 @@
         "D": "Que será no lado do terreno de jogo mais próximo da posição do guarda -redes e sem sanção disciplinar em qualquer circunstância."
       },
       "answer": "A",
-      "answerText": "Que será no lado do terreno de jogo mais próximo da posição do guarda-redes quando foi penalizado. Não há lugar a sanção disciplinar, exceto se o guarda-redes cometer a infração de forma persistente."
+      "answerText": "Que será no lado do terreno de jogo mais próximo da posição do guarda-redes quando foi penalizado. Não há lugar a sanção disciplinar, exceto se o guarda-redes cometer a infração de forma persistente.",
+      "lawRefs": [
+        "l17-1-1",
+        "l12-3-1",
+        "l12-4-15"
+      ],
+      "explanation": "Mais de oito segundos com a bola controlada nas mãos, dentro da área, dá canto. A bola coloca-se na área de canto mais próxima da posição do guarda-redes quando foi penalizado. Esse ato, isolado, não está na lista de advertências. A persistência em infringir as Leis é que pode levar a cartão, e é isso que distingue a opção A das que recusam cartão em qualquer caso ou o impõem sempre."
     },
     {
       "id": "c5-a-05",
@@ -68,7 +87,12 @@
         "D": "O defensor lesionado nunca conta para fora-de-jogo."
       },
       "answer": "B",
-      "answerText": "Se houver dois adversários mais próximos da linha de baliza, o golo é válido."
+      "answerText": "Se houver dois adversários mais próximos da linha de baliza, o golo é válido.",
+      "lawRefs": [
+        "l11-1-4",
+        "l11-1-8"
+      ],
+      "explanation": "Há posição de fora de jogo só se o atacante estiver mais perto da linha de baliza adversária do que a bola e do que o penúltimo adversário. Dois adversários mais próximos dessa linha tiram a posição de fora de jogo, pelo que o golo pode ser válido. Um defensor lesionado que continua em campo conta como adversário."
     },
     {
       "id": "c5-a-06",
@@ -81,7 +105,13 @@
         "D": "Pontapé-livre indireto."
       },
       "answer": "A",
-      "answerText": "Interrompe o jogo e recomeça com bola ao solo para a equipa que teria posse."
+      "answerText": "Interrompe o jogo e recomeça com bola ao solo para a equipa que teria posse.",
+      "lawRefs": [
+        "l8-2-3",
+        "l2-2-2",
+        "l2-2-3"
+      ],
+      "explanation": "Bola que fica defeituosa durante um passe obriga a parar o jogo e a recomeçar com bola ao solo. Fora da área, essa bola ao solo é para a equipa que teria mantido ou ganho a posse, quando o árbitro o consegue determinar."
     },
     {
       "id": "c5-a-07",
@@ -94,7 +124,13 @@
         "D": "Bola ao solo."
       },
       "answer": "A",
-      "answerText": "Pontapé-livre direto se houve interferência ou indireto no local da bola."
+      "answerText": "Pontapé-livre direto se houve interferência ou indireto no local da bola.",
+      "lawRefs": [
+        "l3-8-5",
+        "l3-8-6",
+        "l3-8-3"
+      ],
+      "explanation": "Entrar sem autorização é advertência. Se o árbitro para o jogo e houve interferência, o recomeço é livre direto no local dessa interferência. Se não houve interferência, é livre indireto no local onde a bola estava."
     },
     {
       "id": "c5-a-08",
@@ -107,7 +143,11 @@
         "D": "O árbitro terá sempre de advertir um deles."
       },
       "answer": "A",
-      "answerText": "Ambos podem ser tratados e não precisam sair."
+      "answerText": "Ambos podem ser tratados e não precisam sair.",
+      "lawRefs": [
+        "l5-3-17"
+      ],
+      "explanation": "Dois jogadores da mesma equipa que colidem e precisam de cuidados continuam a ser uma exceção à saída do terreno. Os dois podem ser tratados em campo e não têm de abandonar o jogo por esse facto. A chamada de 2026/27 reescreve o regime geral das lesões e mantém esta colisão entre as exceções."
     },
     {
       "id": "c5-a-09",
@@ -120,7 +160,11 @@
         "D": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado do ponto da linha limite onde o jogador deixou o terreno de jogo."
       },
       "answer": "D",
-      "answerText": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado do ponto da linha limite onde o jogador deixou o terreno de jogo."
+      "answerText": "O jogo recomeça com uma bola ao solo exceto se for assinalado um livre indireto por abandonar o terreno de jogo sem autorização do árbitro; o pontapé livre indireto é executado do ponto da linha limite onde o jogador deixou o terreno de jogo.",
+      "lawRefs": [
+        "l12-5-6"
+      ],
+      "explanation": "Infração de um jogador contra um elemento estranho recomeça com bola ao solo. A exceção é o livre indireto por sair do terreno sem autorização, executado no ponto da linha limite por onde o jogador saiu, e não junto da ocorrência nem no local da bola."
     },
     {
       "id": "c5-a-10",
@@ -133,7 +177,13 @@
         "D": "O árbitro não permite efetuar a substituição e o jogo continua."
       },
       "answer": "A",
-      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído – a substituição não é consumada."
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído – a substituição não é consumada.",
+      "lawRefs": [
+        "l3-5-15",
+        "l3-5-19",
+        "l12-4-50"
+      ],
+      "explanation": "Chave oficial: A — Demorar a sair na substituição estava escrito como advertência por retardar o recomeço. Com um amarelo anterior, seguem-se o segundo amarelo e o vermelho. Expulso depois do início, o jogador não pode ser substituído e a substituição não se consuma, porque o suplente não chegou a entrar.\n\n⚠️ Leis 2026/27: esse ponto foi eliminado da lista. Se o substituído não sai em dez segundos, sai na mesma e só é advertido se retardar excessivamente o recomeço para além desse prazo. A substituição não se anula e o suplente só entra na primeira paragem depois de decorrido um minuto."
     },
     {
       "id": "c5-a-11",
@@ -146,7 +196,12 @@
         "D": "Assinala pontapé de baliza."
       },
       "answer": "C",
-      "answerText": "O pontapé é repetido porque o segundo toque foi acidental e ocorreu imediatamente após o primeiro toque."
+      "answerText": "O pontapé é repetido porque o segundo toque foi acidental e ocorreu imediatamente após o primeiro toque.",
+      "lawRefs": [
+        "l14-2-34",
+        "l14-2-33"
+      ],
+      "explanation": "Se a bola toca no pé ou na perna de apoio logo a seguir ao pontapé e entra diretamente na baliza, o penálti é repetido. Não se valida o golo. O livre indireto ficaria para o duplo toque acidental que não entra."
     },
     {
       "id": "c5-a-12",
@@ -159,7 +214,11 @@
         "D": "Todas as hipóteses estão totalmente erradas."
       },
       "answer": "B",
-      "answerText": "Conceder um pontapé-livre indireto à equipa adversária, não havendo lugar a qualquer sanção disciplinar. Contudo, se a infração consiste em jogar a bola uma 2.ª vez (utilizando ou não, a mão/braço) depois desta estar em jogo e antes que seja tocada por outro jogador, o guarda-redes será sancionado em conformidade se com esta ação interrompe um ataque prometedor ou se evita um golo/clara oportunidade de golo da equipa adversária."
+      "answerText": "Conceder um pontapé-livre indireto à equipa adversária, não havendo lugar a qualquer sanção disciplinar. Contudo, se a infração consiste em jogar a bola uma 2.ª vez (utilizando ou não, a mão/braço) depois desta estar em jogo e antes que seja tocada por outro jogador, o guarda-redes será sancionado em conformidade se com esta ação interrompe um ataque prometedor ou se evita um golo/clara oportunidade de golo da equipa adversária.",
+      "lawRefs": [
+        "l12-1-28"
+      ],
+      "explanation": "Mão ilegal do guarda-redes dentro da sua área dá livre indireto e, por regra, não dá cartão. Há sanção disciplinar quando a infração é jogar a bola uma segunda vez, depois de um recomeço e antes de outro jogador lhe tocar, e isso corta um ataque prometedor ou evita um golo ou uma clara oportunidade de golo."
     },
     {
       "id": "c5-a-13",
@@ -172,7 +231,11 @@
         "D": "Assinalar pontapé livre indireto."
       },
       "answer": "B",
-      "answerText": "As hipóteses A) e C) podem estar corretas."
+      "answerText": "As hipóteses A) e C) podem estar corretas.",
+      "lawRefs": [
+        "l12-4-9"
+      ],
+      "explanation": "A chave oficial admite que o penálti e o livre direto podem ambos estar certos, conforme se localize o agarrão.\n\nNota: l12-4-9 manda conceder penálti quando o defesa começa a agarrar fora da área e prossegue a ação para dentro. O texto não deixa o livre direto em alternativa."
     },
     {
       "id": "c5-a-14",
@@ -185,7 +248,12 @@
         "D": "Interrompia o jogo, assinalava pontapé livre direto e advertia o jogador infrator por comportamento antidesportivo."
       },
       "answer": "A",
-      "answerText": "Interrompia o jogo, assinalava pontapé de penálti e advertia o infrator por comportamento antidesportivo."
+      "answerText": "Interrompia o jogo, assinalava pontapé de penálti e advertia o infrator por comportamento antidesportivo.",
+      "lawRefs": [
+        "l12-4-34",
+        "l12-4-65"
+      ],
+      "explanation": "O penálti já tinha sido executado, a bola estava em jogo e o defesa rasteirou o atacante, que tinha só o guarda-redes pela frente, na tentativa de jogar a bola. Anular essa clara oportunidade dentro da área, na tentativa de jogar a bola, com penálti assinalado, é advertência por comportamento antidesportivo, não expulsão."
     },
     {
       "id": "c5-a-15",
@@ -198,7 +266,12 @@
         "D": "Neste cado não deve o árbitro tomar qualquer decisão."
       },
       "answer": "A",
-      "answerText": "Advertido."
+      "answerText": "Advertido.",
+      "lawRefs": [
+        "l12-4-67",
+        "l12-4-66"
+      ],
+      "explanation": "Mão deliberada que impede um golo ou anula uma clara oportunidade é expulsão, em qualquer lugar, salvo o guarda-redes na sua área. Mão não deliberada, quando o árbitro assinala penálti, é só advertência."
     },
     {
       "id": "c5-a-16",
@@ -211,7 +284,11 @@
         "D": "Só na baliza do adversário do executante."
       },
       "answer": "D",
-      "answerText": "Só na baliza do adversário do executante."
+      "answerText": "Só na baliza do adversário do executante.",
+      "lawRefs": [
+        "l17-0-2"
+      ],
+      "explanation": "Do pontapé de canto pode marcar-se golo diretamente, mas só na baliza adversária. Se a bola entra diretamente na baliza de quem executa, o recomeço é outro canto, para a equipa adversária."
     },
     {
       "id": "c5-a-17",
@@ -224,7 +301,13 @@
         "D": "As alíneas a) e b) estão corretas."
       },
       "answer": "D",
-      "answerText": "As alíneas a) e b) estão corretas."
+      "answerText": "As alíneas a) e b) estão corretas.",
+      "lawRefs": [
+        "l9-1-5",
+        "l9-1-6",
+        "l9-1-7"
+      ],
+      "explanation": "A bola que toca num elemento da equipa de arbitragem e fica em campo só sai de jogo em três casos: ataque prometedor, entrada direta numa baliza, ou mudança da equipa que tinha a posse. As opções A e B cobrem esses casos, por isso estão as duas certas."
     },
     {
       "id": "c5-a-18",
@@ -237,7 +320,11 @@
         "D": "Efetuar uma bola ao solo."
       },
       "answer": "C",
-      "answerText": "Deixar prosseguir o jogo se nenhuma infração tiver lugar."
+      "answerText": "Deixar prosseguir o jogo se nenhuma infração tiver lugar.",
+      "lawRefs": [
+        "l8-1-13"
+      ],
+      "explanation": "A chave oficial deixa o jogo seguir se não houver outra infração. Essa leitura cabe se «colega executante» for um colega distinto de quem pontapeou: a proibição de jogar a bola de novo, antes de outro jogador lhe tocar, é só do executante.\n\nNota: se a frase designar o próprio executante, l8-1-13 impõe livre indireto, ou livre direto no caso de mão na bola, que é a opção A."
     },
     {
       "id": "c5-a-19",
@@ -250,7 +337,12 @@
         "D": "Lançamento de linha lateral."
       },
       "answer": "D",
-      "answerText": "Lançamento de linha lateral."
+      "answerText": "Lançamento de linha lateral.",
+      "lawRefs": [
+        "l12-5-1",
+        "l9-1-2"
+      ],
+      "explanation": "A bola foi chutada para lá da linha lateral, pelo que saiu de jogo. Com a bola já fora de jogo, a infração não muda o recomeço: mantém-se o lançamento lateral. A tentativa de atingir o espetador pode ser sancionada à parte, mas não transforma o recomeço em livre ou em bola ao solo."
     },
     {
       "id": "c5-a-20",
@@ -263,7 +355,13 @@
         "D": "Todas as situações referidas anteriormente estão corretas."
       },
       "answer": "D",
-      "answerText": "Todas as situações referidas anteriormente estão corretas."
+      "answerText": "Todas as situações referidas anteriormente estão corretas.",
+      "lawRefs": [
+        "x-diretrizes-praticas-121",
+        "x-diretrizes-praticas-122",
+        "x-diretrizes-praticas-123"
+      ],
+      "explanation": "Em cantos e livres, o árbitro avisa quem agarra um adversário antes de a bola estar em jogo, adverte se o agarrão continua antes de a bola entrar em jogo, e, depois de a bola estar em jogo, assinala livre direto ou penálti e adverte. As três condutas estão previstas, por isso a resposta é todas."
     }
   ]
 }

@@ -16,7 +16,13 @@
         "D": "O árbitro exibe ao jogador o cartão vermelho. O jogador é expulso e pode ser substituído."
       },
       "answer": "A",
-      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada."
+      "answerText": "O árbitro exibe ao jogador um segundo cartão amarelo e um cartão vermelho. O jogador é expulso e não pode ser substituído - a substituição não é consumada.",
+      "lawRefs": [
+        "l3-5-15",
+        "l3-5-19",
+        "l12-4-50"
+      ],
+      "explanation": "Chave oficial: A — Demorar a sair na substituição estava escrito como advertência por retardar o recomeço. Com um amarelo anterior, seguem-se o segundo amarelo e o vermelho. Expulso depois do início, o jogador não pode ser substituído e a substituição não se consuma, porque o suplente não chegou a entrar.\n\n⚠️ Leis 2026/27: esse ponto foi eliminado da lista. Se o substituído não sai em dez segundos, sai na mesma e só é advertido se retardar excessivamente o recomeço para além desse prazo. A substituição não se anula e o suplente só entra na primeira paragem depois de decorrido um minuto."
     },
     {
       "id": "cf-02",
@@ -29,7 +35,11 @@
         "D": "Assinalar pontapé-livre indireto e solicitar nova bola."
       },
       "answer": "B",
-      "answerText": "Mandar repetir o pontapé de penalti."
+      "answerText": "Mandar repetir o pontapé de penalti.",
+      "lawRefs": [
+        "l2-2-5"
+      ],
+      "explanation": "Se a bola se deforma no penálti, depois de pontapeada para a frente e antes de tocar num jogador ou na barra ou nos postes, o penálti é repetido. Não se faz bola ao solo."
     },
     {
       "id": "cf-03",
@@ -42,7 +52,11 @@
         "D": "Só recomeça depois de normalizada a substituição."
       },
       "answer": "C",
-      "answerText": "Dá continuidade ao jogo."
+      "answerText": "Dá continuidade ao jogo.",
+      "lawRefs": [
+        "l3-3-8"
+      ],
+      "explanation": "Se o jogador que ia ser substituído se recusa a sair, o jogo continua. O suplente não entra e não há que concluir a substituição à força nem dar o jogo por terminado."
     },
     {
       "id": "cf-04",
@@ -55,7 +69,13 @@
         "D": "Depende, pelo que as hipóteses a) e b) podem ser corretas em face das circunstâncias."
       },
       "answer": "D",
-      "answerText": "Depende, pelo que as hipóteses a) e b) podem ser corretas em face das circunstâncias."
+      "answerText": "Depende, pelo que as hipóteses a) e b) podem ser corretas em face das circunstâncias.",
+      "lawRefs": [
+        "l8-2-10",
+        "l8-2-11",
+        "l8-2-9"
+      ],
+      "explanation": "Bola ao solo que entra na baliza sem tocar em pelo menos dois jogadores não é golo. É pontapé de baliza se entra na baliza adversária e pontapé de canto se entra na própria baliza. As duas hipóteses cabem, conforme a baliza."
     },
     {
       "id": "cf-05",
@@ -68,7 +88,11 @@
         "D": "Concedido um pontapé-livre direto à equipa atacante."
       },
       "answer": "B",
-      "answerText": "Concedido um pontapé-livre indireto à equipa defensora."
+      "answerText": "Concedido um pontapé-livre indireto à equipa defensora.",
+      "lawRefs": [
+        "l13-3-2"
+      ],
+      "explanation": "Atacante a menos de 1 m de uma barreira de três ou mais defesas dá livre indireto à equipa defensora."
     },
     {
       "id": "cf-06",
@@ -81,7 +105,11 @@
         "D": "É concedido um pontapé de baliza."
       },
       "answer": "A",
-      "answerText": "É concedido um pontapé de canto a favor da equipa adversária."
+      "answerText": "É concedido um pontapé de canto a favor da equipa adversária.",
+      "lawRefs": [
+        "l8-1-12"
+      ],
+      "explanation": "Do pontapé de saída pode marcar-se golo diretamente na baliza adversária. Se a bola entra diretamente na baliza de quem executa, o recomeço é canto para a equipa adversária, não pontapé de baliza nem repetição."
     },
     {
       "id": "cf-07",
@@ -94,7 +122,13 @@
         "D": "Nenhuma das respostas está correta."
       },
       "answer": "C",
-      "answerText": "Interrompe o jogo, adverte esse jogador e pune a sua equipa com um pontapé-livre direto ou pontapé de penalti."
+      "answerText": "Interrompe o jogo, adverte esse jogador e pune a sua equipa com um pontapé-livre direto ou pontapé de penalti.",
+      "lawRefs": [
+        "l12-1-11",
+        "l12-1-8",
+        "l12-1-1"
+      ],
+      "explanation": "Rasteirar o adversário é infração de livre direto, ou penálti se for na área de quem a comete. Feita de forma negligente, a lei manda advertir. Ter a bota na mão não muda este recomeço, porque a infração é o contacto com o adversário."
     },
     {
       "id": "cf-08",
@@ -107,7 +141,12 @@
         "D": "Nestas circunstâncias é sempre expulso."
       },
       "answer": "B",
-      "answerText": "Exibir o cartão amarelo mesmo que seja a primeira vez."
+      "answerText": "Exibir o cartão amarelo mesmo que seja a primeira vez.",
+      "lawRefs": [
+        "n2-5-4",
+        "l12-4-12"
+      ],
+      "explanation": "Reclamar por gestos ou palavras a exibição de um cartão ao adversário é advertência logo na primeira vez. Não se fica pelo aviso nem se espera por reincidência, e não é expulsão automática."
     },
     {
       "id": "cf-09",
@@ -120,7 +159,12 @@
         "D": "Sim, só quando o resultado já esteja definido."
       },
       "answer": "A",
-      "answerText": "Sim, desde que o árbitro seja informado antes da alteração ser feita e que a alteração seja feita durante a interrupção do jogo antes da execução do penalti."
+      "answerText": "Sim, desde que o árbitro seja informado antes da alteração ser feita e que a alteração seja feita durante a interrupção do jogo antes da execução do penalti.",
+      "lawRefs": [
+        "l3-4-2",
+        "l3-4-3"
+      ],
+      "explanation": "Qualquer jogador de campo pode trocar com o guarda-redes se o árbitro for informado antes e a troca ocorrer numa paragem. Pode fazê-lo para defender o penálti, sem exigir lesão nem resultado já decidido."
     },
     {
       "id": "cf-10",
@@ -133,7 +177,11 @@
         "D": "Todas as opções estão erradas."
       },
       "answer": "D",
-      "answerText": "Todas as opções estão erradas."
+      "answerText": "Todas as opções estão erradas.",
+      "lawRefs": [
+        "l8-2-5"
+      ],
+      "explanation": "Na bola ao solo, a bola entra em jogo quando toca no solo. Não é quando o árbitro a larga, nem quando a entrega ao guarda-redes, nem quando um jogador lhe toca. As três primeiras opções falham."
     },
     {
       "id": "cf-11",
@@ -146,7 +194,11 @@
         "D": "O suplente pode continuar a jogar, é advertido e o jogo recomeça com um pontapé-livre indireto."
       },
       "answer": "B",
-      "answerText": "O suplente pode continuar a jogar, não é tomada qualquer medida disciplinar e a questão é reportada às autoridades competentes."
+      "answerText": "O suplente pode continuar a jogar, não é tomada qualquer medida disciplinar e a questão é reportada às autoridades competentes.",
+      "lawRefs": [
+        "l3-5-7"
+      ],
+      "explanation": "Substituição no intervalo tem de ficar concluída antes do recomeço. Se o árbitro não foi informado, o suplente continua, não há sanção disciplinar e o facto é reportado às autoridades."
     },
     {
       "id": "cf-12",
@@ -159,7 +211,12 @@
         "D": "Deixa prosseguir o jogo."
       },
       "answer": "D",
-      "answerText": "Deixa prosseguir o jogo."
+      "answerText": "Deixa prosseguir o jogo.",
+      "lawRefs": [
+        "l12-2-11",
+        "l12-2-12"
+      ],
+      "explanation": "O guarda-redes só está proibido de agarrar a bola, dentro da sua área, quando um colega lha pontapeia de propósito ou lha entrega num lançamento lateral. A bola veio de um adversário, ainda que sem intenção, pelo que pode agarrá-la e o jogo segue."
     },
     {
       "id": "cf-13",
@@ -172,7 +229,13 @@
         "D": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho é exibido por conduta violenta porque o árbitro assistente identificou e tentou comunicar a infração ao árbitro antes do jogo recomeçar."
       },
       "answer": "D",
-      "answerText": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho é exibido por conduta violenta porque o árbitro assistente identificou e tentou comunicar a infração ao árbitro antes do jogo recomeçar."
+      "answerText": "O árbitro não pode alterar a decisão de reinício e não pode conceder um penalti. O cartão vermelho é exibido por conduta violenta porque o árbitro assistente identificou e tentou comunicar a infração ao árbitro antes do jogo recomeçar.",
+      "lawRefs": [
+        "l5-2-4",
+        "l5-2-3",
+        "l12-4-76"
+      ],
+      "explanation": "Depois de o jogo recomeçar, o árbitro não muda o recomeço, pelo que o lançamento lateral mantém-se e o penálti já não pode ser dado. A sanção disciplinar ainda pode ser mostrada se outro elemento da equipa de arbitragem viu o incidente e o comunicou antes do recomeço. Atingir o adversário sem disputar a bola é conduta violenta."
     },
     {
       "id": "cf-14",
@@ -185,7 +248,11 @@
         "D": "Não pode ser pontapeado para trás em nenhuma circunstância."
       },
       "answer": "A",
-      "answerText": "Pode ser executado levantando a bola com um pé ou com os dois pés simultaneamente."
+      "answerText": "Pode ser executado levantando a bola com um pé ou com os dois pés simultaneamente.",
+      "lawRefs": [
+        "l13-2-13"
+      ],
+      "explanation": "O livre pode ser executado levantando a bola com um pé ou com os dois pés ao mesmo tempo. Não está limitado a um só pé, nem impede que a bola vá para trás por essa forma de execução."
     },
     {
       "id": "cf-15",
@@ -198,7 +265,13 @@
         "D": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e recomeçar o jogo com um lançamento de bola ao solo no local da infração."
       },
       "answer": "C",
-      "answerText": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e punir a sua equipa com um pontapé-livre direto no local da infração."
+      "answerText": "Deve exibir o cartão vermelho ao jogador suplente por usar linguagem injuriosa e/ou grosseira e punir a sua equipa com um pontapé-livre direto no local da infração.",
+      "lawRefs": [
+        "l12-4-61",
+        "l12-5-9",
+        "l12-5-5"
+      ],
+      "explanation": "A chave oficial expulsa o suplente por linguagem ofensiva, injuriosa ou grosseira e recomeça com livre direto no local da infração.\n\nNota: o suplente que, fora do terreno, comete uma infração contra o árbitro faz recomeçar com um pontapé livre na linha delimitadora mais próxima (l12-5-9). As infrações verbais são livre indireto (l12-5-5). O livre direto da Lei 3 é para quando o suplente entra e interfere no jogo (l3-7-8), o que o insulto sobre a linha lateral não descreve."
     },
     {
       "id": "cf-16",
@@ -211,7 +284,11 @@
         "D": "É substituído pelo árbitro assistente mais categorizado"
       },
       "answer": "A",
-      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo."
+      "answerText": "O jogo pode continuar sob a direção dos outros elementos da equipa de arbitragem até que a bola deixe de estar em jogo.",
+      "lawRefs": [
+        "l5-2-5"
+      ],
+      "explanation": "Árbitro incapacitado: o jogo pode continuar com os outros elementos da equipa de arbitragem até a bola sair de jogo."
     },
     {
       "id": "cf-17",
@@ -224,7 +301,13 @@
         "D": "Doze minutos."
       },
       "answer": "C",
-      "answerText": "Um minuto."
+      "answerText": "Um minuto.",
+      "lawRefs": [
+        "l7-3-1",
+        "l7-3-3",
+        "n2-4-2f"
+      ],
+      "explanation": "A chave oficial responde que falta jogar um minuto para terminar a primeira parte.\n\nNota: a Lei 7 manda prolongar a parte para recuperar todo o tempo perdido, e o transporte do lesionado é uma dessas causas (l7-3-1, l7-3-3). Nove minutos de ambulância não se reduzem, nesse texto, a um minuto de jogo. As Normas apontam um minuto em média por transporte (n2-4-2f), como critério de anúncio, e não como teto que substitua a Lei 7."
     },
     {
       "id": "cf-18",
@@ -237,7 +320,11 @@
         "D": "A decisão a tomar é expulsar o jogador e retomar com uma bola ao solo."
       },
       "answer": "B",
-      "answerText": "A decisão a tomar é deixar prosseguir o jogo dado que o jogador não comete uma infração devido a essa ação."
+      "answerText": "A decisão a tomar é deixar prosseguir o jogo dado que o jogador não comete uma infração devido a essa ação.",
+      "lawRefs": [
+        "l3-8-7"
+      ],
+      "explanation": "Sair por acidente para lá de uma linha, como parte da jogada, não é infração. O jogo segue. Não há livre, nem cartão, nem expulsão por esse passo."
     },
     {
       "id": "cf-19",
@@ -250,7 +337,11 @@
         "D": "Não há limite definido."
       },
       "answer": "A",
-      "answerText": "Ponto inferior da axila."
+      "answerText": "Ponto inferior da axila.",
+      "lawRefs": [
+        "l12-1-20"
+      ],
+      "explanation": "Para a mão na bola, o limite superior do braço é o ponto inferior da axila. Não é o ponto superior da axila nem o limite da manga."
     },
     {
       "id": "cf-20",
@@ -263,7 +354,12 @@
         "D": "O treinador principal presente na área técnica irá receber essa mesma sanção."
       },
       "answer": "D",
-      "answerText": "O treinador principal presente na área técnica irá receber essa mesma sanção."
+      "answerText": "O treinador principal presente na área técnica irá receber essa mesma sanção.",
+      "lawRefs": [
+        "l12-4-78",
+        "l5-3-11"
+      ],
+      "explanation": "Se a infração vem de alguém na área técnica e não se identifica o infrator, a sanção vai para o treinador principal que está na área técnica. Não passa para o suplente mais categorizado nem para o massagista."
     }
   ]
 }
