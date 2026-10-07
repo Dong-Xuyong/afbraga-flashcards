@@ -1,0 +1,150 @@
+{
+  "report": {
+    "cards": 518,
+    "withCitation": 518,
+    "withOfficial": 24,
+    "inferredOnly": 494,
+    "withTag": 518,
+    "distinctTags": 30,
+    "vocabulary": 35,
+    "passageBacklinks": 222,
+    "lawPageBacklinks": 12,
+    "circularBacklinks": 2,
+    "alteracaoBacklinks": 26,
+    "weakOnly": 5,
+    "byDeck": {
+      "c5-a": {
+        "cards": 20,
+        "officialPct": 0,
+        "inferredOnlyPct": 100,
+        "tagPct": 100
+      },
+      "c6-a": {
+        "cards": 20,
+        "officialPct": 5,
+        "inferredOnlyPct": 95,
+        "tagPct": 100
+      },
+      "cf": {
+        "cards": 20,
+        "officialPct": 0,
+        "inferredOnlyPct": 100,
+        "tagPct": 100
+      },
+      "cenarios": {
+        "cards": 48,
+        "officialPct": 0,
+        "inferredOnlyPct": 100,
+        "tagPct": 100
+      },
+      "alteracoes-2627": {
+        "cards": 20,
+        "officialPct": 10,
+        "inferredOnlyPct": 90,
+        "tagPct": 100
+      },
+      "testes": {
+        "cards": 390,
+        "officialPct": 5.4,
+        "inferredOnlyPct": 94.6,
+        "tagPct": 100
+      }
+    },
+    "unlinkable": [
+      {
+        "id": "co-68",
+        "why": "A CO 68 só lista nomeações de delegados de uma jornada. Não tem regra de estudo para ligar a uma carta."
+      },
+      {
+        "id": "co-66",
+        "why": "Nenhuma carta trata de PIRPED, policiamento, PCS ou gestor de segurança."
+      },
+      {
+        "id": "co-70",
+        "why": "Nenhuma carta trata do minuto de silêncio ou das autorizações da CO 70."
+      },
+      {
+        "id": "bolas-oficiais",
+        "why": "Nenhuma carta nomeia a marca MKA ou as bolas oficiais da época."
+      },
+      {
+        "id": "substituicoes-f11",
+        "why": "Nenhuma carta trata do número de substituições de Sub-14 a Sub-19 (CO 85)."
+      }
+    ],
+    "officialPct": 4.6,
+    "inferredOnlyPct": 95.4,
+    "tagPct": 100
+  },
+  "weakOnly": [
+    {
+      "id": "te-06-02-2026-teste-escrito-c5-08",
+      "deck": "testes",
+      "reason": "A etiqueta da pergunta indica a Lei 12, mas o texto não nomeia um parágrafo."
+    },
+    {
+      "id": "te-06-02-2026-teste-escrito-c5-14",
+      "deck": "testes",
+      "reason": "Sem referência explícita nem sobreposição forte com um parágrafo; ficou a lei mais próxima."
+    },
+    {
+      "id": "te-27-02-2026-teste-escrito-2-chamada-c6b-c7-c7c-c7f-c8-cj-08",
+      "deck": "testes",
+      "reason": "A etiqueta da pergunta indica a Lei 7, mas o texto não nomeia um parágrafo."
+    },
+    {
+      "id": "te-17-07-2026-c8-cj1-e-cj2-04",
+      "deck": "testes",
+      "reason": "A etiqueta da pergunta indica a Lei 14, mas o texto não nomeia um parágrafo."
+    },
+    {
+      "id": "te-18-09-2026-1-acao-de-avaliacao-repeticao-versao-b-10",
+      "deck": "testes",
+      "reason": "A etiqueta da pergunta indica a Lei 12, mas o texto não nomeia um parágrafo."
+    }
+  ],
+  "missingCite": [],
+  "missingTag": [],
+  "headingIds": [
+    {
+      "id": "comunicados-oficiais-af-braga-epoca-2026-2027-regras-chave",
+      "label": "Comunicados Oficiais AF Braga – Época 2026/2027 (regras-chave)"
+    },
+    {
+      "id": "co-66",
+      "label": "CO n.º 66 – Plataforma PIRPED / Requisição de Policiamento / Segurança nos Jogos de Seniores"
+    },
+    {
+      "id": "co-67",
+      "label": "CO n.º 67 – Composição dos Bancos de Suplentes e Responsáveis / Banco Suplementar"
+    },
+    {
+      "id": "co-68",
+      "label": "CO n.º 68 – Nomeação dos Delegados da AF Braga – 1.ª Jornada do Campeonato Pró-Nacional de Seniores"
+    },
+    {
+      "id": "co-70",
+      "label": "CO n.º 70 – Autorizações (ações e iniciativas nos jogos)"
+    },
+    {
+      "id": "esclarecimentos-e-informacao-complementar-af-braga-2026-2027",
+      "label": "Esclarecimentos e Informação Complementar – AF Braga 2026/2027"
+    },
+    {
+      "id": "esclarecimento-minuto",
+      "label": "1. Esclarecimento Técnico – Aplicação do requisito de 1 minuto (jogador lesionado)"
+    },
+    {
+      "id": "2-informacao-complementar-bolas-oficiais-e-substituicoes-epoca-2",
+      "label": "2. Informação Complementar – Bolas Oficiais e Substituições (Época 2026/2027)"
+    },
+    {
+      "id": "bolas-oficiais",
+      "label": "2.1 Bolas oficiais (CO n.º 1, artigo 38.º – «Bolas oficiais época 2026/2027»)"
+    },
+    {
+      "id": "substituicoes-f11",
+      "label": "2.2 Substituições no Futebol 11 a partir do Sub-14 (CO n.º 85)"
+    }
+  ]
+}
