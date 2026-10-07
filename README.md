@@ -10,6 +10,9 @@ Aplicação web (JavaScript simples, sem build) para estudar as Leis do Jogo e a
 | `#/flashcards` | **Flashcards** — repetição espaçada |
 | `#/exame` | **Exame** — cotação oficial: certa **+5**, em branco **0**, errada **−2** |
 | `#/leis`, `#/leis/<id>`, `#/leis/page/<slug>` | **Leis** — pesquisa, índice e leitor |
+| `#/testes` | **Testes** — testes escritos oficiais, em flashcards ou exame, com filtro por lei |
+| `#/alteracoes`, `#/alteracoes/<lei>` | **Alterações** — alterações 2026/27, lei a lei |
+| `#/circulares`, `#/circulares/<id>` | **Circulares** — comunicados e esclarecimentos |
 | `#/wiki`, `#/wiki/<slug>` | **Wiki** — conceitos, fontes e marcadores |
 
 No telemóvel a barra fica em baixo; no ecrã largo, em cima. A rota inicial é `#/hoje`.
@@ -34,6 +37,10 @@ No telemóvel: abre o link no browser; no iPhone podes usar Partilhar → Adicio
 | `data/wiki.json` | Páginas da wiki em HTML (gerado) |
 | `data/cenarios.json` | Cenários, se existirem na wiki |
 | `data/alteracoes-2627.json` | Cartas das alterações 26/27, se existirem |
+| `data/alteracoes-leis-2627.json` | Texto das alterações 2026/27, por lei |
+| `data/quiz-escritos.json` | Testes escritos com resposta oficial |
+| `data/circulares.md` | CO 66, 67, 68 e 70 |
+| `data/esclarecimentos.md` | Minuto do lesionado, bolas oficiais e substituições |
 
 Os PDF ficam em `pdfs/` e abrem em `pdfs/<ficheiro>#page=N`.
 

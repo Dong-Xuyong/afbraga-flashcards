@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="dong-ui/theme.js"></script>
   <link rel="stylesheet" href="dong-ui/theme.css?v=6">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#view-root">Saltar para o conteúdo</a>
@@ -25,7 +25,10 @@
         <a role="tab" href="#/hoje" data-tab="hoje" aria-selected="true">Hoje</a>
         <a role="tab" href="#/flashcards" data-tab="flashcards" aria-selected="false">Flashcards</a>
         <a role="tab" href="#/exame" data-tab="exame" aria-selected="false">Exame</a>
+        <a role="tab" href="#/testes" data-tab="testes" aria-selected="false">Testes</a>
         <a role="tab" href="#/leis" data-tab="leis" aria-selected="false">Leis</a>
+        <a role="tab" href="#/alteracoes" data-tab="alteracoes" aria-selected="false">Alterações</a>
+        <a role="tab" href="#/circulares" data-tab="circulares" aria-selected="false">Circulares</a>
         <a role="tab" href="#/wiki" data-tab="wiki" aria-selected="false">Wiki</a>
       </nav>
     </div>
@@ -72,7 +75,7 @@
         <div class="study-top">
           <button class="btn-ghost text-action" id="btn-back" type="button" aria-label="Voltar aos baralhos">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            Baralhos
+            <span id="btn-back-label">Baralhos</span>
           </button>
           <div class="study-meta">
             <span class="deck-name" id="study-deck-name"></span>
@@ -94,6 +97,7 @@
                 <span class="card-number" id="card-number"></span>
                 <span class="change-chip hidden" id="card-change-chip">Alterado 26/27</span>
                 <p class="card-question" id="card-question"></p>
+                <p class="card-source" id="card-source" hidden></p>
                 <ul class="options-list options-list--front" id="options-list-front"></ul>
                 <p class="flip-hint">
                   <kbd>Espaço</kbd> ou toque para <strong>Virar</strong>
@@ -168,6 +172,7 @@
           <span class="card-number" id="exam-q-number">Pergunta 1</span>
           <span class="change-chip hidden" id="exam-change-chip">Alterado 26/27</span>
           <p class="card-question" id="exam-question"></p>
+          <p class="card-source" id="exam-source" hidden></p>
           <div class="exam-options" id="exam-options" role="radiogroup" aria-label="Opções de resposta"></div>
           <div class="exam-nav">
             <button class="btn-secondary" id="btn-exam-prev" type="button">Anterior</button>
@@ -258,6 +263,73 @@
         <div id="reader-body"></div>
       </section>
 
+      <section class="view view--alteracoes hidden" id="view-alteracoes">
+        <div class="learning-hero">
+          <span class="eyebrow">Alterações 2026/27</span>
+          <h2>Leis do Jogo</h2>
+          <p class="hero-sub" id="alteracoes-lead">Texto das alterações e orientações técnicas, lei a lei.</p>
+        </div>
+        <form class="leis-filters" role="search" id="alteracoes-form">
+          <label class="field">
+            <span class="field-label">Pesquisar</span>
+            <input id="alteracoes-query" type="search" placeholder="Ex.: substituição, acessórios, VAR" autocomplete="off" enterkeyhint="search">
+          </label>
+        </form>
+        <div id="alteracoes-list" aria-live="polite"></div>
+      </section>
+
+      <section class="view view--testes hidden" id="view-testes">
+        <div class="learning-hero">
+          <span class="eyebrow">Testes escritos</span>
+          <h2>Escolher teste</h2>
+          <p class="hero-sub" id="testes-lead">Perguntas com resposta oficial. A lei indicada é não oficial.</p>
+        </div>
+        <div class="seg-toggle" id="testes-mode" role="group" aria-label="Modo de estudo">
+          <button type="button" class="seg active" data-mode="study" id="testes-mode-study">Flashcards</button>
+          <button type="button" class="seg" data-mode="exam" id="testes-mode-exam">Exame</button>
+        </div>
+        <form class="leis-filters" id="testes-form">
+          <label class="field">
+            <span class="field-label">Lei (indicação não oficial)</span>
+            <select id="testes-law">
+              <option value="">Todas</option>
+              <option value="none">Sem lei indicada</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+            </select>
+          </label>
+        </form>
+        <p class="exam-rules-note" id="testes-rules" hidden>
+          Cotação oficial: certa <strong>+5</strong> · em branco <strong>0</strong> · errada <strong>−2</strong>.
+        </p>
+        <div class="deck-grid" id="testes-grid"></div>
+      </section>
+
+      <section class="view view--circulares hidden" id="view-circulares">
+        <div class="learning-hero">
+          <span class="eyebrow">Circulares &amp; Esclarecimentos</span>
+          <h2>Leitura</h2>
+          <p class="hero-sub">Comunicados oficiais e esclarecimentos técnicos da época 2026/27.</p>
+        </div>
+        <nav class="toc" id="circulares-toc" aria-label="Nesta secção"></nav>
+        <div id="circulares-body"></div>
+      </section>
+
       <section class="view view--wiki hidden" id="view-wiki">
         <div class="learning-hero">
           <span class="eyebrow">Wiki</span>
@@ -279,6 +351,7 @@
   </div>
 
   <script src="core.js?v=6"></script>
-  <script src="app.js?v=6"></script>
+  <script src="official.js?v=7"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>
