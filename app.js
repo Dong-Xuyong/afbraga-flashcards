@@ -24,7 +24,7 @@ const NORMA_CHAPTERS = {
   4: "Cap. 4 — Anexos",
 };
 
-const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page"];
+const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page", "alteracoes", "testes", "circulares"];
 
 /** @type {{ decks: Array<{id:string,file:string,title:string,cardCount?:number,kind?:string}> }} */
 let deckIndex = null;
@@ -248,16 +248,29 @@ function showView(name) {
     exame: "Exame",
     leis: "Leis",
     wiki: "Wiki",
+    testes: "Testes",
+    alteracoes: "Alterações",
+    circulares: "Circulares",
   };
   document.title = "AF Braga — " + (titles[tab] || "Hoje");
+  const current = document.querySelector("#app-nav [aria-selected='true']");
+  const nav = document.getElementById("app-nav");
+  if (current && nav) {
+    const navRect = nav.getBoundingClientRect();
+    const tabRect = current.getBoundingClientRect();
+    if (tabRect.left < navRect.left || tabRect.right > navRect.right) {
+      nav.scrollLeft += tabRect.left - navRect.left - (navRect.width - tabRect.width) / 2;
+    }
+  }
 }
 
 function tabForView(name) {
   if (name === "home") return homeMode === "exam" ? "exame" : "flashcards";
-  if (name === "study") return "flashcards";
-  if (name === "exam") return "exame";
+  if (name === "study") return session.origin === "testes" ? "testes" : "flashcards";
+  if (name === "exam") return exam && exam.origin === "testes" ? "testes" : "exame";
   if (name === "leis" || name === "reader") return "leis";
   if (name === "wiki" || name === "wiki-page") return "wiki";
+  if (name === "alteracoes" || name === "testes" || name === "circulares") return name;
   return "hoje";
 }
 
@@ -292,7 +305,76 @@ function parseHash() {
     if (parts[1]) return { name: "wiki-page", slug: parts.slice(1).join("/") };
     return { name: "wiki" };
   }
+  if (name === "alteracoes") return { name: "alteracoes", law: parts[1] || "" };
+  if (name === "testes") return { name: "testes" };
+  if (name === "circulares") return { name: "circulares", anchor: parts[1] || "" };
   return { name: "hoje" };
+}
+
+function answerLettersOf(card) {
+  if (!card) return [];
+  if (Array.isArray(card.answers) && card.answers.length) {
+    return card.answers.map((letter) => String(letter));
+  }
+  const raw = card.answer == null ? "" : String(card.answer).trim();
+  if (/^[A-D](?:\/[A-D])+$/.test(raw)) return raw.split("/");
+  return raw ? [raw] : [];
+}
+
+function choiceIsCorrect(card, letter) {
+  return answerLettersOf(card).indexOf(letter) !== -1;
+}
+
+function examKey(card) {
+  return card && card.id ? card.id : String(card.number);
+}
+
+function formatCorrectAnswer(card) {
+  const letters = answerLettersOf(card);
+  if (!letters.length) return (card && card.answerText) || "";
+  return letters.map((letter) => {
+    const text = card.options && card.options[letter];
+    return text ? letter + ". " + text : letter;
+  }).join(" · ");
+}
+
+function setStatusChip(el, card) {
+  if (!el) return;
+  el.classList.remove("change-chip--season", "change-chip--gone");
+  if (card && card.outdated) {
+    el.classList.remove("hidden");
+    el.textContent = "Época 2025/26";
+    el.classList.add("change-chip--season");
+    return;
+  }
+  el.textContent = "Alterado 26/27";
+  el.classList.toggle("hidden", !cardHasChange(card));
+}
+
+function appendWrittenMeta(container, card) {
+  if (!container || !card || !card.written) return;
+  const src = document.createElement("p");
+  src.className = "card-source";
+  const strong = document.createElement("strong");
+  strong.textContent = "Teste: ";
+  src.appendChild(strong);
+  src.appendChild(document.createTextNode(card.source || ""));
+  container.appendChild(src);
+  const law = document.createElement("p");
+  law.className = "card-source";
+  law.textContent = card.law == null
+    ? "Sem lei indicada (não oficial)."
+    : "Lei " + card.law + " (não oficial).";
+  container.appendChild(law);
+}
+
+function returnToOrigin(origin) {
+  if (origin === "testes") {
+    if ((location.hash || "") !== "#/testes") location.hash = "#/testes";
+    else openTestes();
+    return;
+  }
+  renderHome();
 }
 
 function cardHasChange(card) {
@@ -376,6 +458,7 @@ function fillCardAside(container, card) {
   if (card && card.explanation) fillExplanation(container, card.explanation, "Explicação: ");
   const links = buildLawLinks(card);
   if (links) container.appendChild(links);
+  appendWrittenMeta(container, card);
 }
 
 async function renderHome() {
@@ -498,7 +581,10 @@ async function startStudy(meta) {
       totalInSession: 0,
       completed: 0,
       isFlipped: false,
+      origin: meta.origin || null,
     };
+    const backLabel = $("#btn-back-label");
+    if (backLabel) backLabel.textContent = meta.origin === "testes" ? "Testes" : "Baralhos";
     showView("study");
     showStudyComplete(true);
     return;
@@ -514,9 +600,14 @@ async function startStudy(meta) {
     totalInSession: queue.length,
     completed: 0,
     isFlipped: false,
+    origin: meta.origin || null,
     _state: state,
   };
 
+  const backLabel = $("#btn-back-label");
+  if (backLabel) backLabel.textContent = meta.origin === "testes" ? "Testes" : "Baralhos";
+  const backBtn = $("#btn-back");
+  if (backBtn) backBtn.setAttribute("aria-label", meta.origin === "testes" ? "Voltar aos testes" : "Voltar aos baralhos");
   showView("study");
   $("#session-done").classList.add("hidden");
   $("#flashcard").classList.remove("hidden");
@@ -531,16 +622,16 @@ function getCurrentCard() {
   return session.queue[session.currentIndex] ?? null;
 }
 
-function fillOptionsList(listEl, options, correctLetter) {
+function fillOptionsList(listEl, options, correct) {
   if (!listEl) return;
   listEl.innerHTML = "";
   if (!options) return;
+  const letters = Array.isArray(correct) ? correct : (correct ? [correct] : []);
   for (const key of ["A", "B", "C", "D"]) {
     const text = options[key];
     if (text == null || text === "") continue;
     const li = document.createElement("li");
-    li.className =
-      "option-item" + (correctLetter && key === correctLetter ? " is-correct" : "");
+    li.className = "option-item" + (letters.indexOf(key) !== -1 ? " is-correct" : "");
     li.innerHTML = `<span class="option-key">${key}.</span>${escapeHtml(text)}`;
     listEl.appendChild(li);
   }
@@ -563,17 +654,23 @@ function renderCurrentCard() {
   $("#card-number-back").textContent = numLabel;
   $("#card-question").textContent = card.question;
 
-  const changed = cardHasChange(card);
-  $("#card-change-chip").classList.toggle("hidden", !changed);
-  $("#card-change-chip-back").classList.toggle("hidden", !changed);
+  setStatusChip($("#card-change-chip"), card);
+  setStatusChip($("#card-change-chip-back"), card);
 
-  const letter = card.answer;
-  $("#answer-letter").textContent = letter;
+  const letters = answerLettersOf(card);
+  $("#answer-letter").textContent = letters.join(" / ");
   $("#answer-text").textContent =
-    card.answerText || (card.options && card.options[letter]) || "";
+    card.answerText || letters.map((letter) => card.options && card.options[letter]).filter(Boolean).join(" ou ");
+
+  const sourceEl = $("#card-source");
+  if (sourceEl) {
+    const repeated = card.source && session.deckTitle && session.deckTitle.indexOf(card.source) === 0;
+    sourceEl.hidden = !card.source || repeated;
+    sourceEl.textContent = card.source || "";
+  }
 
   fillOptionsList($("#options-list-front"), card.options, null);
-  fillOptionsList($("#options-list"), card.options, letter);
+  fillOptionsList($("#options-list"), card.options, letters);
   fillCardAside($("#card-aside"), card);
   updateProgress();
 }
@@ -634,9 +731,12 @@ function showStudyComplete(alreadyDone) {
 async function startExam(meta) {
   const deck = await loadDeck(meta);
   await maybeLoadLaws(deck.cards);
-  const cards = [...deck.cards].sort((a, b) => a.number - b.number);
+  const numbers = new Set(deck.cards.map((card) => card.number));
+  const cards = numbers.size === deck.cards.length
+    ? [...deck.cards].sort((a, b) => a.number - b.number)
+    : [...deck.cards];
   const answers = {};
-  for (const card of cards) answers[card.number] = null;
+  for (const card of cards) answers[examKey(card)] = null;
 
   exam = {
     deckId: meta.id,
@@ -645,7 +745,10 @@ async function startExam(meta) {
     answers,
     index: 0,
     meta,
+    origin: meta.origin || null,
   };
+  const homeBtn = $("#btn-exam-home");
+  if (homeBtn) homeBtn.textContent = meta.origin === "testes" ? "Voltar aos testes" : "Voltar ao início";
 
   showView("exam");
   $("#exam-sheet").classList.remove("hidden");
@@ -666,15 +769,21 @@ function renderExamQuestion() {
   const n = exam.index + 1;
 
   $("#exam-q-number").textContent = `Pergunta ${card.number}`;
-  $("#exam-change-chip").classList.toggle("hidden", !cardHasChange(card));
+  setStatusChip($("#exam-change-chip"), card);
   $("#exam-question").textContent = card.question;
+  const examSource = $("#exam-source");
+  if (examSource) {
+    const repeated = card.source && exam.deckTitle && exam.deckTitle.indexOf(card.source) === 0;
+    examSource.hidden = !card.source || repeated;
+    examSource.textContent = card.source || "";
+  }
   $("#exam-progress-label").textContent = `Pergunta ${n} / ${total}`;
   $("#exam-answered-label").textContent = `${answeredCount()} respondida${answeredCount() !== 1 ? "s" : ""}`;
   const pct = Math.round(((n - 1) / total) * 100);
   $("#exam-progress-fill").style.width = `${pct}%`;
   $("#exam-progress-bar").setAttribute("aria-valuenow", String(pct));
 
-  const selected = exam.answers[card.number];
+  const selected = exam.answers[examKey(card)];
   const box = $("#exam-options");
   box.innerHTML = "";
   for (const key of ["A", "B", "C", "D"]) {
@@ -687,7 +796,7 @@ function renderExamQuestion() {
     btn.setAttribute("aria-checked", selected === key ? "true" : "false");
     btn.innerHTML = `<span class="exam-option-key">${key}</span><span>${escapeHtml(text)}</span>`;
     btn.addEventListener("click", () => {
-      exam.answers[card.number] = key;
+      exam.answers[examKey(card)] = key;
       renderExamQuestion();
     });
     box.appendChild(btn);
@@ -708,7 +817,7 @@ function examGo(delta) {
 function clearExamAnswer() {
   if (!exam) return;
   const card = exam.cards[exam.index];
-  exam.answers[card.number] = null;
+  exam.answers[examKey(card)] = null;
   renderExamQuestion();
 }
 
@@ -720,14 +829,14 @@ function scoreExam() {
   const rows = [];
 
   for (const card of exam.cards) {
-    const chosen = exam.answers[card.number];
+    const chosen = exam.answers[examKey(card)];
     let status;
     let points;
     if (chosen == null) {
       status = "blank";
       points = POINTS_BLANK;
       blank += 1;
-    } else if (chosen === card.answer) {
+    } else if (choiceIsCorrect(card, chosen)) {
       status = "correct";
       points = POINTS_CORRECT;
       correct += 1;
@@ -788,7 +897,7 @@ function submitExam() {
       row.chosen == null
         ? "Sem resposta"
         : `${row.chosen}. ${row.card.options?.[row.chosen] || ""}`;
-    const right = `${row.card.answer}. ${row.card.options?.[row.card.answer] || row.card.answerText || ""}`;
+    const right = formatCorrectAnswer(row.card);
     div.innerHTML = `
       <div class="exam-review-head">Pergunta ${row.card.number} · ${row.points} pts</div>
       <div class="exam-review-detail"><strong>Sua resposta:</strong> ${escapeHtml(your)}</div>
@@ -807,6 +916,7 @@ function submitExam() {
     }
     const links = buildLawLinks(row.card);
     if (links) div.appendChild(links);
+    appendWrittenMeta(div, row.card);
     review.appendChild(div);
   }
   if (!review.children.length) {
@@ -820,15 +930,16 @@ function submitExam() {
 }
 
 function leaveExam() {
+  const origin = exam && exam.origin;
   if (!$("#exam-results").classList.contains("hidden")) {
     exam = null;
-    renderHome();
+    returnToOrigin(origin);
     return;
   }
   const ok = window.confirm("Sair do exame? As respostas atuais serão perdidas.");
   if (ok) {
     exam = null;
-    renderHome();
+    returnToOrigin(origin);
   }
 }
 
@@ -1026,7 +1137,7 @@ function hojeSummary() {
   daily.ids.forEach((id, index) => {
     const card = cardIndex[id];
     const chosen = daily.answers[id];
-    const ok = card && chosen === card.answer;
+    const ok = card && choiceIsCorrect(card, chosen);
     const li = document.createElement("li");
     li.className = ok ? "is-correct" : "is-wrong";
     const meta = document.createElement("p");
@@ -1108,8 +1219,8 @@ function hojeCard() {
     btn.setAttribute("role", "radio");
     if (chosen) {
       btn.disabled = true;
-      if (key === card.answer) btn.classList.add("is-correct");
-      if (key === chosen && key !== card.answer) btn.classList.add("is-wrong");
+      if (choiceIsCorrect(card, key)) btn.classList.add("is-correct");
+      if (key === chosen && !choiceIsCorrect(card, key)) btn.classList.add("is-wrong");
     }
     btn.innerHTML = `<span class="exam-option-key">${key}</span><span>${escapeHtml(text)}</span>`;
     btn.addEventListener("click", () => answerHoje(key));
@@ -1121,7 +1232,7 @@ function hojeCard() {
     fillCardAside(reveal, card);
     const verdict = document.createElement("p");
     verdict.className = "summary-meta";
-    verdict.textContent = chosen === card.answer ? "Certa" : "Errada";
+    verdict.textContent = choiceIsCorrect(card, chosen) ? "Certa" : "Errada";
     reveal.insertBefore(verdict, reveal.firstChild);
     sheet.appendChild(reveal);
     const next = document.createElement("button");
@@ -1143,8 +1254,8 @@ function answerHoje(letter) {
   daily.answers[id] = letter;
   saveDaily(daily);
   if (card) {
-    recordLawStats(card, letter === card.answer);
-    rateDeckCard(card.deckId, card.id, letter === card.answer ? "good" : "again");
+    recordLawStats(card, choiceIsCorrect(card, letter));
+    rateDeckCard(card.deckId, card.id, choiceIsCorrect(card, letter) ? "good" : "again");
   }
   hojeForceCard = true;
   syncStreakIfComplete();
@@ -1804,6 +1915,9 @@ async function renderRoute() {
   if (route.name === "leis-block") return openReader(null, route.id);
   if (route.name === "wiki") return openWiki();
   if (route.name === "wiki-page") return openWikiPage(route.slug);
+  if (route.name === "alteracoes") return openAlteracoes(route.law);
+  if (route.name === "testes") return openTestes();
+  if (route.name === "circulares") return openCirculares(route.anchor);
   return openHoje();
 }
 
@@ -1829,16 +1943,17 @@ function initEvents() {
   document.querySelectorAll(".rate-btn").forEach((btn) => {
     btn.addEventListener("click", () => rateCard(btn.dataset.rating));
   });
-  $("#btn-back").addEventListener("click", () => renderHome());
-  $("#btn-done-home").addEventListener("click", () => renderHome());
+  $("#btn-back").addEventListener("click", () => returnToOrigin(session.origin));
+  $("#btn-done-home").addEventListener("click", () => returnToOrigin(session.origin));
   $("#btn-exam-back").addEventListener("click", leaveExam);
   $("#btn-exam-prev").addEventListener("click", () => examGo(-1));
   $("#btn-exam-next").addEventListener("click", () => examGo(1));
   $("#btn-exam-clear").addEventListener("click", clearExamAnswer);
   $("#btn-exam-submit").addEventListener("click", submitExam);
   $("#btn-exam-home").addEventListener("click", () => {
+    const origin = exam && exam.origin;
     exam = null;
-    renderHome();
+    returnToOrigin(origin);
   });
   $("#btn-exam-retry").addEventListener("click", () => {
     if (exam?.meta) startExam(exam.meta);
@@ -1867,7 +1982,7 @@ function initEvents() {
       if (keyMap[event.code]) {
         event.preventDefault();
         const card = exam.cards[exam.index];
-        exam.answers[card.number] = keyMap[event.code];
+        exam.answers[examKey(card)] = keyMap[event.code];
         renderExamQuestion();
         return;
       }
@@ -1902,6 +2017,14 @@ function initEvents() {
     }
   });
 
+  document.querySelectorAll("#app-nav [role='tab']").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (link.getAttribute("href") === (location.hash || "")) {
+        renderRoute().catch((err) => showBootError(err.message));
+      }
+    });
+  });
+
   window.addEventListener("hashchange", () => {
     renderRoute().catch((err) => showBootError(err.message));
   });
@@ -1911,6 +2034,7 @@ async function init() {
   try {
     await loadDeckIndex();
     initEvents();
+    initOfficialEvents();
     if (!location.hash || location.hash === "#") location.replace("#/hoje");
     else await renderRoute();
   } catch (err) {
