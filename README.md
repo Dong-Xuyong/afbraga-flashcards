@@ -13,6 +13,8 @@ Aplicação web (JavaScript simples, sem build) para estudar as Leis do Jogo e a
 | `#/testes` | **Testes** — testes escritos oficiais, em flashcards ou exame, com filtro por lei |
 | `#/alteracoes`, `#/alteracoes/<lei>` | **Alterações** — alterações 2026/27, lei a lei |
 | `#/circulares`, `#/circulares/<id>` | **Circulares** — comunicados e esclarecimentos |
+| `#/tema/<id>` | Tema — cartas, passagens e circulares com a mesma palavra |
+| `#/fonte/<id>` | Cartões que citam uma passagem, alteração ou circular |
 | `#/wiki`, `#/wiki/<slug>` | **Wiki** — conceitos, fontes e marcadores |
 
 No telemóvel a barra fica em baixo; no ecrã largo, em cima. A rota inicial é `#/hoje`.
@@ -41,6 +43,7 @@ No telemóvel: abre o link no browser; no iPhone podes usar Partilhar → Adicio
 | `data/quiz-escritos.json` | Testes escritos com resposta oficial |
 | `data/circulares.md` | CO 66, 67, 68 e 70 |
 | `data/esclarecimentos.md` | Minuto do lesionado, bolas oficiais e substituições |
+| `data/citations.json` | Citações, temas e ligações inversas (gerado) |
 
 Os PDF ficam em `pdfs/` e abrem em `pdfs/<ficheiro>#page=N`.
 
@@ -79,6 +82,14 @@ Testes da lógica (sem browser):
 ```bash
 node scripts/test_afbraga_core.js
 ```
+
+Citações e temas (volta a gerar `data/citations.json` quando o conteúdo muda):
+
+```bash
+node scripts/build_citations.js
+```
+
+Uma citação contínua foi nomeada na pergunta ou na resposta. Uma citação tracejada foi inferida pelo tema ou pela etiqueta da pergunta e não é uma fonte oficial.
 
 ## Estrutura
 

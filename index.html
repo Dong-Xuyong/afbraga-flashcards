@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="dong-ui/theme.js"></script>
   <link rel="stylesheet" href="dong-ui/theme.css?v=6">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <a class="skip-link" href="#view-root">Saltar para o conteúdo</a>
@@ -330,6 +330,16 @@
         <div id="circulares-body"></div>
       </section>
 
+      <section class="view view--filter hidden" id="view-filter">
+        <button class="btn-ghost text-action" id="btn-filter-back" type="button">Voltar</button>
+        <p class="eyebrow" id="filter-kicker"></p>
+        <h2 id="filter-title"></h2>
+        <p class="hero-sub" id="filter-lead"></p>
+        <p class="cite-legend" id="filter-legend"></p>
+        <div class="filter-actions" id="filter-actions"></div>
+        <div id="filter-body"></div>
+      </section>
+
       <section class="view view--wiki hidden" id="view-wiki">
         <div class="learning-hero">
           <span class="eyebrow">Wiki</span>
@@ -351,7 +361,8 @@
   </div>
 
   <script src="core.js?v=6"></script>
-  <script src="official.js?v=7"></script>
-  <script src="app.js?v=7"></script>
+  <script src="official.js?v=8"></script>
+  <script src="cites.js?v=8"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

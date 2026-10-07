@@ -24,7 +24,7 @@ const NORMA_CHAPTERS = {
   4: "Cap. 4 — Anexos",
 };
 
-const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page", "alteracoes", "testes", "circulares"];
+const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page", "alteracoes", "testes", "circulares", "filter"];
 
 /** @type {{ decks: Array<{id:string,file:string,title:string,cardCount?:number,kind?:string}> }} */
 let deckIndex = null;
@@ -264,9 +264,22 @@ function showView(name) {
   }
 }
 
+function originBackLabel(origin) {
+  if (origin === "testes") return "Testes";
+  if (origin && String(origin).indexOf("tema:") === 0) return "Tema";
+  if (origin && String(origin).indexOf("fonte:") === 0) return "Fonte";
+  return "Baralhos";
+}
+
 function tabForView(name) {
   if (name === "home") return homeMode === "exam" ? "exame" : "flashcards";
-  if (name === "study") return session.origin === "testes" ? "testes" : "flashcards";
+  if (name === "filter") return "";
+  if (name === "study") {
+    if (session.origin === "testes") return "testes";
+    if (session.origin && String(session.origin).indexOf("tema:") === 0) return "";
+    if (session.origin && String(session.origin).indexOf("fonte:") === 0) return "";
+    return "flashcards";
+  }
   if (name === "exam") return exam && exam.origin === "testes" ? "testes" : "exame";
   if (name === "leis" || name === "reader") return "leis";
   if (name === "wiki" || name === "wiki-page") return "wiki";
@@ -305,9 +318,11 @@ function parseHash() {
     if (parts[1]) return { name: "wiki-page", slug: parts.slice(1).join("/") };
     return { name: "wiki" };
   }
-  if (name === "alteracoes") return { name: "alteracoes", law: parts[1] || "" };
+  if (name === "alteracoes") return { name: "alteracoes", law: parts[1] || "", item: parts[2] || "" };
   if (name === "testes") return { name: "testes" };
   if (name === "circulares") return { name: "circulares", anchor: parts[1] || "" };
+  if (name === "tema") return { name: "tema", slug: parts[1] || "" };
+  if (name === "fonte") return { name: "fonte", id: parts[1] || "" };
   return { name: "hoje" };
 }
 
@@ -360,18 +375,24 @@ function appendWrittenMeta(container, card) {
   src.appendChild(strong);
   src.appendChild(document.createTextNode(card.source || ""));
   container.appendChild(src);
-  const law = document.createElement("p");
-  law.className = "card-source";
-  law.textContent = card.law == null
-    ? "Sem lei indicada (não oficial)."
-    : "Lei " + card.law + " (não oficial).";
-  container.appendChild(law);
 }
 
 function returnToOrigin(origin) {
   if (origin === "testes") {
     if ((location.hash || "") !== "#/testes") location.hash = "#/testes";
     else openTestes();
+    return;
+  }
+  if (origin && String(origin).indexOf("tema:") === 0) {
+    const hash = "#/tema/" + encodeURIComponent(origin.slice(5));
+    if ((location.hash || "") !== hash) location.hash = hash;
+    else openTema(origin.slice(5));
+    return;
+  }
+  if (origin && String(origin).indexOf("fonte:") === 0) {
+    const hash = "#/fonte/" + encodeURIComponent(origin.slice(6));
+    if ((location.hash || "") !== hash) location.hash = hash;
+    else openFonte(origin.slice(6));
     return;
   }
   renderHome();
@@ -455,9 +476,12 @@ function buildLawLinks(card) {
 function fillCardAside(container, card) {
   if (!container) return;
   container.innerHTML = "";
+  const cited = typeof appendCardCites === "function" && appendCardCites(container, card);
+  if (!cited) {
+    const links = buildLawLinks(card);
+    if (links) container.appendChild(links);
+  }
   if (card && card.explanation) fillExplanation(container, card.explanation, "Explicação: ");
-  const links = buildLawLinks(card);
-  if (links) container.appendChild(links);
   appendWrittenMeta(container, card);
 }
 
@@ -584,7 +608,7 @@ async function startStudy(meta) {
       origin: meta.origin || null,
     };
     const backLabel = $("#btn-back-label");
-    if (backLabel) backLabel.textContent = meta.origin === "testes" ? "Testes" : "Baralhos";
+    if (backLabel) backLabel.textContent = originBackLabel(meta.origin);
     showView("study");
     showStudyComplete(true);
     return;
@@ -605,9 +629,9 @@ async function startStudy(meta) {
   };
 
   const backLabel = $("#btn-back-label");
-  if (backLabel) backLabel.textContent = meta.origin === "testes" ? "Testes" : "Baralhos";
+  if (backLabel) backLabel.textContent = originBackLabel(meta.origin);
   const backBtn = $("#btn-back");
-  if (backBtn) backBtn.setAttribute("aria-label", meta.origin === "testes" ? "Voltar aos testes" : "Voltar aos baralhos");
+  if (backBtn) backBtn.setAttribute("aria-label", "Voltar para " + originBackLabel(meta.origin));
   showView("study");
   $("#session-done").classList.add("hidden");
   $("#flashcard").classList.remove("hidden");
@@ -914,8 +938,11 @@ function submitExam() {
       detail.appendChild(body);
       div.appendChild(detail);
     }
-    const links = buildLawLinks(row.card);
-    if (links) div.appendChild(links);
+    const cited = typeof appendCardCites === "function" && appendCardCites(div, row.card);
+    if (!cited) {
+      const links = buildLawLinks(row.card);
+      if (links) div.appendChild(links);
+    }
     appendWrittenMeta(div, row.card);
     review.appendChild(div);
   }
@@ -1523,6 +1550,10 @@ function renderReader(slug, focusId) {
   const doc = (lawsData.docs || []).find((item) => item.id === first.doc);
   $("#reader-kicker").textContent = doc ? doc.title : "";
   title.textContent = first.pageTitle || slug;
+  if (typeof backlinkAnchor === "function") {
+    const related = backlinkAnchor(slug);
+    if (related) body.appendChild(related);
+  }
   let lastHeading = null;
   for (const section of sections) {
     if (section.heading !== lastHeading) {
@@ -1701,6 +1732,10 @@ function renderLawBlock(section, actionsOpen) {
     }
   });
   actions.appendChild(copy);
+  if (typeof backlinkAnchor === "function") {
+    const related = backlinkAnchor(section.id);
+    if (related) article.appendChild(related);
+  }
   article.appendChild(actions);
   article.appendChild(area);
 
@@ -1915,9 +1950,11 @@ async function renderRoute() {
   if (route.name === "leis-block") return openReader(null, route.id);
   if (route.name === "wiki") return openWiki();
   if (route.name === "wiki-page") return openWikiPage(route.slug);
-  if (route.name === "alteracoes") return openAlteracoes(route.law);
+  if (route.name === "alteracoes") return openAlteracoes(route.law, route.item);
   if (route.name === "testes") return openTestes();
   if (route.name === "circulares") return openCirculares(route.anchor);
+  if (route.name === "tema") return openTema(route.slug);
+  if (route.name === "fonte") return openFonte(route.id);
   return openHoje();
 }
 
@@ -1960,6 +1997,13 @@ function initEvents() {
   });
   $("#btn-reader-back").addEventListener("click", () => { location.hash = "#/leis"; });
   $("#btn-wiki-back").addEventListener("click", () => { location.hash = "#/wiki"; });
+  const filterBack = $("#btn-filter-back");
+  if (filterBack) {
+    filterBack.addEventListener("click", () => {
+      if (history.length > 1) history.back();
+      else location.hash = "#/hoje";
+    });
+  }
   $("#leis-form").addEventListener("submit", (event) => event.preventDefault());
   $("#leis-query").addEventListener("input", () => {
     clearTimeout(leisTimer);
@@ -2033,6 +2077,9 @@ function initEvents() {
 async function init() {
   try {
     await loadDeckIndex();
+    if (typeof ensureCites === "function") {
+      try { await ensureCites(); } catch (_) { /* cards still open without chips */ }
+    }
     initEvents();
     initOfficialEvents();
     if (!location.hash || location.hash === "#") location.replace("#/hoje");

@@ -15,6 +15,7 @@ let testesMode = "study";
 let testesLaw = "";
 let alteracoesTimer = 0;
 let alteracoesFocus = "";
+let alteracoesItem = "";
 
 function isOutdatedTest(title) {
   const match = /^(\d{2})\.(\d{2})\.(\d{4})/.exec(title || "");
@@ -273,8 +274,10 @@ function paintAlteracoes(focus) {
   }
 
   if (focus) {
+    const itemId = alteracoesItem;
     requestAnimationFrame(() => {
-      const el = document.getElementById("alt-" + focus);
+      const itemEl = itemId ? document.getElementById("alt-item-" + focus + "-" + itemId) : null;
+      const el = itemEl || document.getElementById("alt-" + focus);
       if (el) el.scrollIntoView({ block: "start" });
     });
   }
@@ -295,6 +298,10 @@ function lawFold(entry, changes, open, query) {
   meta.textContent = changes.length ? changes.length + (changes.length === 1 ? " alteração" : " alterações") : "Sem alterações";
   summary.appendChild(title);
   summary.appendChild(meta);
+  if (typeof backlinkAnchor === "function") {
+    const related = backlinkAnchor("alt-" + lawAnchor(entry));
+    if (related) summary.appendChild(related);
+  }
   details.appendChild(summary);
 
   const body = document.createElement("div");
@@ -312,7 +319,12 @@ function lawFold(entry, changes, open, query) {
     const h = document.createElement("h3");
     h.className = "change-summary";
     appendHighlighted(h, change.summary || "", query);
+    article.id = "alt-item-" + lawAnchor(entry) + "-" + (i + 1);
     article.appendChild(h);
+    if (typeof backlinkAnchor === "function") {
+      const related = backlinkAnchor("alt-" + lawAnchor(entry) + "-" + (i + 1));
+      if (related) article.appendChild(related);
+    }
     appendDetail(article, change.detail || "");
     if (change.source) {
       const src = document.createElement("p");
@@ -326,9 +338,10 @@ function lawFold(entry, changes, open, query) {
   return details;
 }
 
-async function openAlteracoes(focus) {
+async function openAlteracoes(focus, item) {
   const token = routeToken;
   alteracoesFocus = focus || "";
+  alteracoesItem = item || "";
   showView("alteracoes");
   const root = $("#alteracoes-list");
   if (!laws2627) root.innerHTML = '<p class="mode-hint">A carregar…</p>';
@@ -492,9 +505,17 @@ function inlineMd(text) {
 }
 
 function headingId(text) {
+  // Keep in sync with scripts/build_citations.js headingId().
   const folded = normalize(text);
-  const co = /co n[^\d]*(\d+)/.exec(folded);
-  if (co) return "co-" + co[1];
+  if (/^co n/.test(folded)) {
+    const co = /co n[^\d]*(\d+)/.exec(folded);
+    if (co) return "co-" + co[1];
+  }
+  if (folded.indexOf("jogador lesionado") !== -1 || folded.indexOf("requisito de 1 minuto") !== -1) {
+    return "esclarecimento-minuto";
+  }
+  if (/^2\.1\s+bolas oficiais/.test(folded)) return "bolas-oficiais";
+  if (/^2\.2\s+substituicoes no futebol/.test(folded)) return "substituicoes-f11";
   const slug = folded.replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64);
   return slug || "sec";
 }
@@ -546,6 +567,7 @@ function renderMarkdown(markdown) {
       const el = document.createElement("h" + level);
       el.id = headingId(heading[2]);
       el.innerHTML = inlineMd(heading[2]);
+      if (typeof decorateHeading === "function") decorateHeading(el);
       root.appendChild(el);
       i += 1;
       continue;
