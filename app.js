@@ -252,7 +252,7 @@ function showView(name) {
     alteracoes: "Alterações",
     circulares: "Circulares",
   };
-  document.title = "AF Braga — " + (titles[tab] || "Hoje");
+  document.title = "AF Braga Referee Study — " + (titles[tab] || "Hoje");
   const current = document.querySelector("#app-nav [aria-selected='true']");
   const nav = document.getElementById("app-nav");
   if (current && nav) {
