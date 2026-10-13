@@ -216,7 +216,7 @@ function studyButton(cards, deckId, title, origin) {
 async function openTema(slug) {
   const token = routeToken;
   showView("filter");
-  document.title = "AF Braga — Tema";
+  document.title = "AF Braga Referee Study — Tema";
   const ui = filterRoot();
   ui.body.innerHTML = '<p class="mode-hint">A carregar…</p>';
   ui.actions.innerHTML = "";
@@ -292,7 +292,7 @@ async function openTema(slug) {
 async function openFonte(target) {
   const token = routeToken;
   showView("filter");
-  document.title = "AF Braga — Cartões relacionados";
+  document.title = "AF Braga Referee Study — Cartões relacionados";
   const ui = filterRoot();
   ui.body.innerHTML = '<p class="mode-hint">A carregar…</p>';
   ui.actions.innerHTML = "";
