@@ -240,6 +240,8 @@ function showView(name) {
   document.querySelectorAll("#app-nav [role='tab']").forEach((link) => {
     const on = link.dataset.tab === tab;
     link.setAttribute("aria-selected", on ? "true" : "false");
+    if (on) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
     link.classList.toggle("active", on);
   });
   const titles = {
@@ -525,7 +527,7 @@ async function deckButton(meta, mode) {
   const deck = await loadDeck(meta);
   const total = deck.cards.length;
   const btn = document.createElement("button");
-  btn.className = "deck-card";
+  btn.className = "deck-card dx-card";
   btn.type = "button";
   if (mode === "exam") {
     const maxPts = total * POINTS_CORRECT;
@@ -916,7 +918,7 @@ function submitExam() {
   for (const row of result.rows) {
     if (row.status === "correct") continue;
     const div = document.createElement("div");
-    div.className = `exam-review-item is-${row.status}`;
+    div.className = `exam-review-item dx-card is-${row.status}`;
     const your =
       row.chosen == null
         ? "Sem resposta"
@@ -948,7 +950,7 @@ function submitExam() {
   }
   if (!review.children.length) {
     review.innerHTML =
-      '<div class="exam-review-item is-correct"><div class="exam-review-head">Todas corretas</div><div class="exam-review-detail">Excelente trabalho.</div></div>';
+      '<div class="exam-review-item dx-card is-correct"><div class="exam-review-head">Todas corretas</div><div class="exam-review-detail">Excelente trabalho.</div></div>';
   }
 
   $("#exam-progress-fill").style.width = "100%";
@@ -1166,7 +1168,7 @@ function hojeSummary() {
     const chosen = daily.answers[id];
     const ok = card && choiceIsCorrect(card, chosen);
     const li = document.createElement("li");
-    li.className = ok ? "is-correct" : "is-wrong";
+    li.className = (ok ? "is-correct" : "is-wrong") + " dx-card";
     const meta = document.createElement("p");
     meta.className = "summary-meta";
     meta.textContent = (index + 1) + ". " + (ok ? "Certa" : "Errada");
@@ -1200,7 +1202,7 @@ function hojeCard() {
   const card = cardIndex[id];
   const chosen = daily.answers[id];
   const sheet = document.createElement("div");
-  sheet.className = "exam-sheet hoje-sheet";
+  sheet.className = "exam-sheet hoje-sheet dx-card";
   const kicker = document.createElement("span");
   kicker.className = "card-number";
   kicker.textContent = "Pergunta " + (hojeIndex + 1) + " de " + daily.ids.length;
@@ -1371,7 +1373,7 @@ function pagesFrom(sections) {
 
 function tocLink(page) {
   const link = document.createElement("a");
-  link.className = "toc-link";
+  link.className = "toc-link dx-card";
   link.href = "#/leis/page/" + encodeURIComponent(page.slug);
   link.textContent = page.title || page.slug;
   if (page.changed) {
@@ -1400,7 +1402,7 @@ function paintToc(root, filters) {
       if (page) lawsList.appendChild(tocLink(page));
       else if (!narrowed) {
         const missing = document.createElement("span");
-        missing.className = "toc-link is-missing";
+        missing.className = "toc-link dx-card is-missing";
         missing.textContent = "Lei " + n;
         lawsList.appendChild(missing);
       }
@@ -1476,7 +1478,7 @@ function paintLeis() {
   list.className = "result-list";
   for (const hit of hits) {
     const link = document.createElement("a");
-    link.className = "result-card";
+    link.className = "result-card dx-card";
     link.href = "#/leis/" + encodeURIComponent(hit.id);
     const kicker = document.createElement("span");
     kicker.className = "result-kicker";
@@ -1622,7 +1624,7 @@ function appendInForce(parent, html, text, kickerText) {
 
 function renderLawBlock(section, actionsOpen) {
   const article = document.createElement("article");
-  article.className = "law-block" + (actionsOpen ? " is-open" : "");
+  article.className = "law-block dx-card" + (actionsOpen ? " is-open" : "");
   article.id = "blk-" + section.id;
   article.tabIndex = 0;
   article.setAttribute("aria-expanded", actionsOpen ? "true" : "false");
@@ -1821,7 +1823,7 @@ function paintBookmarks(root) {
   }
   for (const id of ids) {
     const card = document.createElement("article");
-    card.className = "bookmark-card";
+    card.className = "bookmark-card dx-card";
     const section = sectionById[id];
     const link = document.createElement("a");
     link.href = "#/leis/" + encodeURIComponent(id);
@@ -1856,7 +1858,7 @@ function paintWiki() {
     list.className = "toc";
     for (const page of items) {
       const link = document.createElement("a");
-      link.className = "toc-link";
+      link.className = "toc-link dx-card";
       link.href = "#/wiki/" + encodeURIComponent(page.slug);
       link.textContent = page.title || page.slug;
       if (page.updated) {

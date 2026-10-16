@@ -161,7 +161,7 @@ function showMore(list, limit) {
 
 function cardRow(card, entry) {
   const article = document.createElement("article");
-  article.className = "filter-card";
+  article.className = "filter-card dx-card";
   const meta = document.createElement("p");
   meta.className = "filter-meta";
   meta.textContent = DECK_LABELS[entry.deck] || entry.deck || "";
@@ -257,7 +257,7 @@ async function openTema(slug) {
     const links = [];
     for (const passage of passages) {
       const link = document.createElement("a");
-      link.className = "toc-link";
+      link.className = "toc-link dx-card";
       link.href = passage.href;
       link.textContent = passage.label;
       ui.body.appendChild(link);
@@ -274,7 +274,7 @@ async function openTema(slug) {
     ui.body.appendChild(h);
     for (const row of circulars) {
       const link = document.createElement("a");
-      link.className = "toc-link";
+      link.className = "toc-link dx-card";
       link.href = row.href;
       link.textContent = row.label;
       ui.body.appendChild(link);

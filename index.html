@@ -10,31 +10,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="dong-ui/theme.js"></script>
-  <link rel="stylesheet" href="dong-ui/theme.css?v=6">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="dong-ui/theme.css?v=7">
+  <link rel="stylesheet" href="/ui/shell.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
-<body>
+<body class="dx">
   <a class="skip-link" href="#view-root">Saltar para o conteúdo</a>
   <div id="app">
     <div class="app-chrome">
-      <header id="topbar">
-        <h1 id="topbar-title">AF Braga Referee Study</h1>
-        <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
+      <header class="dx-header" id="topbar">
+        <a class="dx-home" href="/" aria-label="Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+        </a>
+        <h1 class="dx-title" id="topbar-title">AF Braga Referee Study</h1>
+        <div class="dx-actions">
+          <button type="button" data-dong-theme-toggle aria-label="Toggle color theme"></button>
+        </div>
       </header>
-      <nav id="app-nav" role="tablist" aria-label="Secções">
-        <a role="tab" href="#/hoje" data-tab="hoje" aria-selected="true">Hoje</a>
-        <a role="tab" href="#/flashcards" data-tab="flashcards" aria-selected="false">Flashcards</a>
-        <a role="tab" href="#/exame" data-tab="exame" aria-selected="false">Exame</a>
-        <a role="tab" href="#/testes" data-tab="testes" aria-selected="false">Testes</a>
-        <a role="tab" href="#/leis" data-tab="leis" aria-selected="false">Leis</a>
-        <a role="tab" href="#/alteracoes" data-tab="alteracoes" aria-selected="false">Alterações</a>
-        <a role="tab" href="#/circulares" data-tab="circulares" aria-selected="false">Circulares</a>
-        <a role="tab" href="#/wiki" data-tab="wiki" aria-selected="false">Wiki</a>
+      <nav class="dx-tabs" id="app-nav" role="tablist" aria-label="Secções">
+        <a class="dx-tab" role="tab" href="#/hoje" data-tab="hoje" aria-selected="true" aria-current="page">Hoje</a>
+        <a class="dx-tab" role="tab" href="#/flashcards" data-tab="flashcards" aria-selected="false">Flashcards</a>
+        <a class="dx-tab" role="tab" href="#/exame" data-tab="exame" aria-selected="false">Exame</a>
+        <a class="dx-tab" role="tab" href="#/testes" data-tab="testes" aria-selected="false">Testes</a>
+        <a class="dx-tab" role="tab" href="#/leis" data-tab="leis" aria-selected="false">Leis</a>
+        <a class="dx-tab" role="tab" href="#/alteracoes" data-tab="alteracoes" aria-selected="false">Alterações</a>
+        <a class="dx-tab" role="tab" href="#/circulares" data-tab="circulares" aria-selected="false">Circulares</a>
+        <a class="dx-tab" role="tab" href="#/wiki" data-tab="wiki" aria-selected="false">Wiki</a>
       </nav>
     </div>
 
     <main id="view-root" tabindex="-1">
-      <section class="view view--hoje" id="view-hoje">
+      <section class="view view--hoje dx-card" id="view-hoje">
         <div class="learning-hero">
           <span class="eyebrow">Hoje</span>
           <h2 id="hoje-streak">🔥 0 dias</h2>
@@ -47,7 +53,7 @@
         <div id="hoje-stage"></div>
       </section>
 
-      <section class="view view--home hidden" id="view-home">
+      <section class="view view--home dx-card hidden" id="view-home">
         <div class="learning-hero">
           <span class="eyebrow">AF Braga</span>
           <h2 id="home-title">Flashcards</h2>
@@ -72,7 +78,7 @@
       </section>
 
       <section class="view view--study hidden" id="view-study">
-        <div class="study-top">
+        <div class="study-top dx-card">
           <button class="btn-ghost text-action" id="btn-back" type="button" aria-label="Voltar aos baralhos">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             <span id="btn-back-label">Baralhos</span>
@@ -93,7 +99,7 @@
         <div class="card-stage">
           <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Virar carta">
             <div class="flashcard-inner" id="flashcard-inner">
-              <div class="flashcard-face flashcard-front">
+              <div class="flashcard-face flashcard-front dx-card">
                 <span class="card-number" id="card-number"></span>
                 <span class="change-chip hidden" id="card-change-chip">Alterado 26/27</span>
                 <p class="card-question" id="card-question"></p>
@@ -103,7 +109,7 @@
                   <kbd>Espaço</kbd> ou toque para <strong>Virar</strong>
                 </p>
               </div>
-              <div class="flashcard-face flashcard-back">
+              <div class="flashcard-face flashcard-back dx-card">
                 <span class="card-number" id="card-number-back"></span>
                 <span class="change-chip hidden" id="card-change-chip-back">Alterado 26/27</span>
                 <div class="answer-reveal">
@@ -117,7 +123,7 @@
           </div>
         </div>
 
-        <div class="rating-panel hidden" id="rating-panel">
+        <div class="rating-panel dx-card hidden" id="rating-panel">
           <p class="rating-label">Como foi?</p>
           <div class="rating-buttons">
             <button class="rate-btn rate-btn--again" data-rating="again" type="button">
@@ -139,7 +145,7 @@
           </div>
         </div>
 
-        <div class="session-done hidden" id="session-done">
+        <div class="session-done dx-card hidden" id="session-done">
           <h2 class="done-title">Sessão concluída</h2>
           <p class="done-text" id="done-text"></p>
           <button class="primary-action" id="btn-done-home" type="button">
@@ -150,7 +156,7 @@
       </section>
 
       <section class="view view--exam hidden" id="view-exam">
-        <div class="study-top">
+        <div class="study-top dx-card">
           <button class="btn-ghost text-action" id="btn-exam-back" type="button" aria-label="Sair do exame">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             Sair
@@ -168,7 +174,7 @@
           </div>
         </div>
 
-        <div class="exam-sheet" id="exam-sheet">
+        <div class="exam-sheet dx-card" id="exam-sheet">
           <span class="card-number" id="exam-q-number">Pergunta 1</span>
           <span class="change-chip hidden" id="exam-change-chip">Alterado 26/27</span>
           <p class="card-question" id="exam-question"></p>
@@ -185,7 +191,7 @@
           </button>
         </div>
 
-        <div class="exam-results hidden" id="exam-results">
+        <div class="exam-results dx-card hidden" id="exam-results">
           <h2 class="done-title">Resultado do exame</h2>
           <p class="exam-score-line">
             <span class="exam-score" id="exam-score">0</span>
@@ -207,7 +213,7 @@
         </div>
       </section>
 
-      <section class="view view--leis hidden" id="view-leis">
+      <section class="view view--leis dx-card hidden" id="view-leis">
         <div class="learning-hero">
           <span class="eyebrow">Leis</span>
           <h2>Pesquisar</h2>
@@ -256,14 +262,14 @@
         <div id="leis-results" aria-live="polite"></div>
       </section>
 
-      <section class="view view--reader hidden" id="view-reader">
+      <section class="view view--reader dx-card hidden" id="view-reader">
         <button class="btn-ghost text-action" id="btn-reader-back" type="button">Leis</button>
         <p class="eyebrow" id="reader-kicker"></p>
         <h2 id="reader-title"></h2>
         <div id="reader-body"></div>
       </section>
 
-      <section class="view view--alteracoes hidden" id="view-alteracoes">
+      <section class="view view--alteracoes dx-card hidden" id="view-alteracoes">
         <div class="learning-hero">
           <span class="eyebrow">Alterações 2026/27</span>
           <h2>Leis do Jogo</h2>
@@ -278,7 +284,7 @@
         <div id="alteracoes-list" aria-live="polite"></div>
       </section>
 
-      <section class="view view--testes hidden" id="view-testes">
+      <section class="view view--testes dx-card hidden" id="view-testes">
         <div class="learning-hero">
           <span class="eyebrow">Testes escritos</span>
           <h2>Escolher teste</h2>
@@ -320,7 +326,7 @@
         <div class="deck-grid" id="testes-grid"></div>
       </section>
 
-      <section class="view view--circulares hidden" id="view-circulares">
+      <section class="view view--circulares dx-card hidden" id="view-circulares">
         <div class="learning-hero">
           <span class="eyebrow">Circulares &amp; Esclarecimentos</span>
           <h2>Leitura</h2>
@@ -330,7 +336,7 @@
         <div id="circulares-body"></div>
       </section>
 
-      <section class="view view--filter hidden" id="view-filter">
+      <section class="view view--filter dx-card hidden" id="view-filter">
         <button class="btn-ghost text-action" id="btn-filter-back" type="button">Voltar</button>
         <p class="eyebrow" id="filter-kicker"></p>
         <h2 id="filter-title"></h2>
@@ -340,7 +346,7 @@
         <div id="filter-body"></div>
       </section>
 
-      <section class="view view--wiki hidden" id="view-wiki">
+      <section class="view view--wiki dx-card hidden" id="view-wiki">
         <div class="learning-hero">
           <span class="eyebrow">Wiki</span>
           <h2>Notas</h2>
@@ -349,20 +355,20 @@
         <div id="wiki-list"></div>
       </section>
 
-      <section class="view view--wiki-page hidden" id="view-wiki-page">
+      <section class="view view--wiki-page dx-card hidden" id="view-wiki-page">
         <button class="btn-ghost text-action" id="btn-wiki-back" type="button">Wiki</button>
         <article id="wiki-article" class="wiki-body"></article>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer dx-card">
       <p>AF Braga · Conselho de Arbitragem</p>
     </footer>
   </div>
 
   <script src="core.js?v=6"></script>
-  <script src="official.js?v=8"></script>
-  <script src="cites.js?v=9"></script>
-  <script src="app.js?v=9"></script>
+  <script src="official.js?v=9"></script>
+  <script src="cites.js?v=10"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>

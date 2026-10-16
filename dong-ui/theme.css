@@ -129,7 +129,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   color: hsl(var(--foreground));
-  background: hsl(var(--background));
+  background: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

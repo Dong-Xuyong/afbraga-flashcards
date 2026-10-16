@@ -285,7 +285,7 @@ function paintAlteracoes(focus) {
 
 function lawFold(entry, changes, open, query) {
   const details = document.createElement("details");
-  details.className = "fold";
+  details.className = "fold dx-card";
   details.id = "alt-" + lawAnchor(entry);
   if (open) details.open = true;
   const summary = document.createElement("summary");
@@ -423,7 +423,7 @@ function paintTestes() {
 function testDeckButton(test, cards, examMode) {
   const btn = document.createElement("button");
   btn.type = "button";
-  btn.className = "deck-card";
+  btn.className = "deck-card dx-card";
   const total = cards.length;
   const info = document.createElement("div");
   info.className = "deck-card-info";
@@ -612,7 +612,7 @@ function paintCircularesToc() {
   const heads = body.querySelectorAll("h2");
   for (const head of heads) {
     const link = document.createElement("a");
-    link.className = "toc-link";
+    link.className = "toc-link dx-card";
     link.href = "#/circulares/" + encodeURIComponent(head.id);
     link.textContent = head.textContent;
     toc.appendChild(link);
