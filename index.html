@@ -12,7 +12,7 @@
   <script src="dong-ui/theme.js"></script>
   <link rel="stylesheet" href="dong-ui/theme.css?v=7">
   <link rel="stylesheet" href="/ui/shell.css?v=1">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body class="dx">
   <a class="skip-link" href="#view-root">Saltar para o conteúdo</a>
@@ -35,6 +35,7 @@
         <a class="dx-tab" role="tab" href="#/leis" data-tab="leis" aria-selected="false">Leis</a>
         <a class="dx-tab" role="tab" href="#/alteracoes" data-tab="alteracoes" aria-selected="false">Alterações</a>
         <a class="dx-tab" role="tab" href="#/circulares" data-tab="circulares" aria-selected="false">Circulares</a>
+        <a class="dx-tab" role="tab" href="#/regras" data-tab="regras" aria-selected="false">Regras</a>
         <a class="dx-tab" role="tab" href="#/wiki" data-tab="wiki" aria-selected="false">Wiki</a>
       </nav>
     </div>
@@ -346,6 +347,16 @@
         <div id="filter-body"></div>
       </section>
 
+      <section class="view view--regras dx-card hidden" id="view-regras">
+        <div class="learning-hero">
+          <span class="eyebrow">AF Braga · 2026/27</span>
+          <h2>Regras por escalão 2026/27</h2>
+          <p class="hero-sub">Futebol masculino e feminino, por formato. Só o que os comunicados dizem. Onde não há informação: não encontrado.</p>
+        </div>
+        <nav class="toc" id="regras-toc" aria-label="Escalões e formatos"></nav>
+        <div id="regras-body"></div>
+      </section>
+
       <section class="view view--wiki dx-card hidden" id="view-wiki">
         <div class="learning-hero">
           <span class="eyebrow">Wiki</span>
@@ -367,8 +378,8 @@
   </div>
 
   <script src="core.js?v=6"></script>
-  <script src="official.js?v=9"></script>
+  <script src="official.js?v=10"></script>
   <script src="cites.js?v=10"></script>
-  <script src="app.js?v=10"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

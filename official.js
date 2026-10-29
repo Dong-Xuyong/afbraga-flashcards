@@ -1,5 +1,5 @@
 /**
- * Alterações 2026/27, testes escritos e circulares.
+ * Alterações 2026/27, testes escritos, circulares e regras por escalão.
  * Depends on globals from core.js and app.js (called after both load).
  */
 
@@ -11,6 +11,7 @@ let laws2627Promise = null;
 let quizBundle = null;
 let quizPromise = null;
 let circularesHtmlReady = false;
+let regrasHtmlReady = false;
 let testesMode = "study";
 let testesLaw = "";
 let alteracoesTimer = 0;
@@ -501,6 +502,9 @@ function inlineMd(text) {
   let html = escapeHtml(text);
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/(^|[\s(])_([^_\n]+)_(?=[\s).,;:!?»]|$)/g, "$1<em>$2</em>");
+  html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, function (_match, label, url) {
+    return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + label + "</a>";
+  });
   return html;
 }
 
@@ -548,6 +552,7 @@ function renderTable(lines) {
 function renderMarkdown(markdown) {
   const root = document.createElement("div");
   root.className = "reading-body wiki-body";
+  const usedIds = new Set();
   const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
   let i = 0;
   while (i < lines.length) {
@@ -565,7 +570,14 @@ function renderMarkdown(markdown) {
     if (heading) {
       const level = heading[1].length;
       const el = document.createElement("h" + level);
-      el.id = headingId(heading[2]);
+      let id = headingId(heading[2]);
+      if (usedIds.has(id)) {
+        let n = 2;
+        while (usedIds.has(id + "-" + n)) n += 1;
+        id = id + "-" + n;
+      }
+      usedIds.add(id);
+      el.id = id;
       el.innerHTML = inlineMd(heading[2]);
       if (typeof decorateHeading === "function") decorateHeading(el);
       root.appendChild(el);
@@ -592,9 +604,23 @@ function renderMarkdown(markdown) {
       root.appendChild(ul);
       continue;
     }
+    if (/^>\s?/.test(line)) {
+      const quote = [];
+      while (i < lines.length && /^>\s?/.test(lines[i])) {
+        quote.push(lines[i].replace(/^>\s?/, ""));
+        i += 1;
+      }
+      const aside = document.createElement("aside");
+      aside.className = "callout";
+      const note = document.createElement("p");
+      note.innerHTML = inlineMd(quote.join(" "));
+      aside.appendChild(note);
+      root.appendChild(aside);
+      continue;
+    }
     const para = [line];
     i += 1;
-    while (i < lines.length && lines[i].trim() && !/^(#{1,3}\s|---|\||\s*[-*]\s)/.test(lines[i])) {
+    while (i < lines.length && lines[i].trim() && !/^(#{1,3}\s|---|\||\s*[-*]\s|>)/.test(lines[i])) {
       para.push(lines[i]);
       i += 1;
     }
@@ -641,6 +667,50 @@ async function openCirculares(anchor) {
       }
       paintCircularesToc();
       circularesHtmlReady = true;
+    }
+  } catch (err) {
+    if (token !== routeToken) return;
+    body.textContent = err.message;
+    return;
+  }
+  if (token !== routeToken) return;
+  if (anchor) {
+    requestAnimationFrame(() => {
+      const el = document.getElementById(anchor);
+      if (el) el.scrollIntoView({ block: "start" });
+    });
+  }
+}
+
+function paintRegrasToc() {
+  const toc = $("#regras-toc");
+  const body = $("#regras-body");
+  toc.innerHTML = "";
+  const heads = body.querySelectorAll("h2");
+  for (const head of heads) {
+    const link = document.createElement("a");
+    link.className = "toc-link dx-card";
+    link.href = "#/regras/" + encodeURIComponent(head.id);
+    link.textContent = head.textContent;
+    toc.appendChild(link);
+  }
+}
+
+async function openRegras(anchor) {
+  const token = routeToken;
+  showView("regras");
+  const body = $("#regras-body");
+  if (!regrasHtmlReady) body.innerHTML = '<p class="mode-hint">A carregar…</p>';
+  try {
+    if (!regrasHtmlReady) {
+      const res = await fetch("data/regras-escalao.md");
+      if (!res.ok) throw new Error("Não foi possível carregar data/regras-escalao.md.");
+      const markdown = await res.text();
+      if (token !== routeToken) return;
+      body.innerHTML = "";
+      body.appendChild(renderMarkdown(markdown));
+      paintRegrasToc();
+      regrasHtmlReady = true;
     }
   } catch (err) {
     if (token !== routeToken) return;

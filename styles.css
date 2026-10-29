@@ -1264,7 +1264,7 @@ mark {
 
 .reading-body { margin-top: 0.5rem; overflow-x: auto; }
 .reading-body h1 { font-size: 1.35rem; margin: 0.4rem 0 0.6rem; }
-.reading-body h2 { font-size: 1.12rem; margin: 1.4rem 0 0.45rem; scroll-margin-top: 4.5rem; }
+.reading-body h2 { font-size: 1.12rem; margin: 1.4rem 0 0.45rem; scroll-margin-top: 8.5rem; }
 .reading-body h3 { font-size: 1rem; margin: 1rem 0 0.35rem; }
 .reading-body hr {
   border: 0;

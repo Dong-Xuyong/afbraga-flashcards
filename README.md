@@ -13,6 +13,7 @@ Aplicação web (JavaScript simples, sem build) para estudar as Leis do Jogo e a
 | `#/testes` | **Testes** — testes escritos oficiais, em flashcards ou exame, com filtro por lei |
 | `#/alteracoes`, `#/alteracoes/<lei>` | **Alterações** — alterações 2026/27, lei a lei |
 | `#/circulares`, `#/circulares/<id>` | **Circulares** — comunicados e esclarecimentos |
+| `#/regras`, `#/regras/<id>` | **Regras** — regras por escalão 2026/27 (leitura, não são flashcards) |
 | `#/tema/<id>` | Tema — cartas, passagens e circulares com a mesma palavra |
 | `#/fonte/<id>` | Cartões que citam uma passagem, alteração ou circular |
 | `#/wiki`, `#/wiki/<slug>` | **Wiki** — conceitos, fontes e marcadores |
@@ -43,6 +44,7 @@ No telemóvel: abre o link no browser; no iPhone podes usar Partilhar → Adicio
 | `data/quiz-escritos.json` | Testes escritos com resposta oficial |
 | `data/circulares.md` | CO 66, 67, 68 e 70 |
 | `data/esclarecimentos.md` | Minuto do lesionado, bolas oficiais e substituições |
+| `data/regras-escalao.md` | Regras por escalão 2026/27 (masculino e feminino) |
 | `data/citations.json` | Citações, temas e ligações inversas (gerado) |
 
 Os PDF ficam em `pdfs/` e abrem em `pdfs/<ficheiro>#page=N`.
