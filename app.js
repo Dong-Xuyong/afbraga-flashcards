@@ -24,7 +24,7 @@ const NORMA_CHAPTERS = {
   4: "Cap. 4 — Anexos",
 };
 
-const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page", "alteracoes", "testes", "circulares", "filter"];
+const VIEWS = ["hoje", "home", "study", "exam", "leis", "reader", "wiki", "wiki-page", "alteracoes", "testes", "circulares", "regras", "filter"];
 
 /** @type {{ decks: Array<{id:string,file:string,title:string,cardCount?:number,kind?:string}> }} */
 let deckIndex = null;
@@ -253,6 +253,7 @@ function showView(name) {
     testes: "Testes",
     alteracoes: "Alterações",
     circulares: "Circulares",
+    regras: "Regras por escalão 2026/27",
   };
   document.title = "AF Braga Referee Study — " + (titles[tab] || "Hoje");
   const current = document.querySelector("#app-nav [aria-selected='true']");
@@ -285,7 +286,7 @@ function tabForView(name) {
   if (name === "exam") return exam && exam.origin === "testes" ? "testes" : "exame";
   if (name === "leis" || name === "reader") return "leis";
   if (name === "wiki" || name === "wiki-page") return "wiki";
-  if (name === "alteracoes" || name === "testes" || name === "circulares") return name;
+  if (name === "alteracoes" || name === "testes" || name === "circulares" || name === "regras") return name;
   return "hoje";
 }
 
@@ -323,6 +324,7 @@ function parseHash() {
   if (name === "alteracoes") return { name: "alteracoes", law: parts[1] || "", item: parts[2] || "" };
   if (name === "testes") return { name: "testes" };
   if (name === "circulares") return { name: "circulares", anchor: parts[1] || "" };
+  if (name === "regras") return { name: "regras", anchor: parts[1] || "" };
   if (name === "tema") return { name: "tema", slug: parts[1] || "" };
   if (name === "fonte") return { name: "fonte", id: parts[1] || "" };
   return { name: "hoje" };
@@ -1955,6 +1957,7 @@ async function renderRoute() {
   if (route.name === "alteracoes") return openAlteracoes(route.law, route.item);
   if (route.name === "testes") return openTestes();
   if (route.name === "circulares") return openCirculares(route.anchor);
+  if (route.name === "regras") return openRegras(route.anchor);
   if (route.name === "tema") return openTema(route.slug);
   if (route.name === "fonte") return openFonte(route.id);
   return openHoje();
