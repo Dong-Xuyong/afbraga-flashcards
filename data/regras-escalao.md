@@ -14,7 +14,7 @@ Art. 01.11, CO n.º 162 (16/10/2026): «pausa técnica de cinco minutos; segue-s
 
 Art. 01.10, CO n.º 162 (16/10/2026): «sete substituições, não permitidas nos dois períodos da 1ª parte, salvo lesão. Na 2ª parte as substituições ilimitadas e volantes».
 
-> **Nota — «sete substituições».** O art. 01.10 diz, na mesma frase, «sete substituições» e que na 2ª parte as substituições são «ilimitadas e volantes». O CO n.º 162 não explica se as sete são o máximo do jogo, se contam só na 1ª parte, ou se a 2ª parte fica sem número máximo. A ambiguidade mantém-se.
+> **Nota — «sete substituições» (atualizado).** O esclarecimento do CA de 06.11.2026 (E-1106) confirma o regime operativo para Feminino Sub-13: na 1.ª parte só lesão + rotação obrigatória na pausa técnica; na 2.ª parte substituições ilimitadas e volantes. A formulação «sete substituições» do art. 01.10 fica subordinada a esse esclarecimento.
 
 ### Fora de jogo
 
@@ -44,7 +44,7 @@ Art. 01.11, CO n.º 162 (16/10/2026): «pausa técnica de cinco minutos; segue-s
 
 Art. 01.10, CO n.º 162 (16/10/2026): «sete substituições, não permitidas nos dois períodos da 1ª parte, salvo lesão. Na 2ª parte ... ilimitadas e volantes».
 
-> **Nota — «sete substituições».** A Parte II repete «sete substituições» e «ilimitadas e volantes» no art. 01.10. O CO n.º 162 não resolve a mesma ambiguidade da Parte III (Sub-13).
+> **Nota — «sete substituições» (atualizado).** O esclarecimento do CA de 06.11.2026 (E-1106) confirma o mesmo regime para Feminino Sub-15: 1.ª parte só lesão + rotação na pausa técnica; 2.ª parte ilimitadas e volantes. A formulação «sete substituições» do art. 01.10 fica subordinada a esse esclarecimento.
 
 ### Fora de jogo
 
@@ -302,13 +302,13 @@ Art. 35.º (Tabela 13), CO n.º 161 (16/10/2026): intervalo de «15 minutos». P
 
 ### Substituições
 
-Há conflito entre fontes. Nenhuma fica aqui escolhida.
+Esclarecimento do CA de 06.11.2026 (E-1106): «Ilimitadas e **definitivas**, no máximo de 3 paragens, não contabilizando o intervalo». Alinha com o art. 15.º (Tabela 2) / Anexo B do CO n.º 161; **não** volantes.
 
-- CO n.º 85 (18/09/2026) e email do Conselho de Arbitragem de 18/09/2026 (E-0918): «Ilimitadas e volantes».
 - Art. 15.º (Tabela 2) e Anexo B, CO n.º 161 (16/10/2026): «Ilimitadas e definitivas, em três paragens do jogo, mais o intervalo».
-- Art. 35.º (Tabela 13), CO n.º 161 (16/10/2026): «9 substituições autorizadas ... máximo de 3 paragens».
+- Esclarecimento CA 06.11.2026 (E-1106): «Ilimitadas e definitivas, no máximo de 3 paragens» (não contabilizando o intervalo).
+- CO n.º 85 (18/09/2026) e email E-0918 («Ilimitadas e volantes») e art. 35.º Tabela 13 («9 substituições…») ficam **superados** por este esclarecimento para efeitos de consulta rápida.
 
-> **Nota — substituições do Sub-14.** O CO n.º 85 e o email de 18/09/2026 não dizem o mesmo que o art. 15.º nem o mesmo que o art. 35.º do CO n.º 161. É preciso confirmar com o Conselho de Arbitragem.
+> **Nota — substituições do Sub-14 (atualizado).** Conflito anterior (volantes vs definitivas vs 9) resolvido pelo esclarecimento do CA de 06.11.2026 a favor de ilimitadas e definitivas, máx. 3 paragens.
 
 ### Fora de jogo
 
